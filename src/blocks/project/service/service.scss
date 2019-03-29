@@ -1,0 +1,191 @@
+.service {
+  margin-bottom: 108px;
+}
+
+.service__row {
+  @include make-row();
+}
+
+.service__col-3 {
+  @include make-col-ready();
+  @include make-col(3);
+}
+
+.service__col-9 {
+  @include make-col-ready();
+  @include make-col(9);
+}
+
+.service__content {
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: calc(100% - 40px);
+    box-shadow: 1px 0 117px rgba(116, 138, 156, 0.49);
+    border-radius: 10px;
+    background-color: #f4f6f8;
+    z-index: -1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: -217px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 331px;
+    height: 383px;
+    background: url("../img/decor/dot-1.png") no-repeat center left / cover;
+    z-index: -2;
+  }
+}
+
+.service__nav {
+  margin-top: 120px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 17px 62px rgba(223, 224, 227, 0.89);
+}
+
+.service__link {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  padding: 41px 33px 33px;
+  border-bottom: 1px solid #f0f5fb;
+  color: #222222;
+  background: $white;
+
+  &:last-child {
+    border-bottom: 0px;
+  }
+}
+
+.service__link.active {
+  color: $white;
+  background-image: linear-gradient(to top, #006ef7 0%, #6aa5f5 100%);
+}
+
+.service__tab {
+  position: relative;
+  height: 490px;
+  box-shadow: 1px 0 21px rgba(144, 144, 144, 0.13);
+  border-radius: 10px;
+  background-color: #303f46;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service__info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 221px;
+  width: 100%;
+  border-radius: 10px 0;
+  background-color: #ffffff;
+}
+
+.service__info {
+  padding: 27px 20px 30px 24px;
+}
+
+.service__btn .btn {
+  display: block;
+  font-size: 12px;
+  font-weight: 300;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.service__btn .btn--main {
+  padding-bottom: 9px;
+  font-size: 14px;
+}
+
+.service__title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.service__info p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #54585f;
+  margin-bottom: 32px;
+}
+
+.service__numb {
+  position: relative;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 27px;
+
+  &--price {
+    padding-right: 17px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 5px;
+      right: 0;
+      width: 10px;
+      height: 16px;
+      background: url("../img/icon/ruble.svg") no-repeat center / cover;
+    }
+  }
+}
+
+.service__numb sup {
+  top: -10px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 300;
+  color: #333333;
+}
+
+.service__numb sub {
+  bottom: 0;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 300;
+  color: #333333;
+}
+
+
+.service__table {
+  border: none;
+  overflow: visible;
+  margin-bottom: 23px;
+}
+
+.service__table td {
+  padding: 0;
+
+  &:first-child {
+    padding-right: 11px;
+  }
+
+  &:last-child {
+    padding-left: 11px;
+  }
+}
+

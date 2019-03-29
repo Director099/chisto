@@ -1,0 +1,47 @@
+.block-serv {
+  position: relative;
+  padding-top: 116px;
+  padding-bottom: 116px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.94);
+    z-index: -2;
+  }
+
+  &:nth-child(odd) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30%;
+      height: 100%;
+      background-color: rgba(#e9edf1, 0.5%);
+      z-index: -1;
+    }
+  }
+
+  &:nth-child(even) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 70%;
+      height: 100%;
+      background-color: rgba(#e9edf1, 0.5%);
+      z-index: -1;
+    }
+  }
+}

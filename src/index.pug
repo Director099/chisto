@@ -1,0 +1,116 @@
+extends pug/layout.pug
+
+block meta
+  title Главная
+block header
+  .fullpage.fullpage--main(style="background-image: url('../img/decor/bg-main-1.jpg')")
+    +page-header()
+    .container
+      section.main-block
+        h1.main-block__title «Чистоград» — клининговая компания
+        p.main-block__tagline полный спектром частных и коммерческих услуг
+        ul.main-block__list
+          li Уборка квартир, офисов, коттеджей, помещений коммерческого и промышленного назначения
+          li Химчистка ковров и мягкой мебели, мойка окон, витрин и фасадов
+        a.btn.btn--main.main-block__btn Выбрать услугу
+block content
+  main
+    section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')")
+      .container
+        .service
+          .service__row
+            .service__col-3
+              .nav.service__nav
+                a.service__link.active(data-toggle="pill" href="#tab-0" role="tab") Уборка квартир
+                a.service__link(data-toggle="pill" href="#tab-1" role="tab") Уборка коттеджей
+                a.service__link(data-toggle="pill" href="#tab-2" role="tab") Уборка офисов
+                a.service__link(data-toggle="pill" href="#tab-3" role="tab") Уборка помещений
+            .service__col-9
+              .tab-content.service__content
+                .tab-pane.service__tab.fade.show.active(id="tab-0" role="tabpanel" style="background-image: url('../img/decor/service-1.jpg')")
+                  +service__info()
+                .tab-pane.service__tab.fade(id="tab-1" role="tabpanel" style="background-image: url('../img/decor/service-2.jpg')")
+                  +service__info()
+                .tab-pane.service__tab.fade(id="tab-2" role="tabpanel" style="background-image: url('../img/decor/service-3.jpg')")
+                  +service__info()
+                .tab-pane.service__tab.fade(id="tab-3" role="tabpanel" style="background-image: url('../img/decor/service-4.jpg')")
+                  +service__info()
+        .advantages
+          ul.advantages__list
+            li.advantages__column
+              .advantages__item
+                span.advantages__icon(style="background-image: url('../img/icon/icon-1.png')" aria-label="Декоративная иконка")
+                p #[strong Перезваниваем через] 5 мин. Выезжаем на объект в день обращения
+            li.advantages__column
+              .advantages__item
+                span.advantages__icon(style="background-image: url('../img/icon/icon-2.png')" aria-label="Декоративная иконка")
+                p #[strong Несем полную] материальную ответственность. #[a(href="") Смотреть наш договор]
+            li.advantages__column
+              .advantages__item
+                span.advantages__icon(style="background-image: url('../img/icon/icon-3.png')" aria-label="Декоративная иконка")
+                p Клиент #[strong принимает объект] после проверки менеджера компании
+    section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')")
+      .container
+        .service
+          .service__row
+            .service__col-3
+              .nav.service__nav
+                a.service__link.active(data-toggle="pill" href="#tab-4" role="tab") Мойка окон
+                a.service__link(data-toggle="pill" href="#tab-5" role="tab") Мойка фасадов
+            .service__col-9
+              .tab-content.service__content
+                .tab-pane.service__tab.fade.show.active(id="tab-4" role="tabpanel" style="background-image: url('../img/decor/service-5.jpg')")
+                  +service__info()
+                .tab-pane.service__tab.fade(id="tab-5" role="tabpanel" style="background-image: url('../img/decor/service-6.jpg')")
+                  +service__info()
+        .advantages
+          ul.advantages__list
+            li.advantages__column
+              .advantages__item
+                span.advantages__icon(style="background-image: url('../img/icon/icon-4.png')" aria-label="Декоративная иконка")
+                p #[strong Перезваниваем через] 5 мин. Выезжаем на объект в день обращения
+            li.advantages__column
+              .advantages__item
+                span.advantages__icon(style="background-image: url('../img/icon/icon-5.png')" aria-label="Декоративная иконка")
+                p #[strong Несем полную] материальную ответственность. #[a(href="") Смотреть наш договор]
+            li.advantages__column
+              .advantages__item
+                span.advantages__icon(style="background-image: url('../img/icon/icon-6.png')" aria-label="Декоративная иконка")
+                p Клиент #[strong принимает объект] после проверки менеджера компании
+    section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')")
+      .container
+        .service
+          .service__row
+            .service__col-3
+              .nav.service__nav
+                a.service__link.active(data-toggle="pill" href="#tab-6" role="tab") Химчитска ковров
+                a.service__link(data-toggle="pill" href="#tab-7" role="tab") Химчистка мебели
+                a.service__link(data-toggle="pill" href="#tab-8" role="tab") Химчистка матрасов
+                a.service__link(data-toggle="pill" href="#tab-9" role="tab") Устранение запахов
+            .service__col-9
+              .tab-content.service__content
+                .tab-pane.service__tab.fade.show.active(id="tab-6" role="tabpanel" style="background-image: url('../img/decor/service-5.jpg')")
+                  +service__info()
+                .tab-pane.service__tab.fade(id="tab-7" role="tabpanel" style="background-image: url('../img/decor/service-6.jpg')")
+                  +service__info()
+                .tab-pane.service__tab.fade(id="tab-8" role="tabpanel" style="background-image: url('../img/decor/service-5.jpg')")
+                  +service__info()
+                .tab-pane.service__tab.fade(id="tab-9" role="tabpanel" style="background-image: url('../img/decor/service-6.jpg')")
+                  +service__info()
+        .advantages
+          ul.advantages__list
+            li.advantages__column
+              .advantages__item
+                span.advantages__icon(style="background-image: url('../img/icon/icon-7.png')" aria-label="Декоративная иконка")
+                p #[strong Перезваниваем через] 5 мин. Выезжаем на объект в день обращения
+            li.advantages__column
+              .advantages__item
+                span.advantages__icon(style="background-image: url('../img/icon/icon-8.png')" aria-label="Декоративная иконка")
+                p #[strong Несем полную] материальную ответственность. #[a(href="") Смотреть наш договор]
+            li.advantages__column
+              .advantages__item
+                span.advantages__icon(style="background-image: url('../img/icon/icon-9.png')" aria-label="Декоративная иконка")
+                p Клиент #[strong принимает объект] после проверки менеджера компании
+
+block footer
+  +page-footer()

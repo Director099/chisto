@@ -1,0 +1,32 @@
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 59px;
+}
+
+.page-header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__left {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__right {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__logo {
+  display: block;
+  max-width: 185px;
+}
+
+.page-header__phone {
+  color: $white;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 42px;
+}
