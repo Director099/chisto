@@ -1,10 +1,19 @@
 'use strict';
 
-$(function () {
-    $.scrollUp({
-        scrollText: '',
-    });
-});
+$('.reviews__slider').owlCarousel({
+  loop: true,
+  margin: 50,
+  nav: true,
+  dots: true,
+  responsive: {
+    0:{
+      items: 1
+    },
+    992:{
+      items: 3
+    }
+  }
+})
 
 // Плавный скол с навигации
 

@@ -1,12 +1,12 @@
 .block-serv {
   position: relative;
-  padding-top: 116px;
-  padding-bottom: 116px;
+  // padding-bottom: 116px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  z-index: 1;
-  overflow: hidden;
+  // background-attachment: fixed;
+  // z-index: 1;
+
 
   &::after {
     content: "";
@@ -16,7 +16,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.94);
-    z-index: -2;
+    z-index: 0;
   }
 
   &:nth-child(odd) {
@@ -26,9 +26,9 @@
       top: 0;
       right: 0;
       width: 30%;
-      height: 100%;
+      height: calc(100% - 35px);
       background-color: rgba(#e9edf1, 0.5%);
-      z-index: -1;
+      z-index: 1;
     }
   }
 
@@ -39,9 +39,16 @@
       top: 0;
       left: 0;
       width: 70%;
-      height: 100%;
+      height: calc(100% - 35px);
       background-color: rgba(#e9edf1, 0.5%);
-      z-index: -1;
+      z-index: 1;
     }
   }
+}
+
+.block-serv__wrap {
+  position: relative;
+  padding-top: 116px;
+  z-index: 1;
+  overflow: hidden;
 }

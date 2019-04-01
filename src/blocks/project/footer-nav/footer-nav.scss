@@ -1,0 +1,36 @@
+.footer-nav {
+
+}
+
+.footer-nav__list {
+  @include ul-none();
+}
+
+.footer-nav__item {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer-nav__name {
+  display: block;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  color: #a3acb7;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.footer-nav__link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 300;
+  color: #a3acb7;
+
+  &:hover {
+    color: lighten(#a3acb7, 30%);
+  }
+}

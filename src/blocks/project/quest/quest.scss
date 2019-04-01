@@ -1,0 +1,72 @@
+.quest {
+
+}
+
+.quest__header {
+  margin-bottom: 39px;
+}
+
+.quest__title {
+  margin-bottom: 15px;
+}
+
+.quest__signature {
+  font-size: 14px;
+  font-weight: 400;
+  color: #a3acb7;
+  margin: 0;
+}
+
+.quest__row {
+  @include make-row();
+  margin-left: -8px;
+  margin-right: -8px;
+
+  &--center {
+    align-items: center;
+  }
+}
+
+.quest__col-7 {
+  @include make-col-ready();
+  padding-left: 8px;
+  padding-right: 8px;
+
+  @media (min-width: $screen-xl) {
+    @include make-col(7);
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.quest__col-5 {
+  @include make-col-ready();
+  padding-left: 8px;
+  padding-right: 8px;
+
+  @media (min-width: $screen-xl) {
+    @include make-col(5);
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+.quest__col-12 {
+  @include make-col-ready();
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.quest__btn {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  box-shadow: none;
+  padding-top: 19px;
+  padding-bottom: 17px;
+}
+
+.quest .field-checkbox {
+  margin: 0;
+}

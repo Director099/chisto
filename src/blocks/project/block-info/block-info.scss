@@ -1,0 +1,17 @@
+.block-info {
+  padding-top: 93px;
+  padding-bottom: 61px;
+  background-image: linear-gradient(to bottom, #1f2831 0%, #0e0f17 100%);
+}
+
+.block-info__row {
+  @include make-row();
+}
+
+.block-info__column {
+  @include make-col-ready();
+
+  @media (min-width: $screen-sm) {
+    @include make-col(6)
+  }
+}

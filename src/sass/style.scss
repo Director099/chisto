@@ -6,13 +6,13 @@
 @import "../../node_modules/bootstrap/scss/bootstrap-reboot.scss";
 @import "../../node_modules/bootstrap/scss/_nav.scss";
 
-// @import "../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
-// @import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";
-// @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
+@import "../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
+@import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";
+@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 
 // My style
 
- @import "grid-mixins";
+@import "grid-mixins";
 
 
 @import "functions";
@@ -24,6 +24,10 @@
 @import "../blocks/companents/btn/btn";
 @import "../blocks/companents/burger/burger";
 @import "../blocks/companents/table/table";
+@import "../blocks/companents/field-text/field-text";
+@import "../blocks/companents/field-checkbox/field-checkbox";
+@import "../blocks/companents/form/form";
+@import "../blocks/companents/title/title";
 
 
 @import "../blocks/project/page-header/page-header";
@@ -33,3 +37,12 @@
 @import "../blocks/project/block-serv/block-serv";
 @import "../blocks/project/advantages/advantages";
 @import "../blocks/project/service/service";
+@import "../blocks/project/block-info/block-info";
+@import "../blocks/project/quest/quest";
+@import "../blocks/project/footer-nav/footer-nav";
+@import "../blocks/project/developer/developer";
+@import "../blocks/project/contacts/contacts";
+@import "../blocks/project/reviews/reviews";
+@import "../blocks/project/comment/comment";
+@import "../blocks/project/block-result/block-result";
+@import "../blocks/project/clients/clients";

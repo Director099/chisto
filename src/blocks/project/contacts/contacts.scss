@@ -1,0 +1,151 @@
+.contacts {
+
+}
+
+.contacts__header {
+  margin-bottom: 68px;
+}
+
+.contacts__row {
+  @include make-row();
+}
+
+.contacts__column-8 {
+  @include make-col-ready();
+
+  @media (min-width: $screen-xl) {
+    @include make-col(8);
+  }
+}
+
+.contacts__column-4 {
+  @include make-col-ready();
+
+  @media (min-width: $screen-xl) {
+    @include make-col(4);
+  }
+}
+
+.contacts__wrap {
+  margin-bottom: 35px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--ident {
+    @media (min-width: $screen-xl) {
+      margin-bottom: 53px;
+    }
+  }
+}
+
+.contacts__wrap--row {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__name {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  color: $white;
+  min-width: 100px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--point {
+    padding-left: 32px;
+
+    &::after {
+      width: 10px;
+      height: 14px;
+      background-image: url("../img/icon/point.svg");
+    }
+  }
+
+  &--phone {
+    padding-left: 32px;
+
+    &::after {
+      width: 15px;
+      height: 15px;
+      background-image: url("../img/icon/telephone.svg");
+    }
+  }
+
+  &--mail {
+    padding-left: 32px;
+
+    &::after {
+      width: 16px;
+      height: 12px;
+      background-image: url("../img/icon/mail.svg");
+    }
+  }
+}
+
+.contacts__info {
+  margin-left: 35px;
+}
+
+.contacts__info-text {
+  display: inline-block;
+  margin: 0;
+  color: #a3acb7;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+
+  &:hover {
+    color: lighten(#a3acb7, 30%);
+  }
+}
+
+
+.contacts__social {
+  margin-top: 20px;
+}
+
+.contacts__social-link {
+  display: inline-block;
+  margin-right: 15px;
+  width: 15px;
+  height: 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--insta {
+    background-image: url("../img/icon/instagram.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/icon/youtube.svg");
+  }
+
+  &--vk {
+    background-image: url("../img/icon/vk.svg");
+  }
+
+  &--whatsapp {
+    background-image: url("../img/icon/viber.svg");
+  }
+
+  &--telega {
+    background-image: url("../img/icon/telegram.svg");
+  }
+}

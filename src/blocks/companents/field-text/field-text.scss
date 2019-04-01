@@ -19,10 +19,10 @@ $border-radius:               rem(3px) !default;
   $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
 
   &__name {
-    @include field-name;
+    // @include field-name;
   }
 
   &__input-wrap {
@@ -38,14 +38,14 @@ $border-radius:               rem(3px) !default;
     margin: 0;
     line-height: $line-height;
     font-size: 1em;
-    font-family: inherit;
+    font-family: $font-1;
     background-color: #fff;
     border: 1px solid $border-color;
-    border-radius: $border-radius;
+    border-radius: 10px;
     appearance: textfield;
 
     &:focus {
-      @include field-focus;
+      // @include field-focus;
     }
 
     &[disabled],
@@ -76,7 +76,6 @@ $border-radius:               rem(3px) !default;
 
     @at-root textarea#{&} {
       $textarea-height: ($line-height * 2) + ($field-padding-vertical * 2);
-
       height: auto;
       min-height: calc(#{$textarea-height} + 2px);
       resize: vertical;
@@ -84,6 +83,19 @@ $border-radius:               rem(3px) !default;
   }
 
   &__help-text {
-    @include field-help-text;
+    // @include field-help-text;
+  }
+}
+
+.field-text--tr .field-text__input {
+  font-size: 12px;
+  font-weight: 300;
+  background: transparent;
+  border: 1px solid #8c949f;
+  padding: 15px 23px;
+  color: $white;
+
+  &::placeholder {
+    color: $white;
   }
 }

@@ -1,0 +1,10 @@
+.title {
+  font-family: $font-1;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 56px;
+
+  &--white {
+    color: $white;
+  }
+}
