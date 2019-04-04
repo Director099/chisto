@@ -1,0 +1,41 @@
+mixin modal()
+  .modal.fade(id="callback" tabindex="-1")
+    .modal-dialog.modal-dialog-centered
+      .modal-content
+        .modal__header
+          h5.modal__title Ну что, решились?
+          p.modal__tagline Отправьте заявку и мы перезвоним в течении 5 минут
+          button.modal__close(type="button" data-dismiss="modal" aria-label="Закрыть модальное окно")
+        .modal__content
+          form.from
+            +field-text({
+              isTextarea: false,
+              mods: '',
+              val: '',
+              attrs: {
+                name: 'contact',
+                placeholder: 'Введите ваше имя'
+              }
+            })
+            +field-text({
+              isTextarea: false,
+              mods: '',
+              val: '',
+              attrs: {
+                name: 'contact',
+                placeholder: '+7 (___) ___ - __ - __',
+                type: 'tel'
+              }
+            })
+            button.btn.btn--main.modal__btn-form Отправить
+            +field-checkbox([
+              {
+                title: 'Я даю свое согласие на обработку <a href="#">персональных данных</a>',
+                mods: 'quest',
+                attrs: {
+                  name: 'check0',
+                  checked: ""
+                }
+              },
+            ])
+

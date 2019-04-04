@@ -2,6 +2,24 @@
   margin-bottom: 108px;
 }
 
+.service__img-text {
+  position: relative;
+  margin-left: 70px;
+  margin-bottom: -30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -425px;
+    top: 5px;
+    height: 65px;
+    width: 375px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-image: url("../img/decor/dot-2.png");
+  }
+}
+
 .service__row {
   @include make-row();
 }

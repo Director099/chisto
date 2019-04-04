@@ -3,22 +3,33 @@ extends pug/layout.pug
 block meta
   title Главная
 block header
-  .fullpage.fullpage--main(style="background-image: url('../img/decor/bg-main-1.jpg')")
+  .fullpage.fullpage--main.fullpage--y-sb(style="background-image: url('../img/decor/bg-main-1.jpg')")
     +page-header()
     .container
-      section.main-block
-        h1.main-block__title «Чистоград» — клининговая компания
-        p.main-block__tagline полный спектром частных и коммерческих услуг
-        ul.main-block__list
-          li Уборка квартир, офисов, коттеджей, помещений коммерческого и промышленного назначения
-          li Химчистка ковров и мягкой мебели, мойка окон, витрин и фасадов
-        a.btn.btn--main.main-block__btn Выбрать услугу
+      .fullpage__row
+        .fullpage__column
+          .video-content
+            img(src="img/content/man.png", alt="Представитель «Чистоград»")
+            a.video-content__play(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk", aria-label="Воспроизведение видео" data-fancybox="")
+              span
+            .video-content__text-wrap
+              p Узнайте все об услугах, гарантиях, стоимостии и качестве за 30 секунд
+        .fullpage__column
+          section.main-block
+            h1.main-block__title «Чистоград» — клининговая компания
+            p.main-block__tagline полный спектром частных и коммерческих услуг
+            ul.main-block__list
+              li Уборка квартир, офисов, коттеджей, помещений коммерческого и промышленного назначения
+              li Химчистка ковров и мягкой мебели, мойка окон, витрин и фасадов
+            a.btn.btn--main.main-block__btn Выбрать услугу
 block content
   main
     section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')")
       .block-serv__wrap
         .container
           .service
+            .service__img-text
+              img(src="img/content/text-img-1.png", alt="Уборка")
             .service__row
               .service__col-3
                 .nav.service__nav
@@ -54,6 +65,8 @@ block content
       .block-serv__wrap
         .container
           .service
+            .service__img-text
+              img(src="img/content/text-img-2.png", alt="Мойка")
             .service__row
               .service__col-3
                 .nav.service__nav
@@ -83,6 +96,8 @@ block content
       .block-serv__wrap
         .container
           .service
+            .service__img-text
+              img(src="img/content/text-img-3.png", alt="Химчистка")
             .service__row
               .service__col-3
                 .nav.service__nav
