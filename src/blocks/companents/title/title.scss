@@ -7,4 +7,12 @@
   &--white {
     color: $white;
   }
+
+  &--big {
+    @media (min-width: $screen-xl) {
+      font-size: 72px;
+      font-weight: 500;
+      line-height: 72px;
+    }
+  }
 }

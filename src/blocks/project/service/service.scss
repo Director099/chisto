@@ -1,5 +1,5 @@
 .service {
-  margin-bottom: 108px;
+  margin-bottom: 73px;
 }
 
 .service__img-text {
@@ -22,16 +22,33 @@
 
 .service__row {
   @include make-row();
+
+  @media (min-width: $screen-xl) {
+    margin-left: -32.5px;
+    margin-right: -32.5px;
+  }
 }
 
 .service__col-3 {
   @include make-col-ready();
-  @include make-col(3);
+
+  @media (min-width: $screen-xl) {
+    @include make-col(3.1);
+    //align-self: flex-end;
+    padding-left: 32.5px;
+    padding-right: 32.5px;
+  }
 }
 
 .service__col-9 {
   @include make-col-ready();
-  @include make-col(9);
+
+
+  @media (min-width: $screen-xl) {
+    @include make-col(8.9);
+    padding-left: 32.5px;
+    padding-right: 32.5px;
+  }
 }
 
 .service__content {
@@ -41,7 +58,7 @@
   &::after {
     content: "";
     position: absolute;
-    right: -16px;
+    right: 0px;
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
@@ -55,7 +72,7 @@
   &::before {
     content: "";
     position: absolute;
-    right: -217px;
+    right: -232px;
     top: 50%;
     transform: translateY(-50%);
     width: 331px;
@@ -66,30 +83,79 @@
 }
 
 .service__nav {
+  position: relative;
   margin-top: 120px;
-  border-radius: 10px;
-  overflow: hidden;
+  display: block;
+}
+
+.service__nav-list {
+  @include ul-none();
   box-shadow: 0 17px 62px rgba(223, 224, 227, 0.89);
 }
 
+.service__nav-item {
+  width: 100%;
+
+
+  &:first-child {
+    .service__link {
+      border-radius: 10px 10px 0 0;
+
+      &::after {
+        border-radius: 10px 10px 0 0;
+      }
+    }
+  }
+
+  &:last-child {
+    .service__link {
+      border-bottom: 0px;
+      border-radius: 0 0 10px 10px;
+
+      &::after {
+        border-radius: 0 0 10px 10px;
+      }
+    }
+  }
+}
+
 .service__link {
+  position: relative;
   display: block;
   font-size: 16px;
   font-weight: 400;
   width: 100%;
-  padding: 41px 33px 33px;
+  padding: 38px 33px 36px;
   border-bottom: 1px solid #f0f5fb;
   color: #222222;
   background: $white;
 
-  &:last-child {
-    border-bottom: 0px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    width: calc(100% - 16px);
+    height: calc(100% - 14px);
+    transition: $time;
+    border: 1px solid rgba(255,255,255,.3);
   }
 }
 
 .service__link.active {
   color: $white;
   background-image: linear-gradient(to top, #006ef7 0%, #6aa5f5 100%);
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: -55px;
+    top: 50%;
+    margin-top: 2px;
+    width: 93px;
+    height: 1px;
+    background-color: #e3e9f1;
+  }
 }
 
 .service__tab {
@@ -101,6 +167,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $screen-xl) {
+    margin-right: 15px;
+  }
 }
 
 .service__info {

@@ -1,6 +1,12 @@
 .page-header {
   padding-top: 24px;
-  padding-bottom: 51px;
+  padding-bottom: 58px;
+}
+
+.page-header__container {
+  @media (min-width: $screen-xl) {
+    max-width: 1395px;
+  }
 }
 
 .page-header__row {
@@ -31,7 +37,7 @@
   font-weight: 500;
   line-height: 42px;
   padding-left: 35px;
-  margin-right: 45px;
+  margin-right: 40px;
 
   &:hover {
     color: darken($white, 30%);
@@ -58,6 +64,7 @@
   font-weight: 400;
   padding: 12px 14px 9px;
   box-shadow: 0 9px 24px rgba(3,81,152,.39), 0 3px 0 #035198;
+  margin-top: -7px;
 
   &:hover {
     color: darken($white, 30%);

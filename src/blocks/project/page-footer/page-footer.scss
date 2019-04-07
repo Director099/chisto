@@ -3,7 +3,7 @@
 }
 
 .page-footer__top {
-  padding-top: 62px;
+  padding-top: 67px;
   padding-bottom: 55px;
   background-color: #11161d;
 }
@@ -19,5 +19,5 @@
 
 .page-footer__item {
   @include make-col-ready();
-  @include make-col(3);
+  @include make-col(2.68);
 }

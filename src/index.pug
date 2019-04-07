@@ -6,37 +6,45 @@ block header
   .fullpage.fullpage--main.fullpage--y-sb(style="background-image: url('../img/decor/bg-main-1.jpg')")
     +page-header()
     .container
-      .fullpage__row
-        .fullpage__column
-          .video-content
-            img(src="img/content/man.png", alt="Представитель «Чистоград»")
-            a.video-content__play(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk", aria-label="Воспроизведение видео" data-fancybox="")
-              span
-            .video-content__text-wrap
-              p Узнайте все об услугах, гарантиях, стоимостии и качестве за 30 секунд
-        .fullpage__column
-          section.main-block
-            h1.main-block__title «Чистоград» — клининговая компания
-            p.main-block__tagline полный спектром частных и коммерческих услуг
-            ul.main-block__list
-              li Уборка квартир, офисов, коттеджей, помещений коммерческого и промышленного назначения
-              li Химчистка ковров и мягкой мебели, мойка окон, витрин и фасадов
-            a.btn.btn--main.main-block__btn Выбрать услугу
+      .fullpage__relative
+        span.decor-text.fullpage__dec-text листай дальше
+        .fullpage__row
+          .fullpage__column
+            .video-content
+              img(src="img/content/man.png", alt="Представитель «Чистоград»")
+              a.video-content__play(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk", aria-label="Воспроизведение видео" data-fancybox="")
+                span
+              .video-content__text-wrap
+                p Узнайте все об услугах, гарантиях, стоимостии и качестве за 30 секунд
+          .fullpage__column
+            section.main-block.fullpage__mt.fullpage__la
+              h1.title.main-block__title «Чистоград» — клининговая компания
+              p.main-block__tagline полный спектром частных и коммерческих услуг
+              ul.main-block__list
+                li Уборка квартир, офисов, коттеджей, помещений коммерческого и промышленного назначения
+                li Химчистка ковров и мягкой мебели, мойка окон, витрин и фасадов
+              a.btn.btn--main.main-block__btn Выбрать услугу
 block content
-  main
+  main.main-page
     section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')")
-      .block-serv__wrap
+      .block-serv__wrap.block-serv__wrap--service
         .container
           .service
             .service__img-text
               img(src="img/content/text-img-1.png", alt="Уборка")
             .service__row
               .service__col-3
-                .nav.service__nav
-                  a.service__link.active(data-toggle="pill" href="#tab-0" role="tab") Уборка квартир
-                  a.service__link(data-toggle="pill" href="#tab-1" role="tab") Уборка коттеджей
-                  a.service__link(data-toggle="pill" href="#tab-2" role="tab") Уборка офисов
-                  a.service__link(data-toggle="pill" href="#tab-3" role="tab") Уборка помещений
+                .service__nav
+                  ul.nav.service__nav-list
+                    li.service__nav-item
+                      a.service__link.active(data-toggle="pill" href="#tab-0" role="tab") Уборка квартир
+                    li.service__nav-item
+                      a.service__link(data-toggle="pill" href="#tab-1" role="tab") Уборка коттеджей
+                    li.service__nav-item
+                      a.service__link(data-toggle="pill" href="#tab-2" role="tab") Уборка офисов
+                    li.service__nav-item
+                      a.service__link(data-toggle="pill" href="#tab-3" role="tab") Уборка помещений
+                  span.decor-text услуги химчистки
               .service__col-9
                 .tab-content.service__content
                   .tab-pane.service__tab.fade.show.active(id="tab-0" role="tabpanel" style="background-image: url('../img/decor/service-1.jpg')")
@@ -47,7 +55,7 @@ block content
                     +service__info()
                   .tab-pane.service__tab.fade(id="tab-3" role="tabpanel" style="background-image: url('../img/decor/service-4.jpg')")
                     +service__info()
-      .advantages
+      .advantages.advantages--ident
         ul.advantages__list
           li.advantages__column
             .advantages__item
@@ -62,23 +70,27 @@ block content
               span.advantages__icon(style="background-image: url('../img/icon/icon-3.png')" aria-label="Декоративная иконка")
               p Клиент #[strong принимает объект] после проверки менеджера компании
     section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')")
-      .block-serv__wrap
+      .block-serv__wrap.block-serv__wrap--service
         .container
           .service
             .service__img-text
               img(src="img/content/text-img-2.png", alt="Мойка")
             .service__row
               .service__col-3
-                .nav.service__nav
-                  a.service__link.active(data-toggle="pill" href="#tab-4" role="tab") Мойка окон
-                  a.service__link(data-toggle="pill" href="#tab-5" role="tab") Мойка фасадов
+                .service__nav
+                  ul.nav.service__nav-list
+                    li.service__nav-item
+                      a.service__link.active(data-toggle="pill" href="#tab-4" role="tab") Мойка окон
+                    li.service__nav-item
+                      a.service__link(data-toggle="pill" href="#tab-5" role="tab") Мойка фасадов
+                  span.decor-text услуги химчистки
               .service__col-9
                 .tab-content.service__content
                   .tab-pane.service__tab.fade.show.active(id="tab-4" role="tabpanel" style="background-image: url('../img/decor/service-5.jpg')")
                     +service__info()
                   .tab-pane.service__tab.fade(id="tab-5" role="tabpanel" style="background-image: url('../img/decor/service-6.jpg')")
                     +service__info()
-      .advantages
+      .advantages.advantages--ident
         ul.advantages__list
           li.advantages__column
             .advantages__item
@@ -93,18 +105,24 @@ block content
               span.advantages__icon(style="background-image: url('../img/icon/icon-6.png')" aria-label="Декоративная иконка")
               p Клиент #[strong принимает объект] после проверки менеджера компании
     section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')")
-      .block-serv__wrap
+      .block-serv__wrap.block-serv__wrap--service
         .container
           .service
             .service__img-text
               img(src="img/content/text-img-3.png", alt="Химчистка")
             .service__row
               .service__col-3
-                .nav.service__nav
-                  a.service__link.active(data-toggle="pill" href="#tab-6" role="tab") Химчитска ковров
-                  a.service__link(data-toggle="pill" href="#tab-7" role="tab") Химчистка мебели
-                  a.service__link(data-toggle="pill" href="#tab-8" role="tab") Химчистка матрасов
-                  a.service__link(data-toggle="pill" href="#tab-9" role="tab") Устранение запахов
+                .service__nav
+                  ul.nav.service__nav-list
+                    li.service__nav-item
+                      a.service__link.active(data-toggle="pill" href="#tab-6" role="tab") Химчитска ковров
+                    li.service__nav-item
+                      a.service__link(data-toggle="pill" href="#tab-7" role="tab") Химчистка мебели
+                    li.service__nav-item
+                      a.service__link(data-toggle="pill" href="#tab-8" role="tab") Химчистка матрасов
+                    li.service__nav-item
+                      a.service__link(data-toggle="pill" href="#tab-9" role="tab") Устранение запахов
+                  span.decor-text услуги химчистки
               .service__col-9
                 .tab-content.service__content
                   .tab-pane.service__tab.fade.show.active(id="tab-6" role="tabpanel" style="background-image: url('../img/decor/service-5.jpg')")
@@ -115,7 +133,7 @@ block content
                     +service__info()
                   .tab-pane.service__tab.fade(id="tab-9" role="tabpanel" style="background-image: url('../img/decor/service-6.jpg')")
                     +service__info()
-      .advantages
+      .advantages.advantages--ident
         ul.advantages__list
           li.advantages__column
             .advantages__item
@@ -134,6 +152,7 @@ block content
         .clients
           .clients__row
             .clients__left
+              span.decor-text.clients__dec-text Наши клиенты
               h2.title.clients__title-big Клиенты
             .clients__right
               h3.title.clients__title Мы работаем с большими  и маленькими компаниями  и с частными лицами
@@ -162,5 +181,5 @@ block content
                   img(src="img/icon/part-11.png", alt="Логотип")
                 li.clients__item
                   img(src="img/icon/part-12.png", alt="Логотип")
-  block footer
+block footer
   +page-footer()

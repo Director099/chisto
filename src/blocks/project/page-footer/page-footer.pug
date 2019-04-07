@@ -8,86 +8,10 @@ mixin page-footer()
             a.reviews__nav-link.active(data-toggle="tab" href="#tab0" role="tab") Видео-отзывы
           li.reviews__nav-item
             a.reviews__nav-link(data-toggle="tab" href="#tab1") Благодарственные письма
+        img.reviews__header-img(src="img/content/text-img-4.png" alt="Отзывы")
       .tab-content.reviews__content(id="myTabContent")
-        .tab-pane.fade.show.active(id="tab0")
-          .reviews__slider.owl-carousel.owl-theme
-            .reviews__slider-item
-              .comment
-                a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
-                  img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
-                  span.comment__play(aria-label="Открыть Изображение")
-                    span.comment__play-img
-                .comment__text
-                  p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
-                .comment__stars
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-            .reviews__slider-item
-              .comment
-                a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
-                  img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
-                  span.comment__play(aria-label="Открыть Изображение")
-                    span.comment__play-img
-                .comment__text
-                  p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
-                .comment__stars
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-            .reviews__slider-item
-              .comment
-                a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
-                  img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
-                  span.comment__play(aria-label="Открыть Изображение")
-                    span.comment__play-img
-                .comment__text
-                  p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
-                .comment__stars
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-            .reviews__slider-item
-              .comment
-                a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
-                  img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
-                  span.comment__play(aria-label="Открыть Изображение")
-                    span.comment__play-img
-                .comment__text
-                  p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
-                .comment__stars
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-        .tab-pane.fade(id="tab1")
+        span.decor-text.reviews__dec-text Отзывы наших клиентов
+        .tab-pane.fade(id="tab0")
           .reviews__slider.owl-carousel.owl-theme
             .reviews__slider-item
               .comment
@@ -146,6 +70,85 @@ mixin page-footer()
                     use(xlink:href="img/symbols.svg#star")
                   svg(width="16" height="16")
                     use(xlink:href="img/symbols.svg#star")
+        .tab-pane.fade.show.active(id="tab1")
+          .reviews__slider.owl-carousel.owl-theme
+            .reviews__slider-item
+              .comment
+                a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
+                  img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
+                  span.comment__play(aria-label="Открыть Изображение")
+                    span.comment__play-img
+                .comment__text
+                  p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
+                .comment__stars
+                  svg.comment__fill(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+                  svg.comment__fill(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+                  svg.comment__fill(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+                  svg.comment__fill(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+                  svg(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+            .reviews__slider-item
+              .comment
+                a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
+                  img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
+                  span.comment__play(aria-label="Открыть Изображение")
+                    span.comment__play-img
+                .comment__text
+                  p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
+                .comment__stars
+                  svg.comment__fill(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+                  svg.comment__fill(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+                  svg(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+                  svg(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+                  svg(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+            .reviews__slider-item
+              .comment
+                a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
+                  img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
+                  span.comment__play(aria-label="Открыть Изображение")
+                    span.comment__play-img
+                .comment__text
+                  p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
+                .comment__stars
+                  svg.comment__fill(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+                  svg.comment__fill(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+                  svg.comment__fill(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+                  svg(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+                  svg(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+            .reviews__slider-item
+              .comment
+                a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
+                  img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
+                  span.comment__play(aria-label="Открыть Изображение")
+                    span.comment__play-img
+                .comment__text
+                  p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
+                .comment__stars
+                  svg.comment__fill(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+                  svg.comment__fill(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+                  svg.comment__fill(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+                  svg(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+                  svg(width="16" height="16")
+                    use(xlink:href="img/symbols.svg#star")
+
   .block-info
     .container
       .block-info__row

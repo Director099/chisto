@@ -1,0 +1,76 @@
+.results {
+  position: relative;
+
+  &::after {
+    content: 'результат';
+    position: absolute;
+    right: -421px;
+    top: 245px;
+    text-transform: uppercase;
+    font-family: $font-1;
+    font-size: 126px;
+    font-weight: 900;
+    opacity: 0.1;
+    transform: rotate(-90deg);
+    color: #ecf0f5;
+  }
+}
+
+.results__slider .owl-nav {
+  margin: 0;
+}
+
+.results__slider .owl-nav button {
+  position: absolute;
+  // left: 0;
+  top: calc(50% + -75px);
+  width: 51px;
+  height: 51px;
+  box-shadow: -5px 21px 51px rgba(141, 155, 165, 0.4);
+  background-color: #fcfcfc;
+  border-radius: 50% !important;
+  margin: 0 !important;
+  // background: $white !important;
+  transform: translateY(-50%);
+
+  span {
+    font-size: 0;
+  }
+
+  &.owl-prev {
+    left: -25px;
+    background: $white url("../img/icon/right-arrow.svg") no-repeat center / 20px !important;
+    transform: translateY(-50%) scale(-1, 1);
+  }
+
+  &.owl-next {
+    right: -25px;
+    background: $white url("../img/icon/right-arrow.svg") no-repeat center / 20px !important;
+  }
+}
+
+.results__slider .owl-dots {
+  margin-top: 75px;
+}
+
+.results__slider .owl-dots .owl-dot {
+  &:hover {
+    span {
+      background-color: transparent;
+      border: 2px solid #0a74f7 !important;
+    }
+  }
+}
+
+.results__slider .owl-dots .owl-dot span {
+  border: 2px solid transparent;
+  width: 15px;
+  height: 15px;
+  transition: $time;
+  background-color: #3e4556;
+}
+
+.results__slider .owl-dots .owl-dot.active span {
+  background-color: transparent;
+  border: 2px solid #0a74f7 !important;
+}

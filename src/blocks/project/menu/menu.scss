@@ -1,0 +1,124 @@
+.fancybox-is-open .fancybox-bg--menu {
+  background: #151621;
+  opacity: 0.98;
+}
+
+.fancybox-slide {
+  padding: 0;
+}
+
+.fancybox-button {
+  display: none;
+}
+
+.menu {
+  //display: none;
+  width: 100%;
+  height: 100%;
+  padding: 55px 0;
+  background: transparent;
+}
+
+.menu__main {
+  position: relative;
+  max-width: 1050px;
+  margin: auto;
+}
+
+.menu__title {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+  margin-bottom: 65px;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.menu__submenu {
+  display: flex;
+  margin-bottom: 95px;
+}
+
+.menu__submenu-item {
+  margin-right: 120px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.menu__submenu-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: $white;
+  margin-bottom: 29px;
+}
+
+.menu__submenu-menu {
+  @include ul-none();
+}
+
+.menu__submenu-menu li {
+  margin-bottom: 13px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.menu__submenu-menu a {
+  display: inline-block;
+
+  font-size: 12px;
+  font-weight: 300;
+  color: $white;
+}
+
+.menu__messager {
+  @include ul-none();
+  display: flex;
+}
+
+.menu__messager-item {
+  margin-right: 25px;
+}
+
+.menu__messager-link {
+  display: inline-block;
+  color: $white;
+
+  &:hover {
+    color: darken($white, 30%);
+  }
+}
+
+.menu__close {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid $white;
+  background: transparent;
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    height: calc(100% - 12px);
+    width: 1px;
+    background: $white;
+  }
+
+  &::before {
+    transform: translate(-50%,-50%) rotate(45deg)
+  }
+}
