@@ -46,6 +46,32 @@
   }
 }
 
+.block-serv--cleaning {
+  background-color: #e7ebee;
+
+  &::after {
+    display: none;
+  }
+
+  &:nth-child(even) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 28.5%;
+      height: 100%;
+      background-color: #eff3f5;
+      z-index: 1;
+    }
+  }
+}
+
+.block-serv--cleaning .block-serv__wrap {
+  padding-top: 105px;
+  padding-bottom: 77px;
+}
+
 .block-serv__wrap {
   position: relative;
   padding-top: 116px;
@@ -64,11 +90,6 @@
 
 .block-serv__wrap--reglament {
   padding-bottom: 86px;
-}
-
-.block-serv__wrap--cleaning {
-  padding-top: 105px;
-  padding-bottom: 77px;
 }
 
 .block-serv__wrap--calculator {

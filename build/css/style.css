@@ -2379,6 +2379,31 @@ input:checked ~ .field-checkbox__name-text:after {
 .title--white {
     color: white;
 }
+.breadcrumbs {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    color: #1a1a1a;
+}
+.breadcrumbs a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+.breadcrumbs a:hover, .breadcrumbs a:focus {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+.breadcrumbs__item {
+    display: inline-block;
+    margin-right: 0.6em;
+    white-space: nowrap;
+}
+.breadcrumbs__item:not(:last-child):after {
+    content: ">";
+    display: inline-block;
+    margin-left: 0.8rem;
+    color: gray;
+}
 .decor-text {
     position: absolute;
     left: -149px;
@@ -2728,6 +2753,12 @@ input:checked ~ .field-checkbox__name-text:after {
     z-index: -1;
     background: rgba(0, 0, 0, 0.48);
 }
+.fullpage--single .page-header__phone {
+    color: #333333;
+}
+.fullpage--single .page-header__phone::after {
+    background: url("../img/icon/phone-blue.svg") no-repeat center/contain;
+}
 .fullpage--service .page-header {
     padding-bottom: 112px;
 }
@@ -2898,6 +2929,26 @@ input:checked ~ .field-checkbox__name-text:after {
     background-color: rgba(233, 237, 241, 0.5);
     z-index: 1;
 }
+.block-serv--cleaning {
+    background-color: #e7ebee;
+}
+.block-serv--cleaning::after {
+    display: none;
+}
+.block-serv--cleaning:nth-child(even)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28.5%;
+    height: 100%;
+    background-color: #eff3f5;
+    z-index: 1;
+}
+.block-serv--cleaning .block-serv__wrap {
+    padding-top: 105px;
+    padding-bottom: 77px;
+}
 .block-serv__wrap {
     position: relative;
     padding-top: 116px;
@@ -2912,10 +2963,6 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .block-serv__wrap--reglament {
     padding-bottom: 86px;
-}
-.block-serv__wrap--cleaning {
-    padding-top: 105px;
-    padding-bottom: 77px;
 }
 .block-serv__wrap--calculator {
     padding-top: 130px;
@@ -4425,6 +4472,9 @@ input:checked ~ .field-checkbox__name-text:after {
 .calculator__group {
     margin-bottom: 20px;
 }
+.calculator__tab {
+    margin-bottom: 12px;
+}
 .calculator__col-4 {
     position: relative;
     width: 100%;
@@ -4618,6 +4668,23 @@ input:checked ~ .field-checkbox__name-text:after {
     text-decoration: none;
     border-bottom: 1px dashed;
 }
+.calculator__tab {
+    display: block;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-align: center;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 5px 18px rgba(182, 186, 192, 0.35);
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+.calculator__tab.active {
+    color: white;
+    background-image: linear-gradient(to top, #006ef7 0%, #6aa5f5 100%);
+}
 .calculator__collapse {
     margin-top: 40px;
 }
@@ -4681,6 +4748,100 @@ input:checked ~ .field-checkbox__name-text:after {
     width: 10px;
     height: 1px;
     background: black;
+}
+.page {
+    position: relative;
+    padding-top: 175px;
+    padding-bottom: 110px;
+}
+.page::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28.5%;
+    height: 100%;
+    background-color: rgba(233, 237, 241, 0.16);
+    z-index: 1;
+}
+.page h1, .page h2, .page h3, .page h4 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 56px;
+}
+.page h1 {
+    position: relative;
+    margin-bottom: 95px;
+}
+.page h1::after {
+    content: "";
+    position: absolute;
+    left: -425px;
+    top: 0;
+    height: 65px;
+    width: 375px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-image: url("../img/decor/dot-2.png");
+}
+.page h2 {
+    margin-bottom: 40px;
+}
+.page h3 {
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 90px;
+}
+.page h3::after {
+    content: "";
+    position: absolute;
+    left: -425px;
+    top: 0;
+    height: 65px;
+    width: 375px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-image: url("../img/decor/dot-2.png");
+}
+.page h4 {
+    margin-bottom: 40px;
+}
+.page p {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+}
+.page .results::after {
+    display: none;
+}
+.page .result p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+}
+.page__previev {
+    display: flex;
+    margin-bottom: 90px;
+}
+.page__previev-left {
+    max-width: 370px;
+    width: 100%;
+    flex-shrink: 0;
+    box-shadow: 0 23px 43px rgba(195, 200, 206, 0.63);
+}
+.page__previev-right {
+    margin-left: 34px;
+    height: 400px;
+    box-shadow: 0 23px 43px rgba(195, 200, 206, 0.63);
+    border-radius: 10px;
+    background-color: #e7ebee;
+    overflow: hidden;
+}
+.page__previev-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 @media (min-width: 480px) {
     .block-info__column {
@@ -5831,6 +5992,9 @@ input:checked ~ .field-checkbox__name-text:after {
         min-height: 839px;
     }
     .fullpage--service {
+        min-height: inherit;
+    }
+    .fullpage--single {
         min-height: inherit;
     }
     .fullpage__column {

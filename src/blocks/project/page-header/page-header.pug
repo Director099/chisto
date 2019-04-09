@@ -1,4 +1,4 @@
-mixin page-header()
+mixin page-header(tpl)
   header.page-header
     .container.page-header__container
       .page-header__row
@@ -6,7 +6,10 @@ mixin page-header()
           a.burger.page-header__burger(href="#menu" data-fancybox="" aria-label="Открытие меню")
             span.burger__span
           a.page-header__logo(href="index.html")
-            img(src="img/sharing/logo-white.png", alt="«Чистоград» — клининговая компания")
+            if(tpl === "single")
+              img(src="img/sharing/logo-blue.png", alt="«Чистоград» — клининговая компания")
+            else
+              img(src="img/sharing/logo-white.png", alt="«Чистоград» — клининговая компания")
         .page-header__right
           a.page-header__phone(href="tel:+7(919)60-39-770") +7 (919) 60-39-770
           a.btn.btn--main.page-header__cb(href="#callback" data-toggle="modal" data-target="#callback") Заказать звонок

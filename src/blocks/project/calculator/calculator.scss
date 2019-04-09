@@ -19,6 +19,10 @@
   margin-bottom: 20px;
 }
 
+.calculator__tab {
+  margin-bottom: 12px;
+}
+
 .calculator__col-4 {
   @include make-col-ready();
 

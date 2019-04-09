@@ -50,6 +50,20 @@
   }
 }
 
+.fullpage--single {
+  @media (min-width: $screen-xl) {
+    min-height: inherit;
+  }
+
+  .page-header__phone {
+    color: #333333;
+
+    &::after {
+      background: url("../img/icon/phone-blue.svg") no-repeat center/contain;
+    }
+  }
+}
+
 .fullpage--service .page-header {
   padding-bottom: 112px;
 }
