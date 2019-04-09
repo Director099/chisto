@@ -1,9 +1,9 @@
 mixin page-header()
   header.page-header
-    .container
+    .container.page-header__container
       .page-header__row
         .page-header__left
-          button.burger.page-header__burger(aria-label="Открытие меню")
+          a.burger.page-header__burger(href="#menu" data-fancybox="" aria-label="Открытие меню")
             span.burger__span
           a.page-header__logo(href="index.html")
             img(src="img/sharing/logo-white.png", alt="«Чистоград» — клининговая компания")

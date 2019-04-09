@@ -3,7 +3,7 @@
 }
 
 .contacts__header {
-  margin-bottom: 68px;
+  margin-bottom: 50px;
 }
 
 .contacts__row {
@@ -14,7 +14,7 @@
   @include make-col-ready();
 
   @media (min-width: $screen-xl) {
-    @include make-col(8);
+    @include make-col(7.4);
   }
 }
 
@@ -22,12 +22,12 @@
   @include make-col-ready();
 
   @media (min-width: $screen-xl) {
-    @include make-col(4);
+    @include make-col(4.6);
   }
 }
 
 .contacts__wrap {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 
   &:last-child {
     margin-bottom: 0;
@@ -35,7 +35,8 @@
 
   &--ident {
     @media (min-width: $screen-xl) {
-      margin-bottom: 53px;
+      margin-bottom: 30px;
+      margin-top: 3px;
     }
   }
 }

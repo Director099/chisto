@@ -1,7 +1,7 @@
 .block-result {
   position: relative;
-  padding-top: 148px;
-  padding-bottom: 63px;
+  padding-top: 136px;
+  padding-bottom: 70px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -26,11 +26,49 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(50% - 360px);
+    width: calc(50% - 365px);
     // max-width: 375px;
     height: 100%;
     background-image: linear-gradient(to top, #006ef7 0%, #6aa5f5 100%);
     opacity: 0.7;
     z-index: -1;
   }
+}
+
+.block-serv__relative {
+  position: relative;
+}
+
+.block-result--pt {
+  padding-top: 109px;
+  padding-bottom: 97px;
+}
+
+.block-result--reverse {
+  &::before {
+    right: 0;
+    left: inherit;
+  }
+}
+
+.block-result__title {
+  position: relative;
+  margin-left: 120px;
+  max-width: 460px;
+  margin-bottom: 57px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -93px;
+    left: -125px;
+    width: 65px;
+    height: 189px;
+    background-image: url("../img/decor/dots-result.png");
+  }
+}
+
+.block-serv__center-text {
+  top: 50%;
+  transform: rotate(-90deg) translateY(-50%);
 }

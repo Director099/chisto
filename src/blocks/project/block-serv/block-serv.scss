@@ -25,8 +25,8 @@
       position: absolute;
       top: 0;
       right: 0;
-      width: 30%;
-      height: calc(100% - 35px);
+      width: 28.5%;
+      height: 100%;
       background-color: rgba(#e9edf1, 0.5%);
       z-index: 1;
     }
@@ -38,8 +38,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 70%;
-      height: calc(100% - 35px);
+      width: 71.5%;
+      height: 100%;
       background-color: rgba(#e9edf1, 0.5%);
       z-index: 1;
     }
@@ -51,4 +51,58 @@
   padding-top: 116px;
   z-index: 1;
   overflow: hidden;
+}
+
+
+.block-serv__wrap--service {
+  padding-top: 129px;
+}
+
+.block-serv__wrap--action {
+  padding-bottom: 60px;
+}
+
+.block-serv__wrap--reglament {
+  padding-bottom: 86px;
+}
+
+.block-serv__wrap--cleaning {
+  padding-top: 105px;
+  padding-bottom: 77px;
+}
+
+.block-serv__title {
+  position: relative;
+  max-width: 697px;
+  margin-left: auto;
+  margin-bottom: 60px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -457px;
+    top: 19px;
+    height: 65px;
+    width: 375px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-image: url("../img/decor/dot-2.png");
+  }
+}
+
+.block-serv__row {
+  @include make-row();
+}
+
+.block-serv__column-4 {
+  @include make-col-ready();
+
+  @media (min-width: $screen-xl) {
+    @include make-col(4);
+    margin-bottom: 25px;
+  }
+}
+
+.block-serv__faq {
+  margin-left: 85px;
 }

@@ -71,5 +71,9 @@ $border-radius:               rem(3px) !default;
     border: none;
     box-shadow: 0 9px 24px rgba(3, 81, 152, 0.39), 0 5px 0 #035198;
     background-image: linear-gradient(to top, #006ef7 0%, #6aa5f5 100%);
+
+    &:hover {
+      color: $white;
+    }
   }
 }

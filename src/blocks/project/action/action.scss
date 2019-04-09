@@ -1,0 +1,45 @@
+.action {
+  position: relative;
+  padding: 31px 35px 65px;
+  box-shadow: 0 5px 18px rgba(220, 221, 224, 0.35);
+  border-radius: 10px;
+  background-color: #fbfcfc;
+  background-image: url('../img/decor/dots-action.png');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 35px) calc(100% - 27px);
+}
+
+.action__title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #333333;
+
+  @media (min-width: $screen-xl) {
+    min-height: 54px;
+    margin-bottom: 25px;
+  }
+}
+
+.action__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+
+  @media (min-width: $screen-xl) {
+    min-height: 158px;
+  }
+}
+
+.action__text {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #6a6e76;
+}

@@ -34,46 +34,53 @@
 <body>
     <div class="fullpage fullpage--main fullpage--y-sb" style="background-image: url('../img/decor/bg-main-1.jpg')">
         <header class="page-header">
-            <div class="container">
+            <div class="container page-header__container">
                 <div class="page-header__row">
-                    <div class="page-header__left">
-                        <button class="burger page-header__burger" aria-label="Открытие меню"><span class="burger__span"></span></button><a class="page-header__logo" href="index.html"><img src="img/sharing/logo-white.png" alt="«Чистоград» — клининговая компания" /></a>
-                    </div>
+                    <div class="page-header__left"><a class="burger page-header__burger" href="#menu" data-fancybox="" aria-label="Открытие меню"><span class="burger__span"></span></a><a class="page-header__logo" href="index.html"><img src="img/sharing/logo-white.png" alt="«Чистоград» — клининговая компания" /></a></div>
                     <div class="page-header__right"><a class="page-header__phone" href="tel:+7(919)60-39-770">+7 (919) 60-39-770</a><a class="btn btn--main page-header__cb" href="#callback" data-toggle="modal" data-target="#callback">Заказать звонок</a></div>
                 </div>
             </div>
         </header>
         <div class="container">
-            <div class="fullpage__row">
-                <div class="fullpage__column">
-                    <div class="video-content"><img src="img/content/man.png" alt="Представитель «Чистоград»"><a class="video-content__play" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" aria-label="Воспроизведение видео" data-fancybox=""><span></span></a>
-                        <div class="video-content__text-wrap">
-                            <p>Узнайте все об услугах, гарантиях, стоимостии и качестве за 30 секунд</p>
+            <div class="fullpage__relative"><span class="decor-text fullpage__dec-text">листай дальше</span>
+                <div class="fullpage__row">
+                    <div class="fullpage__column">
+                        <div class="video-content"><img src="img/content/man.png" alt="Представитель «Чистоград»"><a class="video-content__play" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" aria-label="Воспроизведение видео" data-fancybox=""><span></span></a>
+                            <div class="video-content__text-wrap">
+                                <p>Узнайте все об услугах, гарантиях, стоимостии и качестве за 30 секунд</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="fullpage__column">
-                    <section class="main-block">
-                        <h1 class="main-block__title">«Чистоград» — клининговая компания</h1>
-                        <p class="main-block__tagline">полный спектром частных и коммерческих услуг</p>
-                        <ul class="main-block__list">
-                            <li>Уборка квартир, офисов, коттеджей, помещений коммерческого и промышленного назначения</li>
-                            <li>Химчистка ковров и мягкой мебели, мойка окон, витрин и фасадов</li>
-                        </ul><a class="btn btn--main main-block__btn">Выбрать услугу</a>
-                    </section>
+                    <div class="fullpage__column">
+                        <section class="main-block fullpage__mt fullpage__la">
+                            <h1 class="title main-block__title">«Чистоград» — клининговая компания</h1>
+                            <p class="main-block__tagline">полный спектром частных и коммерческих услуг</p>
+                            <ul class="main-block__list">
+                                <li>Уборка квартир, офисов, коттеджей, помещений коммерческого и промышленного назначения</li>
+                                <li>Химчистка ковров и мягкой мебели, мойка окон, витрин и фасадов</li>
+                            </ul><a class="btn btn--main main-block__btn">Выбрать услугу</a>
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <main>
+    <main class="main-page">
         <section class="block-serv" style="background-image: url('../img/decor/bg-section-1.jpg')">
-            <div class="block-serv__wrap">
+            <div class="block-serv__wrap block-serv__wrap--service">
                 <div class="container">
                     <div class="service">
                         <div class="service__img-text"><img src="img/content/text-img-1.png" alt="Уборка"></div>
                         <div class="service__row">
                             <div class="service__col-3">
-                                <div class="nav service__nav"><a class="service__link active" data-toggle="pill" href="#tab-0" role="tab">Уборка квартир</a><a class="service__link" data-toggle="pill" href="#tab-1" role="tab">Уборка коттеджей</a><a class="service__link" data-toggle="pill" href="#tab-2" role="tab">Уборка офисов</a><a class="service__link" data-toggle="pill" href="#tab-3" role="tab">Уборка помещений</a></div>
+                                <div class="service__nav">
+                                    <ul class="nav service__nav-list">
+                                        <li class="service__nav-item"><a class="service__link active" data-toggle="pill" href="#tab-0" role="tab">Уборка квартир</a></li>
+                                        <li class="service__nav-item"><a class="service__link" data-toggle="pill" href="#tab-1" role="tab">Уборка коттеджей</a></li>
+                                        <li class="service__nav-item"><a class="service__link" data-toggle="pill" href="#tab-2" role="tab">Уборка офисов</a></li>
+                                        <li class="service__nav-item"><a class="service__link" data-toggle="pill" href="#tab-3" role="tab">Уборка помещений</a></li>
+                                    </ul><span class="decor-text">услуги химчистки</span>
+                                </div>
                             </div>
                             <div class="service__col-9">
                                 <div class="tab-content service__content">
@@ -87,7 +94,7 @@
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
-                                            <div class="service__btn"><a class="btn btn--light" href="#">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
+                                            <div class="service__btn"><a class="btn btn--light" href="service.html">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
                                         </section>
                                     </div>
                                     <div class="tab-pane service__tab fade" id="tab-1" role="tabpanel" style="background-image: url('../img/decor/service-2.jpg')">
@@ -100,7 +107,7 @@
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
-                                            <div class="service__btn"><a class="btn btn--light" href="#">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
+                                            <div class="service__btn"><a class="btn btn--light" href="service.html">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
                                         </section>
                                     </div>
                                     <div class="tab-pane service__tab fade" id="tab-2" role="tabpanel" style="background-image: url('../img/decor/service-3.jpg')">
@@ -113,7 +120,7 @@
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
-                                            <div class="service__btn"><a class="btn btn--light" href="#">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
+                                            <div class="service__btn"><a class="btn btn--light" href="service.html">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
                                         </section>
                                     </div>
                                     <div class="tab-pane service__tab fade" id="tab-3" role="tabpanel" style="background-image: url('../img/decor/service-4.jpg')">
@@ -126,7 +133,7 @@
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
-                                            <div class="service__btn"><a class="btn btn--light" href="#">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
+                                            <div class="service__btn"><a class="btn btn--light" href="service.html">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
                                         </section>
                                     </div>
                                 </div>
@@ -135,7 +142,7 @@
                     </div>
                 </div>
             </div>
-            <div class="advantages">
+            <div class="advantages advantages--ident">
                 <ul class="advantages__list">
                     <li class="advantages__column">
                         <div class="advantages__item"><span class="advantages__icon" style="background-image: url('../img/icon/icon-1.png')" aria-label="Декоративная иконка"></span>
@@ -156,13 +163,18 @@
             </div>
         </section>
         <section class="block-serv" style="background-image: url('../img/decor/bg-section-1.jpg')">
-            <div class="block-serv__wrap">
+            <div class="block-serv__wrap block-serv__wrap--service">
                 <div class="container">
                     <div class="service">
                         <div class="service__img-text"><img src="img/content/text-img-2.png" alt="Мойка"></div>
                         <div class="service__row">
                             <div class="service__col-3">
-                                <div class="nav service__nav"><a class="service__link active" data-toggle="pill" href="#tab-4" role="tab">Мойка окон</a><a class="service__link" data-toggle="pill" href="#tab-5" role="tab">Мойка фасадов</a></div>
+                                <div class="service__nav">
+                                    <ul class="nav service__nav-list">
+                                        <li class="service__nav-item"><a class="service__link active" data-toggle="pill" href="#tab-4" role="tab">Мойка окон</a></li>
+                                        <li class="service__nav-item"><a class="service__link" data-toggle="pill" href="#tab-5" role="tab">Мойка фасадов</a></li>
+                                    </ul><span class="decor-text">услуги химчистки</span>
+                                </div>
                             </div>
                             <div class="service__col-9">
                                 <div class="tab-content service__content">
@@ -176,7 +188,7 @@
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
-                                            <div class="service__btn"><a class="btn btn--light" href="#">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
+                                            <div class="service__btn"><a class="btn btn--light" href="service.html">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
                                         </section>
                                     </div>
                                     <div class="tab-pane service__tab fade" id="tab-5" role="tabpanel" style="background-image: url('../img/decor/service-6.jpg')">
@@ -189,7 +201,7 @@
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
-                                            <div class="service__btn"><a class="btn btn--light" href="#">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
+                                            <div class="service__btn"><a class="btn btn--light" href="service.html">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
                                         </section>
                                     </div>
                                 </div>
@@ -198,7 +210,7 @@
                     </div>
                 </div>
             </div>
-            <div class="advantages">
+            <div class="advantages advantages--ident">
                 <ul class="advantages__list">
                     <li class="advantages__column">
                         <div class="advantages__item"><span class="advantages__icon" style="background-image: url('../img/icon/icon-4.png')" aria-label="Декоративная иконка"></span>
@@ -219,13 +231,20 @@
             </div>
         </section>
         <section class="block-serv" style="background-image: url('../img/decor/bg-section-1.jpg')">
-            <div class="block-serv__wrap">
+            <div class="block-serv__wrap block-serv__wrap--service">
                 <div class="container">
                     <div class="service">
                         <div class="service__img-text"><img src="img/content/text-img-3.png" alt="Химчистка"></div>
                         <div class="service__row">
                             <div class="service__col-3">
-                                <div class="nav service__nav"><a class="service__link active" data-toggle="pill" href="#tab-6" role="tab">Химчитска ковров</a><a class="service__link" data-toggle="pill" href="#tab-7" role="tab">Химчистка мебели</a><a class="service__link" data-toggle="pill" href="#tab-8" role="tab">Химчистка матрасов</a><a class="service__link" data-toggle="pill" href="#tab-9" role="tab">Устранение запахов</a></div>
+                                <div class="service__nav">
+                                    <ul class="nav service__nav-list">
+                                        <li class="service__nav-item"><a class="service__link active" data-toggle="pill" href="#tab-6" role="tab">Химчитска ковров</a></li>
+                                        <li class="service__nav-item"><a class="service__link" data-toggle="pill" href="#tab-7" role="tab">Химчистка мебели</a></li>
+                                        <li class="service__nav-item"><a class="service__link" data-toggle="pill" href="#tab-8" role="tab">Химчистка матрасов</a></li>
+                                        <li class="service__nav-item"><a class="service__link" data-toggle="pill" href="#tab-9" role="tab">Устранение запахов</a></li>
+                                    </ul><span class="decor-text">услуги химчистки</span>
+                                </div>
                             </div>
                             <div class="service__col-9">
                                 <div class="tab-content service__content">
@@ -239,7 +258,7 @@
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
-                                            <div class="service__btn"><a class="btn btn--light" href="#">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
+                                            <div class="service__btn"><a class="btn btn--light" href="service.html">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
                                         </section>
                                     </div>
                                     <div class="tab-pane service__tab fade" id="tab-7" role="tabpanel" style="background-image: url('../img/decor/service-6.jpg')">
@@ -252,7 +271,7 @@
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
-                                            <div class="service__btn"><a class="btn btn--light" href="#">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
+                                            <div class="service__btn"><a class="btn btn--light" href="service.html">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
                                         </section>
                                     </div>
                                     <div class="tab-pane service__tab fade" id="tab-8" role="tabpanel" style="background-image: url('../img/decor/service-5.jpg')">
@@ -265,7 +284,7 @@
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
-                                            <div class="service__btn"><a class="btn btn--light" href="#">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
+                                            <div class="service__btn"><a class="btn btn--light" href="service.html">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
                                         </section>
                                     </div>
                                     <div class="tab-pane service__tab fade" id="tab-9" role="tabpanel" style="background-image: url('../img/decor/service-6.jpg')">
@@ -278,7 +297,7 @@
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
-                                            <div class="service__btn"><a class="btn btn--light" href="#">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
+                                            <div class="service__btn"><a class="btn btn--light" href="service.html">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
                                         </section>
                                     </div>
                                 </div>
@@ -287,7 +306,7 @@
                     </div>
                 </div>
             </div>
-            <div class="advantages">
+            <div class="advantages advantages--ident">
                 <ul class="advantages__list">
                     <li class="advantages__column">
                         <div class="advantages__item"><span class="advantages__icon" style="background-image: url('../img/icon/icon-7.png')" aria-label="Декоративная иконка"></span>
@@ -311,7 +330,7 @@
             <div class="container">
                 <div class="clients">
                     <div class="clients__row">
-                        <div class="clients__left">
+                        <div class="clients__left"><span class="decor-text clients__dec-text">Наши клиенты</span>
                             <h2 class="title clients__title-big">Клиенты</h2>
                         </div>
                         <div class="clients__right">
@@ -343,110 +362,10 @@
                 <ul class="nav reviews__nav" id="myTab">
                     <li class="reviews__nav-item"><a class="reviews__nav-link active" data-toggle="tab" href="#tab0" role="tab">Видео-отзывы</a></li>
                     <li class="reviews__nav-item"><a class="reviews__nav-link" data-toggle="tab" href="#tab1">Благодарственные письма</a></li>
-                </ul>
+                </ul><img class="reviews__header-img" src="img/content/text-img-4.png" alt="Отзывы" />
             </header>
-            <div class="tab-content reviews__content" id="myTabContent">
-                <div class="tab-pane fade show active" id="tab0">
-                    <div class="reviews__slider owl-carousel owl-theme">
-                        <div class="reviews__slider-item">
-                            <div class="comment"><a class="comment__link" href="img/content/rev-1.jpg" data-fancybox=""><img class="comment__img" src="img/content/rev-1.jpg" alt="Изображение" /><span class="comment__play" aria-label="Открыть Изображение"><span class="comment__play-img"></span></span></a>
-                                <div class="comment__text">
-                                    <p>Краткое описание и суть отзыва в текстовом варианте, краткое описание и суть отзыва в текстовом варианте</p>
-                                </div>
-                                <div class="comment__stars">
-                                    <svg class="comment__fill" width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                    <svg class="comment__fill" width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                    <svg class="comment__fill" width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                    <svg class="comment__fill" width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                    <svg width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews__slider-item">
-                            <div class="comment"><a class="comment__link" href="img/content/rev-1.jpg" data-fancybox=""><img class="comment__img" src="img/content/rev-1.jpg" alt="Изображение" /><span class="comment__play" aria-label="Открыть Изображение"><span class="comment__play-img"></span></span></a>
-                                <div class="comment__text">
-                                    <p>Краткое описание и суть отзыва в текстовом варианте, краткое описание и суть отзыва в текстовом варианте</p>
-                                </div>
-                                <div class="comment__stars">
-                                    <svg class="comment__fill" width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                    <svg class="comment__fill" width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                    <svg width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                    <svg width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                    <svg width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews__slider-item">
-                            <div class="comment"><a class="comment__link" href="img/content/rev-1.jpg" data-fancybox=""><img class="comment__img" src="img/content/rev-1.jpg" alt="Изображение" /><span class="comment__play" aria-label="Открыть Изображение"><span class="comment__play-img"></span></span></a>
-                                <div class="comment__text">
-                                    <p>Краткое описание и суть отзыва в текстовом варианте, краткое описание и суть отзыва в текстовом варианте</p>
-                                </div>
-                                <div class="comment__stars">
-                                    <svg class="comment__fill" width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                    <svg class="comment__fill" width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                    <svg class="comment__fill" width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                    <svg width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                    <svg width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews__slider-item">
-                            <div class="comment"><a class="comment__link" href="img/content/rev-1.jpg" data-fancybox=""><img class="comment__img" src="img/content/rev-1.jpg" alt="Изображение" /><span class="comment__play" aria-label="Открыть Изображение"><span class="comment__play-img"></span></span></a>
-                                <div class="comment__text">
-                                    <p>Краткое описание и суть отзыва в текстовом варианте, краткое описание и суть отзыва в текстовом варианте</p>
-                                </div>
-                                <div class="comment__stars">
-                                    <svg class="comment__fill" width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                    <svg class="comment__fill" width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                    <svg class="comment__fill" width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                    <svg width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                    <svg width="16" height="16">
-                                        <use xlink:href="img/symbols.svg#star"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="tab1">
+            <div class="tab-content reviews__content" id="myTabContent"><span class="decor-text reviews__dec-text">Отзывы наших клиентов</span>
+                <div class="tab-pane fade" id="tab0">
                     <div class="reviews__slider owl-carousel owl-theme">
                         <div class="reviews__slider-item">
                             <div class="comment"><a class="comment__link" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox=""><img class="comment__img" src="img/content/rev-1.jpg" alt="Изображение" /><span class="comment__play" aria-label="Открыть Изображение"><span class="comment__play-video"></span></span></a>
@@ -498,6 +417,106 @@
                         </div>
                         <div class="reviews__slider-item">
                             <div class="comment"><a class="comment__link" href="img/content/rev-1.jpg" data-fancybox=""><img class="comment__img" src="img/content/rev-1.jpg" alt="Изображение" /><span class="comment__play" aria-label="Открыть Изображение"><span class="comment__play-video"></span></span></a>
+                                <div class="comment__text">
+                                    <p>Краткое описание и суть отзыва в текстовом варианте, краткое описание и суть отзыва в текстовом варианте</p>
+                                </div>
+                                <div class="comment__stars">
+                                    <svg class="comment__fill" width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                    <svg class="comment__fill" width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                    <svg class="comment__fill" width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                    <svg width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                    <svg width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade show active" id="tab1">
+                    <div class="reviews__slider owl-carousel owl-theme">
+                        <div class="reviews__slider-item">
+                            <div class="comment"><a class="comment__link" href="img/content/rev-1.jpg" data-fancybox=""><img class="comment__img" src="img/content/rev-1.jpg" alt="Изображение" /><span class="comment__play" aria-label="Открыть Изображение"><span class="comment__play-img"></span></span></a>
+                                <div class="comment__text">
+                                    <p>Краткое описание и суть отзыва в текстовом варианте, краткое описание и суть отзыва в текстовом варианте</p>
+                                </div>
+                                <div class="comment__stars">
+                                    <svg class="comment__fill" width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                    <svg class="comment__fill" width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                    <svg class="comment__fill" width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                    <svg class="comment__fill" width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                    <svg width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slider-item">
+                            <div class="comment"><a class="comment__link" href="img/content/rev-1.jpg" data-fancybox=""><img class="comment__img" src="img/content/rev-1.jpg" alt="Изображение" /><span class="comment__play" aria-label="Открыть Изображение"><span class="comment__play-img"></span></span></a>
+                                <div class="comment__text">
+                                    <p>Краткое описание и суть отзыва в текстовом варианте, краткое описание и суть отзыва в текстовом варианте</p>
+                                </div>
+                                <div class="comment__stars">
+                                    <svg class="comment__fill" width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                    <svg class="comment__fill" width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                    <svg width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                    <svg width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                    <svg width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slider-item">
+                            <div class="comment"><a class="comment__link" href="img/content/rev-1.jpg" data-fancybox=""><img class="comment__img" src="img/content/rev-1.jpg" alt="Изображение" /><span class="comment__play" aria-label="Открыть Изображение"><span class="comment__play-img"></span></span></a>
+                                <div class="comment__text">
+                                    <p>Краткое описание и суть отзыва в текстовом варианте, краткое описание и суть отзыва в текстовом варианте</p>
+                                </div>
+                                <div class="comment__stars">
+                                    <svg class="comment__fill" width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                    <svg class="comment__fill" width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                    <svg class="comment__fill" width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                    <svg width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                    <svg width="16" height="16">
+                                        <use xlink:href="img/symbols.svg#star"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews__slider-item">
+                            <div class="comment"><a class="comment__link" href="img/content/rev-1.jpg" data-fancybox=""><img class="comment__img" src="img/content/rev-1.jpg" alt="Изображение" /><span class="comment__play" aria-label="Открыть Изображение"><span class="comment__play-img"></span></span></a>
                                 <div class="comment__text">
                                     <p>Краткое описание и суть отзыва в текстовом варианте, краткое описание и суть отзыва в текстовом варианте</p>
                                 </div>
@@ -682,6 +701,53 @@
                 </form>
             </div>
         </div>
+    </div>
+</div>
+<div class="menu" id="menu">
+    <div class="menu__main">
+        <button class="menu__close" data-fancybox-close="" aria-label="Закрыть меню"></button>
+        <h3 class="menu__title">УСЛУГИ</h3>
+        <div class="menu__submenu">
+            <section class="menu__submenu-item">
+                <h4 class="menu__submenu-title">УБОРКА</h4>
+                <ul class="menu__submenu-menu">
+                    <li><a href="#sa">уборка квартир</a></li>
+                    <li><a href="#">уборка коттеджей</a></li>
+                    <li><a href="#">уборка офисов</a></li>
+                    <li><a href="#">уборка помещений</a></li>
+                </ul>
+            </section>
+            <section class="menu__submenu-item">
+                <h4 class="menu__submenu-title">МОЙКА</h4>
+                <ul class="menu__submenu-menu">
+                    <li><a href="#">мойка окон</a></li>
+                    <li><a href="#">уборка коттеджей</a></li>
+                </ul>
+            </section>
+            <section class="menu__submenu-item">
+                <h4 class="menu__submenu-title">ХИМЧИСТКА</h4>
+                <ul class="menu__submenu-menu">
+                    <li><a href="#">химчистка ковров</a></li>
+                    <li><a href="#">химчистка мягкой мебели</a></li>
+                    <li><a href="#">химчистка матрасов</a></li>
+                    <li><a href="#">устранение запахов</a></li>
+                </ul>
+            </section>
+            <section class="menu__submenu-item">
+                <h4 class="menu__submenu-title">ДРУГОЕ</h4>
+                <ul class="menu__submenu-menu">
+                    <li><a href="#">уборка снега</a></li>
+                    <li><a href="#">услуги ассенизатора</a></li>
+                </ul>
+            </section>
+        </div><a class="menu__title" href="#">О компании</a><a class="menu__title" href="#">Контакты</a>
+        <ul class="menu__messager">
+            <li class="menu__messager-item"><a class="menu__messager-link" href="#">WhatsApp</a></li>
+            <li class="menu__messager-item"><a class="menu__messager-link" href="#">Telegram</a></li>
+            <li class="menu__messager-item"><a class="menu__messager-link" href="#">Vkontakte</a></li>
+            <li class="menu__messager-item"><a class="menu__messager-link" href="#">Instagram</a></li>
+            <li class="menu__messager-item"><a class="menu__messager-link" href="#">YouTube</a></li>
+        </ul>
     </div>
 </div>
 
