@@ -39,12 +39,7 @@ block header
             p Клиент #[strong принимает объект] после проверки менеджера компании
 block content
   main
-    section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')")
-      .block-serv__wrap.block-serv__wrap--service
-        .container
-          .service
-            .service__img-text
-              img(src="img/content/text-img-5.png", alt="Мойка")
+    +calculator()
     section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')")
       .block-serv__wrap.block-serv__wrap--action
         .container
@@ -110,39 +105,7 @@ block content
                 img(src="img/content/img-regl-1.jpg", alt="Уборка")
               .tab-pane.reglament__tab.fade(id="reg-tab3" role="tabpanel")
                 img(src="img/content/img-regl-1.jpg", alt="Уборка")
-    section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')")
-      .block-serv__wrap.block-serv__wrap--cleaning
-        .container
-          .block-serv__relative
-            span.decor-text.block-serv__center-text сотрудники компании
-            .cleaning
-              header.block-serv__header
-                h2.title.block-serv__title Уборкой занимаются надежные, добрые исполнители
-              .cleaning__slider.owl-carousel.owl-theme
-                .cleaning__slider-item
-                  section.performers
-                    img.performers__img(src="img/content/img-perf-1.jpg", alt="Наталья Иванова")
-                    h3.performers__title Наталья Иванова
-                    .performers__text
-                      p Любит животных, двое детей (Вероника и Вова), работает в компании с 2016 г. Считает, что чистота залог здоровья!
-                .cleaning__slider-item
-                  section.performers
-                    img.performers__img(src="img/content/img-perf-1.jpg", alt="Наталья Иванова")
-                    h3.performers__title Наталья Иванова
-                    .performers__text
-                      p Любит животных, двое детей (Вероника и Вова), работает в компании с 2016 г. Считает, что чистота залог здоровья!
-                .cleaning__slider-item
-                  section.performers
-                    img.performers__img(src="img/content/img-perf-1.jpg", alt="Наталья Иванова")
-                    h3.performers__title Наталья Иванова
-                    .performers__text
-                      p Любит животных, двое детей (Вероника и Вова), работает в компании с 2016 г. Считает, что чистота залог здоровья!
-                .cleaning__slider-item
-                  section.performers
-                    img.performers__img(src="img/content/img-perf-1.jpg", alt="Наталья Иванова")
-                    h3.performers__title Наталья Иванова
-                    .performers__text
-                      p Любит животных, двое детей (Вероника и Вова), работает в компании с 2016 г. Считает, что чистота залог здоровья!
+    +cleaning()
 
     section.block-result.block-result--pt.block-result--reverse(style="background-image: url('../img/decor/bg-section-1.jpg')")
       .container
@@ -155,21 +118,24 @@ block content
               .results__slider-item
                 .result()
                   p.result__text Поддерживающая уборка
-                  img(src="img/content/result-1.jpg", alt="Результат работ")
+                  a(href="img/content/result-1.jpg" data-fancybox="")
+                    img(src="img/content/result-1.jpg", alt="Результат работ")
                   .result__footer
                     a.btn.btn--main.result__btn(href="#") Подробнее
                     span.result__hash #До
               .results__slider-item
                 .result()
                   p.result__text Поддерживающая уборка
-                  img(src="img/content/result-2.jpg", alt="Результат работ")
+                  a(href="img/content/result-2.jpg" data-fancybox="")
+                    img(src="img/content/result-2.jpg", alt="Результат работ")
                   .result__footer
                     a.btn.btn--main.result__btn(href="#") Подробнее
                     span.result__hash #После
               .results__slider-item
                 a.result.result--video(href="https://www.youtube.com/watch?v=0X-pKZ8-7Nw&list=PLsgc2PQGF1hAy_BO5vfpWFTfcpi-f05VE&index=1" data-fancybox="")
                   p.result__text Генеральная уборка
-                  img(src="img/content/result-1.jpg", alt="Результат работ")
+                  a(href="img/content/result-1.jpg" data-fancybox="")
+                    img(src="img/content/result-1.jpg", alt="Результат работ")
                   span.result__play
                     span
               .results__slider-item

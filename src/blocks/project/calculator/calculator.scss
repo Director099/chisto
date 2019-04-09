@@ -1,0 +1,158 @@
+.calculator {
+  box-shadow: 0 17px 62px rgba(176, 183, 192, 0.89);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f3f5f7;
+}
+
+.calculator__row {
+  display: flex;
+}
+
+.calculator__row-wrap {
+  @include make-row();
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.calculator__group {
+  margin-bottom: 20px;
+}
+
+.calculator__tab {
+  margin-bottom: 12px;
+}
+
+.calculator__col-4 {
+  @include make-col-ready();
+
+  @media (min-width: $screen-xl) {
+    @include make-col(4);
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+.calculator__col-6 {
+  @include make-col-ready();
+
+  @media (min-width: $screen-xl) {
+    @include make-col(6);
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+.calculator__col-12 {
+  @include make-col-ready();
+
+  @media (min-width: $screen-xl) {
+    @include make-col(12);
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+.calculator__left {
+  max-width: 700px;
+  width: 100%;
+  padding: 55px 38px 50px;
+  background-color: #f3f5f7;
+  //border-radius: 10px 0 0px;
+}
+
+.calculator__right {
+  padding: 55px 38px 50px;
+  background-color: #fbfcfc;
+  //border-radius: 0 0 10px;
+}
+
+.calculator__title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.calculator__btn {
+  padding: 15px 70px 13px;
+  text-shadow: 0 1px 4px rgba(63, 66, 75, 0.45);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.45px;
+}
+
+.calculator__desk {
+  margin-bottom: 45px;
+}
+
+.calculator__desk ul {
+  @include ul-none();
+}
+
+.calculator__desk ul li {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #54585f;
+  padding-left: 25px;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 7px;
+    height: 13px;
+    transform: rotate(45deg);
+    border: 1px solid transparent;
+    border-bottom: 1px solid #4daffb;
+    border-right: 1px solid #4daffb;
+  }
+}
+
+.calculator__subtotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calculator__price strong {
+  position: relative;
+  color: #333333;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 27px;
+  padding-right: 17px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    width: 14px;
+    height: 16px;
+    background: url("../img/icon/ruble.svg") no-repeat bottom center;
+  }
+}
+
+.calculator__price strong sub {
+  top: -10px;
+  bottom: inherit;
+
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.calculator__title-middle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}

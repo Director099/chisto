@@ -105,9 +105,13 @@ $(document).ready(function() {
       "</div>",
   });
 
+  $(".calculator__tab").on("click", function() {
+    $(".calculator__tab").removeClass('active');
+    // $(this).addClass('active')
+
+  })
 
   $(".menu__submenu-menu a").on("click", function() {
-    console.log('asd');
     $.fancybox.close();
   })
 
