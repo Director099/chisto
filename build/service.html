@@ -79,10 +79,179 @@
     </div>
     <main>
         <section class="block-serv" style="background-image: url('../img/decor/bg-section-1.jpg')">
-            <div class="block-serv__wrap block-serv__wrap--service">
+            <div class="block-serv__wrap block-serv__wrap--calculator">
                 <div class="container">
                     <div class="service">
-                        <div class="service__img-text"><img src="img/content/text-img-5.png" alt="Мойка"></div>
+                        <div class="service__img-text"><img src="img/content/text-img-5.png" alt="Калькулятор" /></div>
+                    </div>
+                    <div class="calculator">
+                        <div class="calculator__row">
+                            <div class="calculator__left">
+                                <section class="calculator__content">
+                                    <h3 class="calculator__title">Уборка квартир</h3>
+                                    <div class="calculator__group">
+                                        <div class="calculator__row-wrap">
+                                            <div class="calculator__col-4">
+                                                <label class="field-text field-text--calculator">
+                                                    <input class="field-text__input" type="radio" name="order" checked="" />
+                                                    <div class="field-text__input-wrap"><span>Поддерживающая</span></div>
+                                                </label>
+                                            </div>
+                                            <div class="calculator__col-4">
+                                                <label class="field-text field-text--calculator">
+                                                    <input class="field-text__input" type="radio" name="order" />
+                                                    <div class="field-text__input-wrap"><span>Генеральная</span></div>
+                                                </label>
+                                            </div>
+                                            <div class="calculator__col-4">
+                                                <label class="field-text field-text--calculator">
+                                                    <input class="field-text__input" type="radio" name="order" />
+                                                    <div class="field-text__input-wrap"><span>После ремонта</span></div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calculator__group">
+                                        <div class="calculator__row-wrap">
+                                            <div class="calculator__col-6">
+                                                <div class="calc-service">
+                                                    <div class="calc-service__title"><span>Количество комнат</span>
+                                                        <div class="field-num">
+                                                            <div class="field-num__wrap">
+                                                                <button class="field-num__btn field-num__btn--minus"></button>
+                                                                <input class="field-num__number" type="text" value="1" required="" />
+                                                                <button class="field-num__btn field-num__btn--plus"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calculator__col-6">
+                                                <div class="calc-service">
+                                                    <div class="calc-service__title"><span>Количество санузлов</span>
+                                                        <div class="field-num">
+                                                            <div class="field-num__wrap">
+                                                                <button class="field-num__btn field-num__btn--minus"></button>
+                                                                <input class="field-num__number" type="text" value="1" required="" />
+                                                                <button class="field-num__btn field-num__btn--plus"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calculator__group">
+                                        <h4 class="calculator__title-middle">С уборкой квартир часто заказывают</h4>
+                                        <div class="calculator__row-wrap">
+                                            <div class="calculator__col-12">
+                                                <div class="calc-service">
+                                                    <label class="calc-service__wrap-chek">
+                                                        <input class="calc-service__check" type="checkbox" />
+                                                        <div class="calc-service__checkbox"></div><span class="calc-service__checkbox-text">Мытье окон</span>
+                                                    </label>
+                                                    <div class="calc-service__title"><span>Количество санузлов</span>
+                                                        <div class="field-num">
+                                                            <div class="field-num__wrap">
+                                                                <button class="field-num__btn field-num__btn--minus"></button>
+                                                                <input class="field-num__number" type="text" value="1" required="" />
+                                                                <button class="field-num__btn field-num__btn--plus"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calculator__col-12">
+                                                <div class="calc-service">
+                                                    <label class="calc-service__wrap-chek">
+                                                        <input class="calc-service__check" type="checkbox" />
+                                                        <div class="calc-service__checkbox"></div><span class="calc-service__checkbox-text">Мытье лоджии</span>
+                                                    </label>
+                                                    <div class="calc-service__title"><span>Количество окон</span>
+                                                        <div class="field-num">
+                                                            <div class="field-num__wrap">
+                                                                <button class="field-num__btn field-num__btn--minus"></button>
+                                                                <input class="field-num__number" type="text" value="1" required="" />
+                                                                <button class="field-num__btn field-num__btn--plus"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calculator__center"><a class="calculator__link" data-toggle="collapse" href="#addService">Дополнительные виды услуг</a></div>
+                                    <div class="collapse calculator__collapse" id="addService">
+                                        <div class="calculator__card">
+                                            <div class="calculator__row-wrap">
+                                                <div class="calculator__col-12">
+                                                    <div class="calc-service">
+                                                        <label class="calc-service__wrap-chek">
+                                                            <input class="calc-service__check" type="checkbox" />
+                                                            <div class="calc-service__checkbox"></div><span class="calc-service__checkbox-text">Мытье окон</span>
+                                                        </label>
+                                                        <div class="calc-service__title"><span>Количество санузлов</span>
+                                                            <div class="field-num">
+                                                                <div class="field-num__wrap">
+                                                                    <button class="field-num__btn field-num__btn--minus"></button>
+                                                                    <input class="field-num__number" type="text" value="1" required="" />
+                                                                    <button class="field-num__btn field-num__btn--plus"></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calculator__col-12">
+                                                    <div class="calc-service">
+                                                        <label class="calc-service__wrap-chek">
+                                                            <input class="calc-service__check" type="checkbox" />
+                                                            <div class="calc-service__checkbox"></div><span class="calc-service__checkbox-text">Мытье окон</span>
+                                                        </label>
+                                                        <div class="calc-service__title"><span>Количество санузлов</span>
+                                                            <div class="field-num">
+                                                                <div class="field-num__wrap">
+                                                                    <button class="field-num__btn field-num__btn--minus"></button>
+                                                                    <input class="field-num__number" type="text" value="1" required="" />
+                                                                    <button class="field-num__btn field-num__btn--plus"></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calculator__col-12">
+                                                    <div class="calc-service">
+                                                        <label class="calc-service__wrap-chek">
+                                                            <input class="calc-service__check" type="checkbox" />
+                                                            <div class="calc-service__checkbox"></div><span class="calc-service__checkbox-text">Прочистить трубы</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="calculator__right">
+                                <section class="calculator__desk">
+                                    <h3 class="calculator__title">Что входит</h3>
+                                    <ul>
+                                        <li>Мойка полов, плинтусов, стен, потолка от строительной пыли</li>
+                                        <li>Мойка осветительных приборов, люстр</li>
+                                        <li>Протирка пыли с бытовой техники и предметов интерьера и мебели</li>
+                                        <li>Мойка розеток и выключателей</li>
+                                        <li>Мойка кухонного гарнитура внутри и снаружи + мойка фартука</li>
+                                        <li>Дверных коробок, дверей, фурнитуры</li>
+                                        <li>Зеркальных поверхностей</li>
+                                        <li>Мойка санузла</li>
+                                        <li>Мойка шкафов и тумбочек внутри и снаружи</li>
+                                        <li>Вынос полиэтилена, картона и мусора</li>
+                                    </ul>
+                                </section>
+                                <div class="calculator__subtotal">
+                                    <div class="calculator__price"><strong><sub>Итого:</sub> 3200</strong></div><a class="btn btn--main calculator__btn" href="#">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -661,7 +830,7 @@
             <section class="menu__submenu-item">
                 <h4 class="menu__submenu-title">УБОРКА</h4>
                 <ul class="menu__submenu-menu">
-                    <li><a href="#sa">уборка квартир</a></li>
+                    <li><a href="#">уборка квартир</a></li>
                     <li><a href="#">уборка коттеджей</a></li>
                     <li><a href="#">уборка офисов</a></li>
                     <li><a href="#">уборка помещений</a></li>
