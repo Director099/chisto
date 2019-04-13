@@ -1,22 +1,29 @@
 .service {
-  margin-bottom: 73px;
+  margin-bottom: 51px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 73px;
+  }
 }
 
 .service__img-text {
   position: relative;
-  margin-left: 70px;
-  margin-bottom: -30px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: -425px;
-    top: 5px;
-    height: 65px;
-    width: 375px;
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-image: url("../img/decor/dot-2.png");
+  @media (min-width: $screen-xl) {
+    margin-left: 70px;
+    margin-bottom: -30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -425px;
+      top: 5px;
+      height: 65px;
+      width: 375px;
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-image: url("../img/decor/dot-2.png");
+    }
   }
 }
 
@@ -84,36 +91,51 @@
 
 .service__nav {
   position: relative;
-  margin-top: 120px;
   display: block;
+  margin-top: 45px;
+
+  @media (min-width: $screen-xl) {
+    margin-top: 120px;
+  }
 }
 
 .service__nav-list {
   @include ul-none();
+  border-radius: 10px;
+  overflow: hidden;
   box-shadow: 0 17px 62px rgba(223, 224, 227, 0.89);
+  margin-bottom: 30px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 0px;
+    overflow: visible;
+  }
 }
 
 .service__nav-item {
-  width: 100%;
+  width: 50%;
 
+  @media (min-width: $screen-xl) {
+    width: 100%;
 
-  &:first-child {
-    .service__link {
-      border-radius: 10px 10px 0 0;
-
-      &::after {
+    &:first-child {
+      .service__link {
         border-radius: 10px 10px 0 0;
+
+        &::after {
+          border-radius: 10px 10px 0 0;
+        }
       }
     }
-  }
 
-  &:last-child {
-    .service__link {
-      border-bottom: 0px;
-      border-radius: 0 0 10px 10px;
-
-      &::after {
+    &:last-child {
+      .service__link {
+        border-bottom: 0px;
         border-radius: 0 0 10px 10px;
+
+        &::after {
+          border-radius: 0 0 10px 10px;
+        }
       }
     }
   }
@@ -122,13 +144,19 @@
 .service__link {
   position: relative;
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   width: 100%;
-  padding: 38px 33px 36px;
+  height: 100%;
+  padding: 16px 21px 14px;
   border-bottom: 1px solid #f0f5fb;
   color: #222222;
   background: $white;
+
+  @media (min-width: $screen-xl) {
+    padding: 38px 33px 36px;
+    font-size: 16px;
+  }
 
   &::after {
     content: "";
@@ -146,21 +174,23 @@
   color: $white;
   background-image: linear-gradient(to top, #006ef7 0%, #6aa5f5 100%);
 
-  &::before {
-    content: "";
-    position: absolute;
-    right: -55px;
-    top: 50%;
-    margin-top: 2px;
-    width: 93px;
-    height: 1px;
-    background-color: #e3e9f1;
+  @media (min-width: $screen-xl) {
+    &::before {
+      content: "";
+      position: absolute;
+      right: -55px;
+      top: 50%;
+      margin-top: 2px;
+      width: 93px;
+      height: 1px;
+      background-color: #e3e9f1;
+    }
   }
 }
 
 .service__tab {
   position: relative;
-  height: 490px;
+  height: 483px;
   box-shadow: 1px 0 21px rgba(144, 144, 144, 0.13);
   border-radius: 10px;
   background-color: #303f46;
@@ -170,6 +200,7 @@
 
   @media (min-width: $screen-xl) {
     margin-right: 15px;
+    height: 490px;
   }
 }
 
@@ -177,14 +208,25 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  max-width: 221px;
   width: 100%;
-  border-radius: 10px 0;
-  background-color: #ffffff;
+  background-color: $white;
+  padding: 17px 20px 26px 24px;
+
+  @media (min-width: $screen-xl) {
+    border-radius: 10px 0;
+    max-width: 221px;
+    padding: 27px 20px 30px 24px;
+  }
 }
 
-.service__info {
-  padding: 27px 20px 30px 24px;
+.service__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $screen-xl) {
+    display: block;
+  }
 }
 
 .service__btn .btn {
@@ -192,12 +234,21 @@
   font-size: 12px;
   font-weight: 300;
   border-radius: 10px;
-  margin-bottom: 12px;
   padding-top: 10px;
   padding-bottom: 10px;
+  max-width: 112px;
+  width: 100%;
 
-  &:last-child {
-    margin-bottom: 0;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+    max-width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -210,15 +261,24 @@
   font-size: 18px;
   font-weight: 500;
   color: #333333;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 15px;
+  }
 }
 
 .service__info p {
+  display: none;
   font-size: 12px;
   font-weight: 400;
   line-height: 23px;
   color: #54585f;
   margin-bottom: 32px;
+
+  @media (min-width: $screen-xl) {
+    display: block;
+  }
 }
 
 .service__numb {
@@ -262,7 +322,11 @@
 .service__table {
   border: none;
   overflow: visible;
-  margin-bottom: 23px;
+  margin-bottom: 19px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 23px;
+  }
 }
 
 .service__table td {

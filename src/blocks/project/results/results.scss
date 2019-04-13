@@ -1,18 +1,20 @@
 .results {
   position: relative;
 
-  &::after {
-    content: 'результат';
-    position: absolute;
-    right: -421px;
-    top: 245px;
-    text-transform: uppercase;
-    font-family: $font-1;
-    font-size: 126px;
-    font-weight: 900;
-    opacity: 0.1;
-    transform: rotate(-90deg);
-    color: #ecf0f5;
+  @media (min-width: $screen-xl) {
+    &::after {
+      content: 'результат';
+      position: absolute;
+      right: -421px;
+      top: 245px;
+      text-transform: uppercase;
+      font-family: $font-1;
+      font-size: 126px;
+      font-weight: 900;
+      opacity: 0.1;
+      transform: rotate(-90deg);
+      color: #ecf0f5;
+    }
   }
 }
 
@@ -50,7 +52,13 @@
 }
 
 .results__slider .owl-dots {
-  margin-top: 75px;
+  @media (max-width: 1199px) {
+    margin-top: 40px !important;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-top: 75px;
+  }
 }
 
 .results__slider .owl-dots .owl-dot {

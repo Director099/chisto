@@ -157,3 +157,20 @@ $border-radius:               rem(3px) !default;
     border-bottom: 1px solid $white;
   }
 }
+
+.field-checkbox__input-wrap--service {
+  .field-checkbox__name-text:before {
+    top: 2px;
+  }
+
+  .field-checkbox__name-text:after {
+    top: 5px;
+    height: 5px;
+  }
+}
+
+.field-checkbox__input-wrap--service {
+  a {
+    color: $white;
+  }
+}

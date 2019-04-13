@@ -1,8 +1,16 @@
 .performers {
   padding: 15px 15px 32px;
-  //box-shadow: -5px 21px 51px rgba(141, 155, 165, 0.4);
+  box-shadow: -5px 21px 51px rgba(141, 155, 165, 0.4);
   border-radius: 10px;
   background-image: linear-gradient(to top, #ebeef1 0%, #ffffff 100%);
+}
+
+.cleaning__slider .owl-stage-outer {
+  overflow: visible;
+
+  @media (min-width: $screen-xl) {
+    overflow: hidden;
+  }
 }
 
 .performers__img {

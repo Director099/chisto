@@ -14,6 +14,7 @@
 
 .modal-content {
   padding: 40px 35px 47px;
+  border-radius: 10px;
 }
 
 .modal__header {
@@ -41,10 +42,27 @@
   top: -20px;
   right: -20px;
   width: 16px;
+  padding: 8px;
   height: 16px;
   border: 1px solid $white;
   background: transparent;
   border-radius: 50%;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    height: 8px;
+    width: 1px;
+    background: $white;
+  }
+
+  &::before {
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
 }
 
 .modal__btn-form {
@@ -56,4 +74,8 @@
   font-weight: 400;
   letter-spacing: 0.45px;
   margin-bottom: 35px;
+}
+
+.modal__content .field-text__input {
+  padding: 22px 30px 22px 50px;
 }

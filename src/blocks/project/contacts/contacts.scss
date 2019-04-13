@@ -2,8 +2,19 @@
 
 }
 
+.contacts .title {
+  @media (max-width: 1199px) {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
 .contacts__header {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 50px;
+  }
 }
 
 .contacts__row {
@@ -12,9 +23,11 @@
 
 .contacts__column-8 {
   @include make-col-ready();
+  margin-bottom: 34px;
 
   @media (min-width: $screen-xl) {
     @include make-col(7.4);
+    margin-bottom: 0;
   }
 }
 
@@ -34,9 +47,12 @@
   }
 
   &--ident {
+    margin-right: 55px;
+
     @media (min-width: $screen-xl) {
       margin-bottom: 30px;
       margin-top: 3px;
+      margin-right: 0;
     }
   }
 }
@@ -96,7 +112,19 @@
 }
 
 .contacts__info {
-  margin-left: 35px;
+  margin-left: 30px;
+
+  @media (min-width: $screen-xl) {
+    margin-left: 35px;
+  }
+}
+
+.contacts__row-message {
+  display: flex;
+
+  @media (min-width: $screen-xl) {
+    display: block;
+  }
 }
 
 .contacts__info-text {
@@ -111,7 +139,6 @@
     color: lighten(#a3acb7, 30%);
   }
 }
-
 
 .contacts__social {
   margin-top: 20px;
@@ -150,3 +177,5 @@
     background-image: url("../img/icon/telegram.svg");
   }
 }
+
+

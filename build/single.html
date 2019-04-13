@@ -92,6 +92,25 @@
             </div>
         </div>
         <section class="block-serv" style="background-image: url('../img/decor/bg-section-1.jpg')">
+            <div class="advantages">
+                <ul class="advantages__list">
+                    <li class="advantages__column">
+                        <div class="advantages__item"><span class="advantages__icon" style="background-image: url('../img/icon/icon-1.png')" aria-label="Декоративная иконка"></span>
+                            <p><strong>Перезваниваем через</strong> 5 мин. Выезжаем на объект в день обращения</p>
+                        </div>
+                    </li>
+                    <li class="advantages__column">
+                        <div class="advantages__item"><span class="advantages__icon" style="background-image: url('../img/icon/icon-2.png')" aria-label="Декоративная иконка"></span>
+                            <p><strong>Несем полную</strong> материальную ответственность. <a href="">Смотреть наш договор</a></p>
+                        </div>
+                    </li>
+                    <li class="advantages__column">
+                        <div class="advantages__item"><span class="advantages__icon" style="background-image: url('../img/icon/icon-3.png')" aria-label="Декоративная иконка"></span>
+                            <p>Клиент <strong>принимает объект</strong> после проверки менеджера компании</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
             <div class="block-serv__wrap block-serv__wrap--calculator">
                 <div class="container">
                     <div class="service">
@@ -347,7 +366,7 @@
                                 </section>
                             </div>
                             <div class="calculator__right">
-                                <section class="calculator__desk">
+                                <section class="calculator__desk" id="desk">
                                     <h3 class="calculator__title">Что входит</h3>
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="serv-1">
@@ -385,7 +404,7 @@
                                     </div>
                                 </section>
                                 <div class="calculator__subtotal">
-                                    <div class="calculator__price"><strong><sub>Итого:</sub> 3200</strong></div><a class="btn btn--main calculator__btn" href="#callback" data-toggle="modal" data-target="#callback">Заказать</a>
+                                    <div class="calculator__price"><strong><sub>Итого:</sub> 3200</strong><a class="calculator__btn-desk" href="#desk" data-fancybox="">Что входит</a></div><a class="btn btn--main calculator__btn" href="#callback" data-toggle="modal" data-target="#callback">Заказать</a>
                                 </div>
                             </div>
                         </div>
@@ -464,17 +483,19 @@
                                 </div>
                             </div>
                             <div class="contacts__column-4">
-                                <div class="contacts__wrap contacts__wrap--ident"><strong class="contacts__name">Соц. сети</strong>
-                                    <div class="contacts__social"><a class="contacts__social-link contacts__social-link--insta" aria-label="Instagram"></a><a class="contacts__social-link contacts__social-link--youtube" aria-label="Youtube"></a><a class="contacts__social-link contacts__social-link--vk" aria-label="VK"></a></div>
-                                </div>
-                                <div class="contacts__wrap"><strong class="contacts__name">Messenger</strong>
-                                    <div class="contacts__social"><a class="contacts__social-link contacts__social-link--whatsapp" aria-label="whatsapp"></a><a class="contacts__social-link contacts__social-link--vk" aria-label="vk"></a><a class="contacts__social-link contacts__social-link--telega" aria-label="telegram"></a></div>
+                                <div class="contacts__row-message">
+                                    <div class="contacts__wrap contacts__wrap--ident"><strong class="contacts__name">Соц. сети</strong>
+                                        <div class="contacts__social"><a class="contacts__social-link contacts__social-link--insta" aria-label="Instagram"></a><a class="contacts__social-link contacts__social-link--youtube" aria-label="Youtube"></a><a class="contacts__social-link contacts__social-link--vk" aria-label="VK"></a></div>
+                                    </div>
+                                    <div class="contacts__wrap"><strong class="contacts__name">Messenger</strong>
+                                        <div class="contacts__social"><a class="contacts__social-link contacts__social-link--whatsapp" aria-label="whatsapp"></a><a class="contacts__social-link contacts__social-link--vk" aria-label="vk"></a><a class="contacts__social-link contacts__social-link--telega" aria-label="telegram"></a></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="block-info__column">
+                <div class="block-info__column visible-xl">
                     <div class="quest">
                         <header class="quest__header">
                             <h3 class="title title--white quest__title">Задайте вопрос</h3>

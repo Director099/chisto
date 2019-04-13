@@ -5,14 +5,16 @@ $(document).ready(function() {
   $('.reviews__slider, .cleaning__slider').owlCarousel({
     loop: true,
     margin: 50,
-    nav: true,
+
     dots: true,
     responsive: {
       0:{
-        items: 1
+        items: 1,
+        nav: false,
       },
       992:{
-        items: 3
+        items: 3,
+        nav: true
       }
     }
   });
@@ -24,10 +26,12 @@ $(document).ready(function() {
     margin: 30,
     responsive: {
       0:{
-        items: 1
+        items: 1,
+        nav: false,
       },
       992:{
-        items: 3
+        items: 3,
+        nav: true,
       }
     }
   });
@@ -58,6 +62,19 @@ $(document).ready(function() {
   $(".menu__submenu-menu a").on("click", function() {
     $.fancybox.close();
   })
+
+  if ($(window).width() <= 1200) {
+    $(".block-serv__row").owlCarousel({
+      loop: true,
+      nav: false,
+      dots: true,
+      margin: 30,
+      center: true,
+      items: 1
+    });
+  }
+
+
 
   // Плавный скол с навигации
 

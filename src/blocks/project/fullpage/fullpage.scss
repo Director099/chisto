@@ -65,7 +65,11 @@
 }
 
 .fullpage--service .page-header {
-  padding-bottom: 112px;
+  padding-bottom: 51px;
+
+  @media (min-width: $screen-xl) {
+    padding-bottom: 112px;
+  }
 }
 
 .fullpage--service .burger {
@@ -81,9 +85,16 @@
 }
 
 .fullpage--service .page-header__phone {
-   &::after {
+  background-color: $white;
+  background-image: url("../img/icon/phone-blue.svg");
+
+  @media (min-width: $screen-xl) {
+    background: transparent;
+
+    &::after {
       background-image: url("../img/icon/phone-white.svg");
-   }
+    }
+  }
 }
 
 .fullpage--y-sb {
@@ -98,6 +109,14 @@
 
 .fullpage__row {
   @include make-row();
+
+  &--xs-cr {
+    flex-direction: column-reverse;
+
+    @media (min-width: $screen-xl) {
+      flex-direction: row;
+    }
+  }
 }
 
 .fullpage__column {
