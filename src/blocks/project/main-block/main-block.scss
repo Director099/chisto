@@ -5,33 +5,60 @@
 
   &--big {
     max-width: 635px;
-    margin-bottom: 153px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 153px;
+    }
   }
 }
 
 .main-block__title {
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 56px;
-  margin-bottom: 12px;
+  margin-bottom: 17px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 12px;
+  }
+
+
+  //@media (max-width: 1199px) {
+  //  font-size: 30px;
+  //  font-weight: 500;
+  //  line-height: 42px;
+  //}
 }
 
 .main-block__tagline {
-  font-size: 32px;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 44px;
-  margin-bottom: 46px;
+  line-height: 27px;
+  margin-bottom: 27px;
+
+  @media (min-width: $screen-xl) {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 46px;
+  }
 }
 
 .main-block__tagline--big {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 29px;
+  line-height: 25px;
+
+  @media (min-width: $screen-xl) {
+    font-size: 18px;
+    line-height: 29px;
+  }
 }
 
 .main-block__list {
   @include ul-none();
+  display: none;
   margin-bottom: 62px;
+
+  @media (min-width: $screen-xl) {
+    display: block;
+  }
 }
 
 .main-block__list li {
@@ -60,23 +87,47 @@
 }
 
 .main-block__btn {
-  font-size: 18px;
+  position: absolute;
+  bottom: -398px;
+  left: 0;
+  z-index: 1;
+  font-size: 16px;
+  right: 0;
+  max-width: 290px;
+  margin: auto;
+
+  font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.45px;
-  padding: 24px 83px 19px;
+  padding: 18px 79px 20px;
+
+  @media (min-width: $screen-xl) {
+    position: static;
+    padding: 24px 83px 19px;
+    font-size: 18px;
+    max-width: inherit;
+  }
 }
 
 .main-block__btn-form {
   padding: 20px 32px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  letter-spacing: 0.45px;
+  letter-spacing: 0.4px;
+
+  @media (min-width: $screen-xl) {
+    font-size: 18px;
+    letter-spacing: 0.45px;
+  }
 }
 
 .main-block__form-wrap {
   max-width: 320px;
   width: 100%;
-  margin-right: 20px;
+
+  @media (min-width: $screen-xl) {
+    margin-right: 20px;
+  }
 
   .field-text {
     @media (min-width: $screen-xl) {
@@ -88,11 +139,24 @@
     font-size: 18px;
     font-weight: 400;
     border-radius: 8px;
-    padding: 20px 20px 20px 60px;
-    background: $white url("../img/icon/phone-tr.svg") no-repeat 22px 50% / 22px;
+    padding: 20px 20px 20px 50px;
+    background: $white url("../img/icon/phone-tr.svg") no-repeat 16px 50% / 18px;
+
+    @media (min-width: $screen-xl) {
+      padding: 20px 20px 20px 60px;
+      background-position: 22px 50%;
+      background-size: 22px;
+    }
   }
 }
 
 .main-block__form-row {
   display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-xl) {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
 }

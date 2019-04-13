@@ -174,19 +174,20 @@ mixin page-footer(tpl)
                   .contacts__info
                     a.contacts__info-text(href="mailto:moikaokon-rb@mail.ru") moikaokon-rb@mail.ru
               .contacts__column-4
-                .contacts__wrap.contacts__wrap--ident
-                  strong.contacts__name Соц. сети
-                  .contacts__social
-                    a.contacts__social-link.contacts__social-link--insta(aria-label="Instagram")
-                    a.contacts__social-link.contacts__social-link--youtube(aria-label="Youtube")
-                    a.contacts__social-link.contacts__social-link--vk(aria-label="VK")
-                .contacts__wrap
-                  strong.contacts__name Messenger
-                  .contacts__social
-                    a.contacts__social-link.contacts__social-link--whatsapp(aria-label="whatsapp")
-                    a.contacts__social-link.contacts__social-link--vk(aria-label="vk")
-                    a.contacts__social-link.contacts__social-link--telega(aria-label="telegram")
-        .block-info__column
+                .contacts__row-message
+                  .contacts__wrap.contacts__wrap--ident
+                    strong.contacts__name Соц. сети
+                    .contacts__social
+                      a.contacts__social-link.contacts__social-link--insta(aria-label="Instagram")
+                      a.contacts__social-link.contacts__social-link--youtube(aria-label="Youtube")
+                      a.contacts__social-link.contacts__social-link--vk(aria-label="VK")
+                  .contacts__wrap
+                    strong.contacts__name Messenger
+                    .contacts__social
+                      a.contacts__social-link.contacts__social-link--whatsapp(aria-label="whatsapp")
+                      a.contacts__social-link.contacts__social-link--vk(aria-label="vk")
+                      a.contacts__social-link.contacts__social-link--telega(aria-label="telegram")
+        .block-info__column.visible-xl
           .quest
             header.quest__header
               h3.title.title--white.quest__title Задайте вопрос

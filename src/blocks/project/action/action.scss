@@ -1,12 +1,19 @@
 .action {
   position: relative;
-  padding: 31px 35px 65px;
+  padding: 22px 24px 94px;
   box-shadow: 0 5px 18px rgba(220, 221, 224, 0.35);
   border-radius: 10px;
   background-color: #fbfcfc;
   background-image: url('../img/decor/dots-action.png');
+  background-size: 60px;
   background-repeat: no-repeat;
-  background-position: calc(100% - 35px) calc(100% - 27px);
+  background-position: calc(100% - 15px) calc(100% - 27px);
+
+  @media (min-width: $screen-xl) {
+    padding: 31px 35px 65px;
+    background-size: auto;
+    background-position: calc(100% - 35px) calc(100% - 27px);
+  }
 }
 
 .action__title {
@@ -14,6 +21,7 @@
   font-weight: 500;
   line-height: 27px;
   color: #333333;
+  margin-bottom: 40px;
 
   @media (min-width: $screen-xl) {
     min-height: 54px;
@@ -27,19 +35,36 @@
   align-items: center;
   text-align: center;
   width: 100%;
+  height: 123px;
+
+  img {
+    width: auto !important;
+    height: 100%;
+    object-fit: contain;
+
+    @media (min-width: $screen-xl) {
+      height: auto;
+      object-fit: inherit;
+    }
+  }
 
   @media (min-width: $screen-xl) {
     min-height: 158px;
+    height: auto;
   }
 }
 
 .action__text {
   position: absolute;
   bottom: 20px;
-  left: 30px;
+  left: 22px;
   margin: 0;
   font-size: 12px;
   font-weight: 400;
   line-height: 27px;
   color: #6a6e76;
+
+  @media (min-width: $screen-xl) {
+    left: 30px;
+  }
 }

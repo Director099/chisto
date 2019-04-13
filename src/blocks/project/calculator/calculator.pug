@@ -1,5 +1,19 @@
 mixin calculator()
   section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')")
+    .advantages
+      ul.advantages__list
+        li.advantages__column
+          .advantages__item
+            span.advantages__icon(style="background-image: url('../img/icon/icon-1.png')" aria-label="Декоративная иконка")
+            p #[strong Перезваниваем через] 5 мин. Выезжаем на объект в день обращения
+        li.advantages__column
+          .advantages__item
+            span.advantages__icon(style="background-image: url('../img/icon/icon-2.png')" aria-label="Декоративная иконка")
+            p #[strong Несем полную] материальную ответственность. #[a(href="") Смотреть наш договор]
+        li.advantages__column
+          .advantages__item
+            span.advantages__icon(style="background-image: url('../img/icon/icon-3.png')" aria-label="Декоративная иконка")
+            p Клиент #[strong принимает объект] после проверки менеджера компании
     .block-serv__wrap.block-serv__wrap--calculator
       .container
         .service
@@ -186,7 +200,7 @@ mixin calculator()
                                 .calc-service__checkbox
                                 span.calc-service__checkbox-text Прочистить трубы
             .calculator__right
-              section.calculator__desk
+              section.calculator__desk(id="desk")
                 h3.calculator__title Что входит
                 .tab-content(id="nav-tabContent")
                   .tab-pane.fade.show.active(id="serv-1")
@@ -218,4 +232,5 @@ mixin calculator()
               .calculator__subtotal
                 .calculator__price
                   strong #[sub Итого:] 3200
+                  a.calculator__btn-desk(href="#desk" data-fancybox="") Что входит
                 a.btn.btn--main.calculator__btn(href="#callback" data-toggle="modal" data-target="#callback") Заказать

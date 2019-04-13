@@ -3,11 +3,17 @@
 }
 
 .reglament__header {
-  margin-bottom: 25px;
+  margin-bottom: 39px;
+  @media (min-width: $screen-xl) {
+    margin-bottom: 25px;
+  }
 }
 
 .reglament__title {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+  @media (min-width: $screen-xl) {
+    margin-bottom: 35px;
+  }
 }
 
 .reglament__nav {
@@ -20,11 +26,16 @@
   @include make-col-ready();
   padding-left: 6px;
   padding-right: 6px;
-  margin-bottom: 15px;
-  max-width: 192px;
-  width: 100%;
+  margin-bottom: 10px;
+  width: 50%;
   cursor: pointer;
   text-align: center;
+
+  @media (min-width: $screen-xl) {
+    max-width: 192px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 
 .reglament__nav-link {
@@ -37,8 +48,13 @@
   box-shadow: 0 5px 18px rgba(182, 186, 192, 0.35);
   border-radius: 10px;
   transition: $time;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 
   &.active {
     color: $white;
@@ -49,8 +65,25 @@
 
 .reglament__content {
   overflow: auto;
+  margin-left: -15px;
+  margin-right: -15px;
+
+  @media (min-width: $screen-xl) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .reglament__tab {
   width: 100%;
+}
+
+.reglament__tab  img {
+  max-width: inherit;
+  height: 351px;
+
+  @media (min-width: $screen-xl) {
+    max-width: 100%;
+    height: auto;
+  }
 }

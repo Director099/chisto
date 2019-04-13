@@ -1,5 +1,8 @@
 .faq {
-  padding-bottom: 60px;
+
+  @media (min-width: $screen-xl) {
+    padding-bottom: 60px;
+  }
 }
 
 .faq__list {
@@ -11,19 +14,27 @@
 }
 
 .faq__item {
-  padding: 36px;
+  padding: 27px 13px;
   border-bottom: 1px solid #f0f5fb;
+
+  @media (min-width: $screen-xl) {
+    padding: 36px;
+  }
 }
 
 .faq__title {
   position: relative;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   padding-right: 15px;
 
   color: #333333;
   margin: 0;
   cursor: pointer;
+
+  @media (min-width: $screen-xl) {
+    font-size: 18px;
+  }
 
   &::after {
     content: '';

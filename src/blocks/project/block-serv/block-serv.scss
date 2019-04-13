@@ -1,12 +1,13 @@
 .block-serv {
   position: relative;
-  // padding-bottom: 116px;
+  padding-bottom: 65px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  // background-attachment: fixed;
-  // z-index: 1;
 
+  @media (min-width: $screen-xl) {
+    padding-bottom: 0;
+  }
 
   &::after {
     content: "";
@@ -25,10 +26,14 @@
       position: absolute;
       top: 0;
       right: 0;
-      width: 28.5%;
+      width: 21%;
       height: 100%;
       background-color: rgba(#e9edf1, 0.5%);
       z-index: 1;
+
+      @media (min-width: $screen-xl) {
+        width: 28.5%;
+      }
     }
   }
 
@@ -38,10 +43,14 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 71.5%;
+      width: 79%;
       height: 100%;
       background-color: rgba(#e9edf1, 0.5%);
       z-index: 1;
+
+      @media (min-width: $screen-xl) {
+        width: 71.5%;
+      }
     }
   }
 }
@@ -68,8 +77,13 @@
 }
 
 .block-serv--cleaning .block-serv__wrap {
-  padding-top: 105px;
-  padding-bottom: 77px;
+  padding-top: 65px;
+  padding-bottom: 0px;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 105px;
+    padding-bottom: 77px;
+  }
 }
 
 .block-serv__wrap {
@@ -81,27 +95,71 @@
 
 
 .block-serv__wrap--service {
-  padding-top: 129px;
+  padding-top: 46px;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 129px;
+  }
 }
 
 .block-serv__wrap--action {
-  padding-bottom: 60px;
+  padding-bottom: 0;
+  padding-top: 42px;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+}
+
+.block-serv__wrap--action .decor-text {
+
+  @media (max-width: $screen-xl) {
+    display: block;
+    position: static;
+    transform: rotate(0) translateY(-0);
+    font-size: 16px;
+    margin-bottom: 20px;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 23px;
+      width: 31px;
+      height: 2px;
+      background-color: #a5acb5;
+    }
+  }
 }
 
 .block-serv__wrap--reglament {
-  padding-bottom: 86px;
+  padding-top: 50px;
+
+  @media (min-width: $screen-xl) {
+    padding-bottom: 86px;
+  }
 }
 
 .block-serv__wrap--calculator {
-  padding-top: 130px;
-  padding-bottom: 113px;
+  padding-top: 53px;
+  padding-bottom: 0px;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 130px;
+    padding-bottom: 113px;
+  }
 }
 
 .block-serv__title {
   position: relative;
   max-width: 697px;
   margin-left: auto;
-  margin-bottom: 60px;
+  margin-bottom: 35px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 60px;
+  }
 
   &::after {
     content: "";
@@ -117,18 +175,89 @@
 }
 
 .block-serv__row {
-  @include make-row();
+
+  @media (min-width: $screen-xl) {
+    @include make-row();
+  }
+}
+
+.block-serv__row .owl-stage-outer {
+  overflow: visible;
+}
+
+.block-serv__row .owl-item {
+  margin-left: -2px;
 }
 
 .block-serv__column-4 {
-  @include make-col-ready();
+  //для слайдера
+  position: relative;
+  padding: 10px 15px 10px 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: calc(100% - 55px);
+    //box-shadow: 0 5px 18px rgba(141, 143, 146, 0.35);
+    border-radius: 10px;
+    background-color: #f4f7f7;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: calc(100% - 95px);
+    //box-shadow: 0 5px 18px rgba(141, 143, 146, 0.35);
+    border-radius: 10px;
+    background-color: #ebeeee;
+    right: -15px;
+    width: 100%;
+    z-index: -1;
+  }
 
   @media (min-width: $screen-xl) {
+    @include make-col-ready();
     @include make-col(4);
     margin-bottom: 25px;
+
+    &::after,
+    &::before {
+      display: none;
+    }
   }
 }
 
 .block-serv__faq {
-  margin-left: 85px;
+  margin-left: -15px;
+  margin-right: -15px;
+
+  @media (min-width: $screen-xl) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-left: 85px;
+  }
+}
+
+.block-serv__row .owl-dots {
+  margin-top: 20px !important;
+}
+
+
+.block-serv__row .owl-dots .owl-dot span,
+.block-serv__row .owl-dots .owl-dot:hover span {
+  width: 15px;
+  height: 15px;
+  background-color: #d1d4d9;
+}
+
+.block-serv__row .owl-dots .owl-dot.active span {
+  border: 2px solid #0a74f7;
+  background: transparent;
 }

@@ -1,13 +1,18 @@
 .block-result {
   position: relative;
-  padding-top: 136px;
-  padding-bottom: 70px;
+  padding-top: 40px;
+  padding-bottom: 26px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   // background-attachment: fixed;
   overflow-x: hidden;
   z-index: 1;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 136px;
+    padding-bottom: 70px;
+  }
 
   &::after {
     content: "";
@@ -26,12 +31,16 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(50% - 365px);
+    width: 68px;
     // max-width: 375px;
     height: 100%;
     background-image: linear-gradient(to top, #006ef7 0%, #6aa5f5 100%);
     opacity: 0.7;
     z-index: -1;
+
+    @media (min-width: $screen-xl) {
+      width: calc(50% - 365px);
+    }
   }
 }
 
@@ -40,8 +49,13 @@
 }
 
 .block-result--pt {
-  padding-top: 109px;
-  padding-bottom: 97px;
+  padding-top: 48px;
+  padding-bottom: 41px;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 109px;
+    padding-bottom: 97px;
+  }
 }
 
 .block-result--reverse {
@@ -53,9 +67,13 @@
 
 .block-result__title {
   position: relative;
-  margin-left: 120px;
   max-width: 460px;
-  margin-bottom: 57px;
+  margin-bottom: 40px;
+
+  @media (min-width: $screen-xl) {
+    margin-left: 120px;
+    margin-bottom: 57px;
+  }
 
   &::after {
     content: '';
