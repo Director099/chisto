@@ -39,8 +39,12 @@
 }
 
 .menu__submenu {
-  display: flex;
-  margin-bottom: 95px;
+  display: none;
+
+  @media (min-width: $screen-xl) {
+    display: flex;
+    margin-bottom: 95px;
+  }
 }
 
 .menu__submenu-item {

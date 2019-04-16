@@ -6,16 +6,16 @@
   border-radius: 10px;
   box-shadow: 0 17px 62px rgba(176, 183, 192, 0.89);
 
-  @media (min-width: $screen-xl) {
-    display: none;
-  }
+  // @media (min-width: $screen-xl) {
+  //   display: none;
+  // }
 }
 
 
 
 .calculator__row {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 }
 
 .calculator__row-wrap {
@@ -193,6 +193,10 @@
     width: 15px;
     height: 15px;
     background: url("../img/icon/question-mark.svg") no-repeat center / cover;
+  }
+
+  @media (min-width: $screen-xl) {
+    display: none;
   }
 }
 

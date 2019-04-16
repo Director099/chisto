@@ -2720,8 +2720,7 @@ input:checked ~ .field-checkbox__name-text:after {
     color: white;
 }
 .menu__submenu {
-    display: flex;
-    margin-bottom: 95px;
+    display: none;
 }
 .menu__submenu-item {
     margin-right: 120px;
@@ -4737,7 +4736,6 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .calculator__row {
     display: flex;
-    flex-wrap: wrap;
 }
 .calculator__row-wrap {
     display: flex;
@@ -7442,6 +7440,10 @@ input:checked ~ .field-checkbox__name-text:after {
         width: 30px;
         background-color: #808495;
     }
+    .menu__submenu {
+        display: flex;
+        margin-bottom: 95px;
+    }
     .advantages {
         max-width: 1170px;
         margin: 0 auto;
@@ -8013,9 +8015,6 @@ input:checked ~ .field-checkbox__name-text:after {
     .results__slider .owl-dots {
         margin-top: 75px;
     }
-    .calculator {
-        display: none;
-    }
     .calculator__group {
         margin-bottom: 20px;
     }
@@ -8062,6 +8061,9 @@ input:checked ~ .field-checkbox__name-text:after {
     .calculator__price {
         display: block;
         margin-bottom: 0;
+    }
+    .calculator__btn-desk {
+        display: none;
     }
     .calculator__title-middle {
         font-size: 18px;

@@ -74,8 +74,15 @@ $(document).ready(function() {
     });
   }
 
-
-
+  $(document).click( function(event){
+    if( $(event.target).closest(".menu__submenu").length ) return;
+    $(".menu__submenu").slideUp("slow");
+    event.stopPropagation();
+  });
+  $('.menu__title').click( function() {
+    $(this).siblings(".menu__submenu").slideToggle("slow");
+    return false;
+  });
   // Плавный скол с навигации
 
   /* $(".scrollto > a").click(function () {
