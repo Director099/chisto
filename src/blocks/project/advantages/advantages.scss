@@ -22,6 +22,15 @@
   }
 }
 
+.advantages--top {
+  @media (min-width: $screen-xl) {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    right: 0;
+  }
+}
+
 .advantages__list {
   @include ul-none();
   @include make-row();

@@ -51,12 +51,14 @@ $(document).ready(function() {
       '<div class="fancybox-caption"></div>' +
       "</div>" +
       "</div>",
+    afterClose: function () {
+      $(".menu__title").removeClass("menu__title--active");
+      $(".menu__submenu").slideUp("slow");
+    }
   });
 
   $(".calculator__tab").on("click", function() {
     $(".calculator__tab").removeClass('active');
-    // $(this).addClass('active')
-
   })
 
   $(".menu__submenu-menu a").on("click", function() {
@@ -74,15 +76,30 @@ $(document).ready(function() {
     });
   }
 
-  $(document).click( function(event){
-    if( $(event.target).closest(".menu__submenu").length ) return;
-    $(".menu__submenu").slideUp("slow");
-    event.stopPropagation();
-  });
-  $('.menu__title').click( function() {
-    $(this).siblings(".menu__submenu").slideToggle("slow");
-    return false;
-  });
+  if ($(window).width() <= 1200) {
+    $(document).click(function (event) {
+      if ($(event.target).closest(".menu__submenu").length) return;
+      $(".menu__submenu").slideUp("slow", function () {
+        // $(this).css('display', 'flex');
+      });
+      event.stopPropagation();
+    });
+
+    $('[data-menu-toggle]').click(function () {
+      $(this).toggleClass("menu__title--active")
+      $(this).siblings(".menu__submenu").slideToggle("slow", function () {
+
+      });
+      return false;
+    });
+  }
+
+  $(".calc-service__wrap-chek").on("click", function(evt) {
+    // console.log($(evt).parent(".calc-service"))
+
+    // $(this).parent(".calc-service").toggleClass("calc-service--active")
+  })
+
   // Плавный скол с навигации
 
   /* $(".scrollto > a").click(function () {

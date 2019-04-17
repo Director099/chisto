@@ -15,7 +15,11 @@
 
 .calculator__row {
   display: flex;
-  // flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  @media (min-width: $screen-xl) {
+    flex-wrap: nowrap;
+  }
 }
 
 .calculator__row-wrap {
@@ -116,10 +120,14 @@
 
 .calculator__desk {
   display: none;
-  margin-bottom: 45px;
+  margin-left: -15px;
+  margin-right: -15px;
 
   @media (min-width: $screen-xl) {
     display: block;
+    margin-bottom: 45px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

@@ -1,6 +1,6 @@
 mixin calculator()
   section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')")
-    .advantages
+    .advantages.advantages--top
       ul.advantages__list
         li.advantages__column
           .advantages__item
@@ -25,7 +25,7 @@ mixin calculator()
               section.calculator__content
                 h3.calculator__title Уборка квартир
                 .calculator__group
-                  .calculator__row-wrap.nav(id="nav-tab" role="tablist")
+                  .calculator__row-wrap.nav(id="nav-tab" )
                     .calculator__col-4
                       a.calculator__tab.active(data-toggle="tab" href="#serv-1") Поддерживающая
                     .calculator__col-4
@@ -61,7 +61,7 @@ mixin calculator()
                               .calc-service
                                 label.calc-service__wrap-chek
                                   input.calc-service__check(type="checkbox")
-                                  .calc-service__checkbox
+                                  span.calc-service__checkbox
                                   span.calc-service__checkbox-text Мытье окон
                                 .calc-service__title
                                   span Количество санузлов
@@ -74,7 +74,7 @@ mixin calculator()
                               .calc-service
                                 label.calc-service__wrap-chek
                                   input.calc-service__check(type="checkbox")
-                                  .calc-service__checkbox
+                                  span.calc-service__checkbox
                                   span.calc-service__checkbox-text Мытье лоджии
                                 .calc-service__title
                                   span Количество окон
@@ -92,7 +92,7 @@ mixin calculator()
                             .calc-service
                               label.calc-service__wrap-chek
                                 input.calc-service__check(type="checkbox")
-                                .calc-service__checkbox
+                                span.calc-service__checkbox
                                 span.calc-service__checkbox-text Мытье окон
                               .calc-service__title
                                 span Количество санузлов
@@ -105,7 +105,7 @@ mixin calculator()
                             .calc-service
                               label.calc-service__wrap-chek
                                 input.calc-service__check(type="checkbox")
-                                .calc-service__checkbox
+                                span.calc-service__checkbox
                                 span.calc-service__checkbox-text Мытье окон
                               .calc-service__title
                                 span Количество санузлов
@@ -118,7 +118,7 @@ mixin calculator()
                             .calc-service
                               label.calc-service__wrap-chek
                                 input.calc-service__check(type="checkbox")
-                                .calc-service__checkbox
+                                span.calc-service__checkbox
                                 span.calc-service__checkbox-text Прочистить трубы
                   .tab-pane.fade(id="")
                     .calculator__group
@@ -171,7 +171,7 @@ mixin calculator()
                             .calc-service
                               label.calc-service__wrap-chek
                                 input.calc-service__check(type="checkbox")
-                                .calc-service__checkbox
+                                span.calc-service__checkbox
                                 span.calc-service__checkbox-text Мытье окон
                               .calc-service__title
                                 span Количество санузлов
@@ -184,7 +184,7 @@ mixin calculator()
                             .calc-service
                               label.calc-service__wrap-chek
                                 input.calc-service__check(type="checkbox")
-                                .calc-service__checkbox
+                                span.calc-service__checkbox
                                 span.calc-service__checkbox-text Мытье окон
                               .calc-service__title
                                 span Количество санузлов
@@ -197,7 +197,7 @@ mixin calculator()
                             .calc-service
                               label.calc-service__wrap-chek
                                 input.calc-service__check(type="checkbox")
-                                .calc-service__checkbox
+                                span.calc-service__checkbox
                                 span.calc-service__checkbox-text Прочистить трубы
             .calculator__right
               section.calculator__desk(id="desk")

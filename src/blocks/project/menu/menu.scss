@@ -3,20 +3,26 @@
   opacity: 0.98;
 }
 
-.fancybox-slide {
-  padding: 0;
-}
+.fancybox-bg--menu + .fancybox-inner {
+  .fancybox-slide {
+    padding: 0;
+  }
 
-.fancybox-button {
-  display: none;
+  .fancybox-button {
+    display: none;
+  }
 }
 
 .menu {
   display: none;
   width: 100%;
   height: 100%;
-  padding: 55px 0;
+  padding: 64px 39px;
   background: transparent;
+
+  @media (min-width: $screen-xl) {
+    padding: 55px 0;
+  }
 }
 
 .menu__main {
@@ -27,32 +33,84 @@
 
 .menu__title {
   display: block;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   color: $white;
   margin-bottom: 65px;
+
+  @media (min-width: $screen-xl) {
+    font-size: 40px;
+  }
 
   &:hover {
     color: $white;
   }
 }
 
+.menu__title[data-menu-toggle=""] {
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: -35px;
+    top: 50%;
+    margin-top: -8.5px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid transparent;
+    border-right: 1px solid #1064bc;
+    border-bottom: 1px solid #1064bc;
+    transform: rotate(45deg);
+    transition: $time;
+  }
+
+  @media (min-width: $screen-xl) {
+    display: block;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.menu__title--active[data-menu-toggle=""] {
+  &::after {
+    margin-top: -3.5px;
+    transform: rotate(-135deg);
+  }
+}
+
 .menu__submenu {
   display: none;
+  flex-wrap: wrap;
+  margin-top: -40px;
+  margin-bottom: 80px;
 
   @media (min-width: $screen-xl) {
     display: flex;
+    margin-top: 0;
     margin-bottom: 95px;
   }
 }
 
 .menu__submenu-item {
-  margin-right: 120px;
+  margin-bottom: 40px;
+  max-width: 230px;
+  width: 100%;
 
-  &:last-child {
-    margin-right: 0;
+  @media (min-width: $screen-xl) {
+    margin-right: 120px;
+    width: auto;
+    max-width: inherit;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
+
 }
 
 .menu__submenu-title {
@@ -85,10 +143,12 @@
 .menu__messager {
   @include ul-none();
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu__messager-item {
   margin-right: 25px;
+  margin-bottom: 15px;
 }
 
 .menu__messager-link {
@@ -102,13 +162,18 @@
 
 .menu__close {
   position: absolute;
-  right: 0;
-  top: 10px;
+  top: -35px;
+  right: -20px;
   width: 26px;
   height: 26px;
   border-radius: 50%;
   border: 1px solid $white;
   background: transparent;
+
+  @media (min-width: $screen-xl) {
+    right: 0;
+    top: 10px;
+  }
 
   &::after,
   &::before {

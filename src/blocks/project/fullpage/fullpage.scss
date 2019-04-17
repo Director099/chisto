@@ -30,9 +30,10 @@
 
 .fullpage--service {
   background-position: top center;
+  padding-bottom: 50px;
 
   @media (min-width: $screen-xl) {
-    //height: 100vh;
+    padding-bottom: 172px;
     min-height: inherit;
   }
 

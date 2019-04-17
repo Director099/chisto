@@ -49,14 +49,18 @@
 }
 
 .clients__title-big {
-  font-size: 149px;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #ecf0f5;
-  opacity: .1;
-  margin-top: 678px;
-  transform: rotate(-90deg);
-  margin-right: 75px;
+
+  @media (min-width: $screen-xl) {
+    font-size: 149px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ecf0f5;
+    opacity: .1;
+    margin-top: 678px;
+    transform: rotate(-90deg);
+    margin-right: 75px;
+  }
+
 }
 
 .clients__list {
