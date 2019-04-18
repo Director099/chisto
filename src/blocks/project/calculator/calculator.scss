@@ -26,6 +26,11 @@
   @include make-row();
   margin-left: -6px;
   margin-right: -6px;
+
+  @media (min-width: $screen-xl) {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
 
 .calculator__group {

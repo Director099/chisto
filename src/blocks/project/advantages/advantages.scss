@@ -22,6 +22,10 @@
   }
 }
 
+.advantages--shadow {
+  box-shadow: 0 15px 24px rgba($black, 0.19%);
+}
+
 .advantages--top {
   @media (min-width: $screen-xl) {
     position: absolute;

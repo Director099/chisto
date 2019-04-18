@@ -18,6 +18,14 @@
   }
 }
 
+.results__slider .owl-stage-outer {
+  overflow: visible;
+
+  @media (min-width: $screen-xl) {
+    overflow: hidden;
+  }
+}
+
 .results__slider .owl-nav {
   margin: 0;
 }
@@ -25,7 +33,7 @@
 .results__slider .owl-nav button {
   position: absolute;
   // left: 0;
-  top: calc(50% + -75px);
+  top: calc(50% + -45px);
   width: 51px;
   height: 51px;
   box-shadow: -5px 21px 51px rgba(141, 155, 165, 0.4);

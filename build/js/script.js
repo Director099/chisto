@@ -94,6 +94,15 @@ $(document).ready(function() {
 
   $('input[type=tel]').mask("+7 (000) 000 00 00");
 
+  $(".main-block__form .field-text__input").on("change paste keyup", function(){
+    tmpval = $(this).val();
+    if(tmpval === '') {
+      $(".main-block__form .field-checkbox").removeClass("field-checkbox--visible")
+    } else {
+      $(".main-block__form .field-checkbox").addClass("field-checkbox--visible")
+    }
+  });
+
   $(".burger[href='#menu']").fancybox({
     touch: false,
     baseTpl:
@@ -107,10 +116,6 @@ $(document).ready(function() {
       '<div class="fancybox-caption"></div>' +
       "</div>" +
       "</div>",
-    afterClose: function () {
-      $(".menu__title").removeClass("menu__title--active");
-      $(".menu__submenu").slideUp("slow");
-    }
   });
 
   $(".calculator__tab").on("click", function() {
@@ -133,6 +138,25 @@ $(document).ready(function() {
   }
 
   if ($(window).width() <= 1200) {
+    $(".burger[href='#menu']").fancybox({
+      touch: false,
+      baseTpl:
+        '<div class="fancybox-container" role="dialog" tabindex="-1">' +
+        '<div class="fancybox-bg fancybox-bg--menu"></div>' +
+        '<div class="fancybox-inner">' +
+        '<div class="fancybox-infobar"><span data-fancybox-index></span>&nbsp;/&nbsp;<span data-fancybox-count></span></div>' +
+        '<div class="fancybox-toolbar">{{buttons}}</div>' +
+        '<div class="fancybox-navigation">{{arrows}}</div>' +
+        '<div class="fancybox-stage"></div>' +
+        '<div class="fancybox-caption"></div>' +
+        "</div>" +
+        "</div>",
+      afterClose: function () {
+        $(".menu__title").removeClass("menu__title--active");
+        $(".menu__submenu").slideUp("slow");
+      }
+    });
+
     $(document).click(function (event) {
       if ($(event.target).closest(".menu__submenu").length) return;
       $(".menu__submenu").slideUp("slow", function () {
