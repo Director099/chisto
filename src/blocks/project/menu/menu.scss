@@ -1,6 +1,6 @@
 .fancybox-is-open .fancybox-bg--menu {
-  background: #151621;
-  opacity: 0.98;
+  background: rgba(233,237,241,1);
+  opacity: 1;
 }
 
 .fancybox-bg--menu + .fancybox-inner {
@@ -36,15 +36,22 @@
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  color: $white;
-  margin-bottom: 65px;
+  color: #313645;
+  margin-bottom: 35px;
 
   @media (min-width: $screen-xl) {
     font-size: 40px;
   }
 
+  &--middle {
+    font-size: 18px;
+    @media (min-width: $screen-xl) {
+      font-size: 24px;
+    }
+  }
+
   &:hover {
-    color: $white;
+    color: #313645;
   }
 }
 
@@ -61,8 +68,8 @@
     width: 12px;
     height: 12px;
     border: 1px solid transparent;
-    border-right: 1px solid #1064bc;
-    border-bottom: 1px solid #1064bc;
+    border-right: 1px solid #313645;
+    border-bottom: 1px solid #313645;
     transform: rotate(45deg);
     transition: $time;
   }
@@ -86,7 +93,7 @@
 .menu__submenu {
   display: none;
   flex-wrap: wrap;
-  margin-top: -40px;
+  margin-top: -10px;
   margin-bottom: 80px;
 
   @media (min-width: $screen-xl) {
@@ -104,19 +111,19 @@
   @media (min-width: $screen-xl) {
     margin-right: 120px;
     width: auto;
+    margin-bottom: 0;
     max-width: inherit;
 
     &:last-child {
       margin-right: 0;
     }
   }
-
 }
 
 .menu__submenu-title {
   font-size: 16px;
   font-weight: 500;
-  color: $white;
+  color: #313645;
   margin-bottom: 29px;
 }
 
@@ -137,7 +144,7 @@
 
   font-size: 12px;
   font-weight: 300;
-  color: $white;
+  color: #313645;
 }
 
 .menu__messager {
@@ -153,10 +160,12 @@
 
 .menu__messager-link {
   display: inline-block;
-  color: $white;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #313645;
+  color: #313645;
 
   &:hover {
-    color: darken($white, 30%);
+    color: darken(#313645, 30%);
   }
 }
 
@@ -166,8 +175,9 @@
   right: -20px;
   width: 26px;
   height: 26px;
+  padding: 12px;
   border-radius: 50%;
-  border: 1px solid $white;
+  border: 1px solid #313645;
   background: transparent;
   z-index: 9;
 
@@ -185,7 +195,7 @@
     transform: translate(-50%,-50%) rotate(-45deg);
     height: calc(100% - 12px);
     width: 1px;
-    background: $white;
+    background: #313645;
   }
 
   &::before {

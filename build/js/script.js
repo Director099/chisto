@@ -180,6 +180,11 @@ $(document).ready(function() {
     // $(this).parent(".calc-service").toggleClass("calc-service--active")
   })
 
+  $(".social-fix__btn").on("click", function() {
+    $(".social-fix__btn").toggleClass("social-fix__btn--close");
+    $(".social-fix__list").toggleClass("social-fix__list--open");
+  })
+
   // Плавный скол с навигации
 
   /* $(".scrollto > a").click(function () {

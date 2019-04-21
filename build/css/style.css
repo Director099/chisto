@@ -2306,8 +2306,17 @@ button {
 img {
     max-width: 100%;
 }
+main {
+    position: relative;
+}
 .fancybox-active {
     overflow: hidden;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
 }
 .btn {
     box-sizing: border-box;
@@ -2708,8 +2717,8 @@ input:checked ~ .field-checkbox__name-text:after {
     background-color: #808495;
 }
 .fancybox-is-open .fancybox-bg--menu {
-    background: #151621;
-    opacity: 0.98;
+    background: #e9edf1;
+    opacity: 1;
 }
 .fancybox-bg--menu + .fancybox-inner .fancybox-slide {
     padding: 0;
@@ -2734,11 +2743,14 @@ input:checked ~ .field-checkbox__name-text:after {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
-    color: white;
-    margin-bottom: 65px;
+    color: #313645;
+    margin-bottom: 35px;
+}
+.menu__title--middle {
+    font-size: 18px;
 }
 .menu__title:hover {
-    color: white;
+    color: #313645;
 }
 .menu__title[data-menu-toggle=""] {
     display: inline-block;
@@ -2753,8 +2765,8 @@ input:checked ~ .field-checkbox__name-text:after {
     width: 12px;
     height: 12px;
     border: 1px solid transparent;
-    border-right: 1px solid #1064bc;
-    border-bottom: 1px solid #1064bc;
+    border-right: 1px solid #313645;
+    border-bottom: 1px solid #313645;
     transform: rotate(45deg);
     transition: 0.3s;
 }
@@ -2765,7 +2777,7 @@ input:checked ~ .field-checkbox__name-text:after {
 .menu__submenu {
     display: none;
     flex-wrap: wrap;
-    margin-top: -40px;
+    margin-top: -10px;
     margin-bottom: 80px;
 }
 .menu__submenu-item {
@@ -2776,7 +2788,7 @@ input:checked ~ .field-checkbox__name-text:after {
 .menu__submenu-title {
     font-size: 16px;
     font-weight: 500;
-    color: white;
+    color: #313645;
     margin-bottom: 29px;
 }
 .menu__submenu-menu {
@@ -2794,7 +2806,7 @@ input:checked ~ .field-checkbox__name-text:after {
     display: inline-block;
     font-size: 12px;
     font-weight: 300;
-    color: white;
+    color: #313645;
 }
 .menu__messager {
     list-style-type: none;
@@ -2809,10 +2821,12 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .menu__messager-link {
     display: inline-block;
-    color: white;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #313645;
+    color: #313645;
 }
 .menu__messager-link:hover {
-    color: #b3b3b3;
+    color: black;
 }
 .menu__close {
     position: absolute;
@@ -2820,8 +2834,9 @@ input:checked ~ .field-checkbox__name-text:after {
     right: -20px;
     width: 26px;
     height: 26px;
+    padding: 12px;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 1px solid #313645;
     background: transparent;
     z-index: 9;
 }
@@ -2833,7 +2848,7 @@ input:checked ~ .field-checkbox__name-text:after {
     transform: translate(-50%, -50%) rotate(-45deg);
     height: calc(100% - 12px);
     width: 1px;
-    background: white;
+    background: #313645;
 }
 .menu__close::before {
     transform: translate(-50%, -50%) rotate(45deg);
@@ -3455,6 +3470,7 @@ input:checked ~ .field-checkbox__name-text:after {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 .service__info {
     position: absolute;
@@ -3705,7 +3721,7 @@ input:checked ~ .field-checkbox__name-text:after {
     margin-bottom: 0;
 }
 .contacts__wrap--ident {
-    margin-right: 55px;
+    margin-right: 46px;
 }
 .contacts__wrap--row {
     display: flex;
@@ -4922,6 +4938,7 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .calculator__price strong {
     position: relative;
+    display: inline-block;
     color: #333333;
     font-size: 24px;
     font-weight: 500;
@@ -5180,6 +5197,10 @@ input:checked ~ .field-checkbox__name-text:after {
     width: 100%;
     margin-top: 31px;
 }
+.calc-service__wrap-chek + input + input + input + .calc-service__title {
+    width: 100%;
+    margin-top: 31px;
+}
 .calc-service__title {
     display: flex;
     align-items: center;
@@ -5203,6 +5224,13 @@ input:checked ~ .field-checkbox__name-text:after {
 .calc-service__check {
     display: none;
 }
+.calc-service__check:checked + .calc-service__checkbox {
+    background-image: linear-gradient(to top, #006ef7 0%, #6aa5f5 100%);
+    box-shadow: 0 2px 8px rgba(105, 164, 245, 0.53);
+}
+.calc-service__check:checked + .calc-service__checkbox::after {
+    left: 19px;
+}
 .calc-service__checkbox {
     position: relative;
     width: 42px;
@@ -5225,6 +5253,114 @@ input:checked ~ .field-checkbox__name-text:after {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.04), 0 0 2px rgba(0, 0, 0, 0.08);
     background-color: white;
     transition: 0.3s;
+}
+.social-fix {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9;
+}
+.social-fix__btn {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 40px 6px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/icon-messager/i-message.svg");
+    background-color: white;
+    z-index: 9;
+}
+.social-fix__btn:focus {
+    outline: none;
+}
+.social-fix__btn--close {
+    background-image: url("../img/icon-messager/close.svg");
+}
+.social-fix__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-out 0s;
+    opacity: 0;
+}
+.social-fix__list .social-fix__item:nth-child(1) {
+    transform: translate(0, 240px);
+}
+.social-fix__list .social-fix__item:nth-child(2) {
+    transform: translate(0, 180px);
+}
+.social-fix__list .social-fix__item:nth-child(3) {
+    transform: translate(0, 120px);
+}
+.social-fix__list .social-fix__item:nth-child(4) {
+    transform: translate(0, 60px);
+}
+.social-fix__list--open {
+    opacity: 1;
+}
+.social-fix__list--open .social-fix__item {
+    transform: translate(0, 0) !important;
+}
+.social-fix__list--open .social-fix__item:nth-child(1) {
+    transition-duration: 400ms;
+}
+.social-fix__list--open .social-fix__item:nth-child(2) {
+    transition-duration: 300ms;
+}
+.social-fix__list--open .social-fix__item:nth-child(3) {
+    transition-duration: 200ms;
+}
+.social-fix__list--open .social-fix__item:nth-child(4) {
+    transition-duration: 100ms;
+}
+.social-fix__item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    margin-top: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 40px 6px rgba(0, 0, 0, 0.2);
+    will-change: transform, opacity;
+    transition: all 0.2s ease-out 0s;
+}
+.social-fix__item:nth-child(1) {
+    transition-duration: 400ms;
+}
+.social-fix__item:nth-child(2) {
+    transition-duration: 300ms;
+}
+.social-fix__item:nth-child(3) {
+    transition-duration: 200ms;
+}
+.social-fix__item:nth-child(4) {
+    transition-duration: 100ms;
+}
+.social-fix__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.social-fix__link--whatsapp {
+    background-image: url("../img/icon-messager/whatsapp.svg");
+}
+.social-fix__link--telega {
+    background-image: url("../img/icon-messager/telegram.svg");
+}
+.social-fix__link--vk {
+    background-image: url("../img/icon-messager/vk.svg");
+}
+.social-fix__link--facebook {
+    background-image: url("../img/icon-messager/facebook.svg");
 }
 .visible-xl {
     display: none;
@@ -6369,6 +6505,10 @@ input:checked ~ .field-checkbox__name-text:after {
         width: auto;
         margin-top: 0;
     }
+    .calc-service__wrap-chek + input + input + input + .calc-service__title {
+        width: auto;
+        margin-top: 0;
+    }
 }
 @media (min-width: 992px) {
     .container {
@@ -7484,6 +7624,9 @@ input:checked ~ .field-checkbox__name-text:after {
     .menu__title {
         font-size: 40px;
     }
+    .menu__title--middle {
+        font-size: 24px;
+    }
     .menu__title[data-menu-toggle=""] {
         display: block;
     }
@@ -7498,6 +7641,7 @@ input:checked ~ .field-checkbox__name-text:after {
     .menu__submenu-item {
         margin-right: 120px;
         width: auto;
+        margin-bottom: 0;
         max-width: inherit;
     }
     .menu__submenu-item:last-child {
