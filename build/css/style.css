@@ -8360,6 +8360,7 @@ input:checked ~ .field-checkbox__name-text:after {
     .page h1, .page h2, .page h3, .page h4 {
         font-size: 40px;
         line-height: 56px;
+        max-width: 800px;
     }
     .page h1 {
         margin-bottom: 95px;
@@ -8377,6 +8378,7 @@ input:checked ~ .field-checkbox__name-text:after {
     .page p {
         font-size: 18px;
         line-height: 36px;
+        max-width: 800px;
     }
     .page__previev {
         margin-bottom: 90px;
