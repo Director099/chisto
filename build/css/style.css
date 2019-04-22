@@ -5269,8 +5269,8 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .social-fix__btn {
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     border: none;
     box-shadow: 0 0 40px 6px rgba(0, 0, 0, 0.2);
@@ -5297,17 +5297,17 @@ input:checked ~ .field-checkbox__name-text:after {
     transition: all 0.3s ease-out 0s;
     opacity: 0;
 }
-.social-fix__list .social-fix__item:nth-child(1) {
-    transform: translate(0, 240px);
+.social-fix__list .social-fix__item:nth-last-child(1) {
+    transform: translate(0, 60px);
 }
-.social-fix__list .social-fix__item:nth-child(2) {
-    transform: translate(0, 180px);
-}
-.social-fix__list .social-fix__item:nth-child(3) {
+.social-fix__list .social-fix__item:nth-last-child(2) {
     transform: translate(0, 120px);
 }
-.social-fix__list .social-fix__item:nth-child(4) {
-    transform: translate(0, 60px);
+.social-fix__list .social-fix__item:nth-last-child(3) {
+    transform: translate(0, 180px);
+}
+.social-fix__list .social-fix__item:nth-last-child(4) {
+    transform: translate(0, 240px);
 }
 .social-fix__list--open {
     opacity: 1;
@@ -5315,21 +5315,21 @@ input:checked ~ .field-checkbox__name-text:after {
 .social-fix__list--open .social-fix__item {
     transform: translate(0, 0) !important;
 }
-.social-fix__list--open .social-fix__item:nth-child(1) {
-    transition-duration: 400ms;
-}
-.social-fix__list--open .social-fix__item:nth-child(2) {
-    transition-duration: 300ms;
-}
-.social-fix__list--open .social-fix__item:nth-child(3) {
-    transition-duration: 200ms;
-}
-.social-fix__list--open .social-fix__item:nth-child(4) {
+.social-fix__list--open .social-fix__item:nth-last-child(1) {
     transition-duration: 100ms;
 }
+.social-fix__list--open .social-fix__item:nth-last-child(2) {
+    transition-duration: 200ms;
+}
+.social-fix__list--open .social-fix__item:nth-last-child(3) {
+    transition-duration: 300ms;
+}
+.social-fix__list--open .social-fix__item:nth-last-child(4) {
+    transition-duration: 400ms;
+}
 .social-fix__item {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     border: none;
     margin-top: 10px;
