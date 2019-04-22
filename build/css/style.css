@@ -7703,7 +7703,7 @@ input:checked ~ .field-checkbox__name-text:after {
         margin-bottom: 0;
     }
     .page-header {
-        padding-bottom: 58px;
+        padding-bottom: 51px;
     }
     .page-header__container {
         max-width: 1395px;
@@ -7766,11 +7766,13 @@ input:checked ~ .field-checkbox__name-text:after {
         margin-bottom: 0;
     }
     .fullpage {
+        height: 100vh;
         min-height: 839px;
     }
     .fullpage--service {
         padding-bottom: 172px;
         min-height: inherit;
+        height: inherit;
     }
     .fullpage--single {
         min-height: inherit;

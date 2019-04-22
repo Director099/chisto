@@ -174,16 +174,17 @@ $(document).ready(function() {
     });
   }
 
-  $(".calc-service__wrap-chek").on("click", function(evt) {
-    // console.log($(evt).parent(".calc-service"))
-
-    // $(this).parent(".calc-service").toggleClass("calc-service--active")
-  })
-
   $(".social-fix__btn").on("click", function() {
     $(".social-fix__btn").toggleClass("social-fix__btn--close");
     $(".social-fix__list").toggleClass("social-fix__list--open");
   })
+
+  $(".main-block__btn").click(function () {
+      var elementClick = $(this).attr("href")
+      var destination = $(elementClick).offset().top;
+      jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
+      return false;
+  });
 
   // Плавный скол с навигации
 
