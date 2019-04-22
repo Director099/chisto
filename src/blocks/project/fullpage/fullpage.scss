@@ -55,6 +55,7 @@
 .fullpage--single {
   @media (min-width: $screen-xl) {
     min-height: inherit;
+    height: inherit;
   }
 
   .page-header__phone {

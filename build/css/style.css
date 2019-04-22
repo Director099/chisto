@@ -7776,6 +7776,7 @@ input:checked ~ .field-checkbox__name-text:after {
     }
     .fullpage--single {
         min-height: inherit;
+        height: inherit;
     }
     .fullpage--service .page-header {
         padding-bottom: 112px;
