@@ -3117,9 +3117,6 @@ input:checked ~ .field-checkbox__name-text:after {
     top: 228px;
     left: -135px;
 }
-.fullpage__dec-text::after {
-    left: -83px;
-}
 .fullpage__dec-text::before {
     content: "";
     position: absolute;
@@ -7798,6 +7795,9 @@ input:checked ~ .field-checkbox__name-text:after {
     }
     .fullpage__la {
         margin-left: auto;
+    }
+    .fullpage__dec-text::after {
+        left: -83px;
     }
     .main-block--big {
         margin-bottom: 153px;

@@ -141,9 +141,6 @@
 .fullpage__dec-text {
   top: 228px;
   left: -135px;
-  &::after {
-    left: -83px;
-  }
 
   &::before {
     content: '';
@@ -154,5 +151,11 @@
     height: 20px;
     background: url("../img/icon/mouse.svg") no-repeat center / cover;
     transform: rotate(90deg);
+  }
+
+  @media (min-width: $screen-xl) {
+    &::after {
+      left: -83px;
+    }
   }
 }
