@@ -26,6 +26,10 @@
     opacity: 0.98;
     background-image: linear-gradient(to top, #151621 0%, #343b4b 100%);
   }
+
+  @media (min-width: $screen-xl) {
+    overflow: hidden;
+  }
 }
 
 .fullpage--service {

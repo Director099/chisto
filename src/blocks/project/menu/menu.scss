@@ -172,7 +172,8 @@
 .menu__close {
   position: absolute;
   top: -35px;
-  right: -20px;
+  left: -20px;
+  //right: -20px;
   width: 26px;
   height: 26px;
   padding: 12px;
@@ -182,8 +183,15 @@
   z-index: 9;
 
   @media (min-width: $screen-xl) {
-    right: 0;
-    top: 10px;
+    //right: 0;
+    //top: 10px;
+    left: -55px;
+    top: -10px;
+  }
+
+  @media (min-width: 1366px) {
+    left: -145px;
+    top: -10px;
   }
 
   &::after,
