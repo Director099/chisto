@@ -87,6 +87,20 @@ $border-radius:               rem(3px) !default;
   }
 }
 
+.field-text--user .field-text__input {
+  background-image: url("../img/icon/user.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 50%;
+  background-size: 15px;
+}
+
+.field-text--phone .field-text__input {
+  background-image: url("../img/icon/phone-tr.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 50%;
+  background-size: 15px;
+}
+
 .field-text--tr .field-text__input {
   font-size: 12px;
   font-weight: 300;

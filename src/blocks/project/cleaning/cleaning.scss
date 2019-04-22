@@ -10,6 +10,13 @@
   }
 }
 
+.cleaning__slider-item {
+
+  @media (min-width: $screen-xl) {
+    padding: 5px 5px 15px;
+  }
+}
+
 .cleaning__slider .owl-dots {
   @media (max-width: 1199px) {
     margin-top: 40px !important;

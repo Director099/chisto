@@ -4,11 +4,13 @@
   overflow: hidden;
   background-color: #f3f5f7;
   border-radius: 10px;
-  box-shadow: 0 17px 62px rgba(176, 183, 192, 0.89);
+  margin-bottom: 20px;
+  box-shadow: 0 6px 13px rgba(176,183,192,0.59);
 
-  // @media (min-width: $screen-xl) {
-  //   display: none;
-  // }
+   @media (min-width: $screen-xl) {
+     margin-bottom: 0;
+     box-shadow: 0 17px 62px rgba(176, 183, 192, 0.89);
+   }
 }
 
 

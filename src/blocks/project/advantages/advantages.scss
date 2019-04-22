@@ -27,11 +27,13 @@
 }
 
 .advantages--top {
+  transform: translateY(-20px);
   @media (min-width: $screen-xl) {
     position: absolute;
     top: -200px;
     left: 0;
     right: 0;
+    transform: translateY(-0px);
   }
 }
 

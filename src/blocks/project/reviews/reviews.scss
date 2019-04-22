@@ -45,6 +45,20 @@
   }
 }
 
+.reviews__slider .owl-stage-outer {
+  overflow: visible;
+
+  @media (min-width: $screen-xl) {
+    overflow: hidden;
+  }
+}
+
+.reviews__slider-item {
+  @media (min-width: $screen-xl) {
+    padding: 5px 5px 15px;
+  }
+}
+
 .reviews__header {
   position: relative;
   display: flex;
