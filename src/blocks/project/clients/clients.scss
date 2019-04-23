@@ -43,8 +43,10 @@
   top: 46px;
   color: #d7dbe0;
 
-  &::after {
-    background: #d7dbe0;
+  @media (min-width: $screen-xl) {
+    &::after {
+      background: #d7dbe0;
+    }
   }
 }
 
