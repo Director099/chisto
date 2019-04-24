@@ -120,7 +120,7 @@
   &--xs-cr {
     flex-direction: column-reverse;
 
-    @media (min-width: $screen-xl) {
+    @media (min-width: $screen-lg) {
       flex-direction: row;
     }
   }
@@ -129,7 +129,7 @@
 .fullpage__column {
   @include make-col-ready();
 
-  @media (min-width: $screen-xl) {
+  @media (min-width: $screen-lg) {
     @include make-col(6);
   }
 }

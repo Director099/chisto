@@ -1,5 +1,6 @@
 .fancybox-is-open .fancybox-bg--menu {
-  background: rgba(233,237,241,1);
+  //background: rgba(233,237,241,1);
+  background: rgb(243, 245, 247);
   opacity: 1;
 }
 
@@ -17,7 +18,7 @@
   display: none;
   width: 100%;
   height: 100%;
-  padding: 64px 39px;
+  padding: 84px 39px 64px;
   background: transparent;
 
   @media (min-width: $screen-xl) {
@@ -171,14 +172,14 @@
 
 .menu__close {
   position: absolute;
-  top: -35px;
+  top: -55px;
   left: -20px;
   //right: -20px;
   width: 26px;
   height: 26px;
   padding: 12px;
   border-radius: 50%;
-  border: 1px solid #313645;
+  border: none;
   background: transparent;
   z-index: 9;
 
@@ -201,9 +202,9 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%) rotate(-45deg);
-    height: calc(100% - 12px);
+    height: 100%;
     width: 1px;
-    background: #313645;
+    background: #1d7df6;
   }
 
   &::before {

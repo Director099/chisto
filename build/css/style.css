@@ -2719,7 +2719,7 @@ input:checked ~ .field-checkbox__name-text:after {
     transform: rotate(-90deg);
 }
 .fancybox-is-open .fancybox-bg--menu {
-    background: #e9edf1;
+    background: #f3f5f7;
     opacity: 1;
 }
 .fancybox-bg--menu + .fancybox-inner .fancybox-slide {
@@ -2732,7 +2732,7 @@ input:checked ~ .field-checkbox__name-text:after {
     display: none;
     width: 100%;
     height: 100%;
-    padding: 64px 39px;
+    padding: 84px 39px 64px;
     background: transparent;
 }
 .menu__main {
@@ -2832,13 +2832,13 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .menu__close {
     position: absolute;
-    top: -35px;
+    top: -55px;
     left: -20px;
     width: 26px;
     height: 26px;
     padding: 12px;
     border-radius: 50%;
-    border: 1px solid #313645;
+    border: none;
     background: transparent;
     z-index: 9;
 }
@@ -2848,9 +2848,9 @@ input:checked ~ .field-checkbox__name-text:after {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
-    height: calc(100% - 12px);
+    height: 100%;
     width: 1px;
-    background: #313645;
+    background: #1d7df6;
 }
 .menu__close::before {
     transform: translate(-50%, -50%) rotate(45deg);
@@ -7066,6 +7066,15 @@ input:checked ~ .field-checkbox__name-text:after {
     .modal-lg, .modal-xl {
         max-width: 800px;
     }
+    .fullpage__row--xs-cr {
+        flex-direction: row;
+    }
+    .fullpage__column {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 @media (min-width: 1200px) {
     .container {
@@ -7790,15 +7799,6 @@ input:checked ~ .field-checkbox__name-text:after {
     }
     .fullpage--service .page-header__phone::after {
         background-image: url("../img/icon/phone-white.svg");
-    }
-    .fullpage__row--xs-cr {
-        flex-direction: row;
-    }
-    .fullpage__column {
-        flex: 0 0 50%;
-        max-width: 50%;
-        padding-left: 15px;
-        padding-right: 15px;
     }
     .fullpage__la {
         margin-left: auto;
