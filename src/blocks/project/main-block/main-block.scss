@@ -36,7 +36,8 @@
   @media (min-width: $screen-xl) {
     font-size: 32px;
     line-height: 44px;
-    margin-bottom: 46px;
+    //margin-bottom: 46px;
+    margin-bottom: 36px;
   }
 }
 
@@ -54,10 +55,11 @@
 .main-block__list {
   @include ul-none();
   display: none;
-  margin-bottom: 62px;
+  //margin-bottom: 62px;
 
   @media (min-width: $screen-xl) {
     display: block;
+    margin-bottom: 52px;
   }
 }
 

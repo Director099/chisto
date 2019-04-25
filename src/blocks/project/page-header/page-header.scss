@@ -3,7 +3,9 @@
   padding-bottom: 20px;
 
   @media (min-width: $screen-xl) {
-    padding-bottom: 58px;
+    //padding-bottom: 58px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
