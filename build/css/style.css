@@ -2971,7 +2971,7 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .page-header {
     padding-top: 24px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 .page-header__row {
     position: relative;
@@ -3010,6 +3010,26 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .page-header__cb {
     display: none;
+}
+.page-header__social {
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+.page-header__social-link {
+    display: inline-block;
+    margin-right: 15px;
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.page-header__social-link svg {
+    fill: #a3acb7;
+}
+.page-header__social-link:last-child {
+    margin-right: 0;
 }
 .page-footer__top {
     padding-top: 48px;
@@ -3075,11 +3095,20 @@ input:checked ~ .field-checkbox__name-text:after {
     z-index: -1;
     background: rgba(0, 0, 0, 0.48);
 }
+.fullpage--service .page-header__social-link svg {
+    fill: white;
+}
+.fullpage--single .page-header {
+    margin-bottom: 20px;
+}
 .fullpage--single .page-header__phone {
     color: #333333;
 }
 .fullpage--single .page-header__phone::after {
     background: url("../img/icon/phone-blue.svg") no-repeat center/contain;
+}
+.fullpage--single .page-header__social-link svg {
+    fill: #2b84f7;
 }
 .fullpage--service .page-header {
     padding-bottom: 51px;
@@ -7794,6 +7823,10 @@ input:checked ~ .field-checkbox__name-text:after {
     }
     .page-header__cb:hover {
         color: #b3b3b3;
+    }
+    .page-header__social {
+        position: static;
+        margin-right: 35px;
     }
     .page-footer__top {
         padding-top: 67px;
