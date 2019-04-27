@@ -60,6 +60,12 @@ $(document).ready(function() {
       '<div class="fancybox-caption"></div>' +
       "</div>" +
       "</div>",
+      beforeShow: function () {
+        $(".burger").addClass("burger--active");
+      },
+      beforeClose: function () {
+        $(".burger").removeClass("burger--active");
+      }
   });
 
   $(".calculator__tab").on("click", function() {
@@ -98,6 +104,12 @@ $(document).ready(function() {
       afterClose: function () {
         $(".menu__title").removeClass("menu__title--active");
         $(".menu__submenu").slideUp("slow");
+      },
+      beforeShow: function () {
+        $(".burger").addClass("burger--active");
+      },
+      beforeClose: function () {
+        $(".burger").removeClass("burger--active");
       }
     });
 

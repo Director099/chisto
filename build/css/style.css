@@ -2404,6 +2404,9 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     transition: 0.3s;
     background: #1d7df6;
 }
+.burger:focus {
+    outline: none;
+}
 .burger__span {
     position: absolute;
     bottom: 7px;
@@ -2412,6 +2415,19 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     height: 2px;
     background: #1d7df6;
     transition: 0.3s;
+}
+.burger--active .burger__span {
+    width: 0;
+}
+.burger--active::after {
+    top: 50%;
+    transform: rotate(-45deg);
+    height: 2px;
+}
+.burger--active::before {
+    top: 50%;
+    margin-top: 0;
+    transform: rotate(45deg);
 }
 .table {
     display: block;
@@ -2845,26 +2861,6 @@ input:checked ~ .field-checkbox__name-text:after {
     position: absolute;
     top: -55px;
     left: -20px;
-    width: 26px;
-    height: 26px;
-    padding: 12px;
-    border-radius: 50%;
-    border: none;
-    background: transparent;
-    z-index: 9;
-}
-.menu__close::after, .menu__close::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-    height: 100%;
-    width: 1px;
-    background: #1d7df6;
-}
-.menu__close::before {
-    transform: translate(-50%, -50%) rotate(45deg);
 }
 .order-page {
     display: flex;
@@ -6511,6 +6507,29 @@ input:checked ~ .field-checkbox__name-text:after {
     .ml-md-auto, .mx-md-auto {
         margin-left: auto !important;
     }
+    .advantages__column {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 0;
+    }
+    .fullpage__row--xs-cr {
+        flex-direction: row;
+    }
+    .fullpage__column {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .main-block__btn {
+        position: static;
+        padding: 24px 20px 19px;
+        max-width: 320px;
+        width: 100%;
+        font-size: 18px;
+    }
     .developer__row {
         flex-direction: row;
         justify-content: space-around;
@@ -6518,6 +6537,9 @@ input:checked ~ .field-checkbox__name-text:after {
     .developer__text {
         font-size: 12px;
         margin-bottom: 0px;
+    }
+    .clients__list {
+        justify-content: flex-start;
     }
     .calc-service__wrap-chek + .calc-service__title {
         width: auto;
@@ -7076,14 +7098,8 @@ input:checked ~ .field-checkbox__name-text:after {
     .modal-lg, .modal-xl {
         max-width: 800px;
     }
-    .fullpage__row--xs-cr {
-        flex-direction: row;
-    }
-    .fullpage__column {
-        flex: 0 0 50%;
-        max-width: 50%;
-        padding-left: 15px;
-        padding-right: 15px;
+    .clients__list {
+        justify-content: space-between;
     }
 }
 @media (min-width: 1200px) {
@@ -7656,7 +7672,7 @@ input:checked ~ .field-checkbox__name-text:after {
         background-color: #808495;
     }
     .menu {
-        padding: 85px 0 55px;
+        padding: 129px 0 55px;
     }
     .menu__title {
         font-size: 40px;
@@ -7697,7 +7713,7 @@ input:checked ~ .field-checkbox__name-text:after {
     }
     .menu__close {
         left: -55px;
-        top: -40px;
+        top: -90px;
     }
     .advantages {
         max-width: 1170px;
@@ -7713,13 +7729,6 @@ input:checked ~ .field-checkbox__name-text:after {
         left: 0;
         right: 0;
         transform: translateY(0px);
-    }
-    .advantages__column {
-        flex: 0 0 33.33333%;
-        max-width: 33.33333%;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-bottom: 0;
     }
     .advantages__item {
         flex-direction: row;
@@ -7846,12 +7855,6 @@ input:checked ~ .field-checkbox__name-text:after {
     .main-block__list {
         display: block;
         margin-bottom: 52px;
-    }
-    .main-block__btn {
-        position: static;
-        padding: 24px 83px 19px;
-        font-size: 18px;
-        max-width: inherit;
     }
     .main-block__btn-form {
         font-size: 18px;

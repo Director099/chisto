@@ -70,8 +70,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  // padding-bottom: 150px;
-  // padding-left: 44px;
+
+  @media (min-width: $screen-md) {
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $screen-lg) {
+    justify-content: space-between;
+  }
 }
 
 .clients__item {

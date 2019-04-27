@@ -103,11 +103,12 @@
   letter-spacing: 0.45px;
   padding: 18px 79px 20px;
 
-  @media (min-width: $screen-xl) {
+  @media (min-width: $screen-md) {
     position: static;
-    padding: 24px 83px 19px;
+    padding: 24px 20px 19px;
+    max-width: 320px;
+    width: 100%;
     font-size: 18px;
-    max-width: inherit;
   }
 }
 

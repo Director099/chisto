@@ -50,7 +50,7 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: $screen-xl) {
+  @media (min-width: $screen-md) {
     @include make-col(4);
     margin-bottom: 0;
   }
