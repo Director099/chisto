@@ -3,7 +3,7 @@
 }
 
 .contacts .title {
-  @media (max-width: 1199px) {
+  @media (max-width: 767px) {
     font-size: 30px;
     text-align: center;
   }
@@ -157,24 +157,29 @@
     margin-right: 0;
   }
 
-  &--insta {
-    background-image: url("../img/icon/instagram.svg");
+  &--insta svg {
+    fill: red;
+    // background-image: url("../img/icon/instagram.svg");
   }
 
-  &--youtube {
-    background-image: url("../img/icon/youtube.svg");
+  &--youtube svg {
+    fill: #ff0000;
+    // background-image: url("../img/icon/youtube.svg");
   }
 
-  &--vk {
-    background-image: url("../img/icon/vk.svg");
+  &--vk svg {
+    fill: #4a76a8;
+    // background-image: url("../img/icon/vk.svg");
   }
 
-  &--whatsapp {
-    background-image: url("../img/icon/viber.svg");
+  &--whatsapp svg {
+    fill: #29a71a;
+    // background-image: url("../img/icon/viber.svg");
   }
 
-  &--telega {
-    background-image: url("../img/icon/telegram.svg");
+  &--telega svg {
+    fill: #2ea6d9 ;
+    // background-image: url("../img/icon/telegram.svg");
   }
 }
 

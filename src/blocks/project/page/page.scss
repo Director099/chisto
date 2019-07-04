@@ -2,10 +2,12 @@
   position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
+  overflow: hidden;
 
   @media (min-width: $screen-xl) {
     padding-top: 175px;
     padding-bottom: 110px;
+    overflow: visible;
   }
 
   &::after {
@@ -148,6 +150,7 @@
 }
 
 .page__previev-right {
+  display: none;
   margin-left: 34px;
   height: 400px;
   box-shadow: 0 23px 43px rgba(195, 200, 206, 0.63);
@@ -161,5 +164,7 @@
     object-fit: cover;
   }
 
-
+  @media (min-width: $screen-lg) {
+    display: block;
+  }
 }

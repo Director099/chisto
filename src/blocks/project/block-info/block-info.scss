@@ -1,7 +1,7 @@
 .block-info {
   padding-top: 39px;
-  padding-bottom: 19px;
-  background-image: linear-gradient(to bottom, #1f2831 0%, #0e0f17 100%);
+  padding-bottom: 39px;
+  // background-image: linear-gradient(to bottom, #1f2831 0%, #0e0f17 100%);
 
   @media (min-width: $screen-xl) {
     padding-top: 88px;
@@ -16,7 +16,7 @@
 .block-info__column {
   @include make-col-ready();
 
-  @media (min-width: $screen-xl) {
+  @media (min-width: $screen-md) {
     @include make-col(6)
     //max-width: 490px;
   }

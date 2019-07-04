@@ -1,10 +1,18 @@
 .quest {
-  max-width: 455px;
   margin-left: auto;
+
+  @media (min-width: $screen-xl) {
+    max-width: 455px;
+  }
 }
 
 .quest__header {
   margin-bottom: 31px;
+  text-align: center;
+
+  @media (min-width: $screen-md) {
+    text-align: left;
+  }
 }
 
 .quest__title {
@@ -65,7 +73,12 @@
   font-weight: 400;
   box-shadow: none;
   padding-top: 19px;
+  margin-top: 15px;
   padding-bottom: 17px;
+
+  @media (min-width: $screen-xl) {
+    margin-top: 0;
+  }
 }
 
 .quest .field-checkbox {

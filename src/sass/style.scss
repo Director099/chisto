@@ -66,6 +66,10 @@
 @import "../blocks/project/calc-service/calc-service";
 @import "../blocks/project/social-fix/social-fix";
 
+.footer-wrap {
+  background-image: linear-gradient(to bottom,#1f2831 0%,#0e0f17 100%);
+}
+
 .visible-xl {
   display: none;
 

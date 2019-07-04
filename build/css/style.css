@@ -2989,11 +2989,8 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .page-header__logo {
     display: block;
-    position: absolute;
-    left: 50%;
-    top: -11px;
-    transform: translateX(-50%);
     max-width: 135px;
+    transform: translateY(-5px);
 }
 .page-header__phone {
     font-size: 0;
@@ -3006,15 +3003,13 @@ input:checked ~ .field-checkbox__name-text:after {
     background-size: 14px, auto;
 }
 .page-header__burger {
-    margin-right: 47px;
+    margin-right: 15px;
 }
 .page-header__cb {
     display: none;
 }
 .page-header__social {
-    position: absolute;
-    right: 0;
-    top: 50px;
+    margin-right: 15px;
 }
 .page-header__social-link {
     display: inline-block;
@@ -3031,13 +3026,15 @@ input:checked ~ .field-checkbox__name-text:after {
 .page-header__social-link:last-child {
     margin-right: 0;
 }
+.page-header__social-link--telega svg {
+    fill: #2ea6d9;
+}
+.page-header__social-link--whatsapp svg {
+    fill: #29a71a;
+}
 .page-footer__top {
     padding-top: 48px;
     padding-bottom: 5px;
-    background-color: #11161d;
-}
-.page-footer__bottom {
-    background-color: #11161d;
 }
 .page-footer__row {
     list-style-type: none;
@@ -3095,9 +3092,6 @@ input:checked ~ .field-checkbox__name-text:after {
     z-index: -1;
     background: rgba(0, 0, 0, 0.48);
 }
-.fullpage--service .page-header__social-link svg {
-    fill: white;
-}
 .fullpage--single .page-header {
     margin-bottom: 20px;
 }
@@ -3106,9 +3100,6 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .fullpage--single .page-header__phone::after {
     background: url("../img/icon/phone-blue.svg") no-repeat center/contain;
-}
-.fullpage--single .page-header__social-link svg {
-    fill: #2b84f7;
 }
 .fullpage--service .page-header {
     padding-bottom: 51px;
@@ -3598,8 +3589,7 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .block-info {
     padding-top: 39px;
-    padding-bottom: 19px;
-    background-image: linear-gradient(to bottom, #1f2831 0%, #0e0f17 100%);
+    padding-bottom: 39px;
 }
 .block-info__row {
     display: flex;
@@ -3614,11 +3604,11 @@ input:checked ~ .field-checkbox__name-text:after {
     padding-left: 15px;
 }
 .quest {
-    max-width: 455px;
     margin-left: auto;
 }
 .quest__header {
     margin-bottom: 31px;
+    text-align: center;
 }
 .quest__title {
     margin-bottom: 5px;
@@ -3671,6 +3661,7 @@ input:checked ~ .field-checkbox__name-text:after {
     font-weight: 400;
     box-shadow: none;
     padding-top: 19px;
+    margin-top: 15px;
     padding-bottom: 17px;
 }
 .quest .field-checkbox {
@@ -3837,20 +3828,20 @@ input:checked ~ .field-checkbox__name-text:after {
 .contacts__social-link:last-child {
     margin-right: 0;
 }
-.contacts__social-link--insta {
-    background-image: url("../img/icon/instagram.svg");
+.contacts__social-link--insta svg {
+    fill: red;
 }
-.contacts__social-link--youtube {
-    background-image: url("../img/icon/youtube.svg");
+.contacts__social-link--youtube svg {
+    fill: #ff0000;
 }
-.contacts__social-link--vk {
-    background-image: url("../img/icon/vk.svg");
+.contacts__social-link--vk svg {
+    fill: #4a76a8;
 }
-.contacts__social-link--whatsapp {
-    background-image: url("../img/icon/viber.svg");
+.contacts__social-link--whatsapp svg {
+    fill: #29a71a;
 }
-.contacts__social-link--telega {
-    background-image: url("../img/icon/telegram.svg");
+.contacts__social-link--telega svg {
+    fill: #2ea6d9;
 }
 .reviews {
     position: relative;
@@ -4527,6 +4518,8 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .reglament__tab {
     width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .reglament__tab img {
     max-width: inherit;
@@ -5062,6 +5055,7 @@ input:checked ~ .field-checkbox__name-text:after {
     position: relative;
     padding-top: 20px;
     padding-bottom: 20px;
+    overflow: hidden;
 }
 .page::after {
     content: "";
@@ -5145,6 +5139,7 @@ input:checked ~ .field-checkbox__name-text:after {
     height: 100%;
 }
 .page__previev-right {
+    display: none;
     margin-left: 34px;
     height: 400px;
     box-shadow: 0 23px 43px rgba(195, 200, 206, 0.63);
@@ -5256,13 +5251,13 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .calc-service__title span {
     margin-right: 11px;
-    white-space: nowrap;
 }
 .calc-service__checkbox-text {
     font-size: 14px;
     font-weight: 500;
     color: #333333;
     cursor: pointer;
+    padding-right: 15px;
 }
 .calc-service__check {
     display: none;
@@ -5283,6 +5278,7 @@ input:checked ~ .field-checkbox__name-text:after {
     background-color: #e0ebf2;
     cursor: pointer;
     transition: 0.3s;
+    flex-shrink: 0;
 }
 .calc-service__checkbox::after {
     content: "";
@@ -5405,6 +5401,9 @@ input:checked ~ .field-checkbox__name-text:after {
 .social-fix__link--facebook {
     background-image: url("../img/icon-messager/facebook.svg");
 }
+.footer-wrap {
+    background-image: linear-gradient(to bottom, #1f2831 0%, #0e0f17 100%);
+}
 .visible-xl {
     display: none;
 }
@@ -5416,8 +5415,13 @@ input:checked ~ .field-checkbox__name-text:after {
         justify-content: flex-start;
         flex-direction: row;
     }
+    .calc-service__wrap-chek + input + input + input + .calc-service__title {
+        width: auto;
+        margin-top: 0;
+    }
     .calc-service__checkbox-text {
         margin-left: 24px;
+        padding-right: 0;
     }
     .calc-service__checkbox {
         margin-right: 0;
@@ -6559,6 +6563,15 @@ input:checked ~ .field-checkbox__name-text:after {
         width: 100%;
         font-size: 18px;
     }
+    .block-info__column {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .quest__header {
+        text-align: left;
+    }
     .developer__row {
         flex-direction: row;
         justify-content: space-around;
@@ -6574,9 +6587,8 @@ input:checked ~ .field-checkbox__name-text:after {
         width: auto;
         margin-top: 0;
     }
-    .calc-service__wrap-chek + input + input + input + .calc-service__title {
-        width: auto;
-        margin-top: 0;
+    .calc-service__title span {
+        white-space: nowrap;
     }
 }
 @media (min-width: 992px) {
@@ -7129,6 +7141,9 @@ input:checked ~ .field-checkbox__name-text:after {
     }
     .clients__list {
         justify-content: space-between;
+    }
+    .page__previev-right {
+        display: block;
     }
 }
 @media (min-width: 1200px) {
@@ -7780,7 +7795,7 @@ input:checked ~ .field-checkbox__name-text:after {
     }
     .page-header__logo {
         position: static;
-        transform: translateX(0);
+        transform: translate(0);
         max-width: 185px;
     }
     .page-header__phone {
@@ -7825,7 +7840,6 @@ input:checked ~ .field-checkbox__name-text:after {
         color: #b3b3b3;
     }
     .page-header__social {
-        position: static;
         margin-right: 35px;
     }
     .page-footer__top {
@@ -8046,7 +8060,7 @@ input:checked ~ .field-checkbox__name-text:after {
     .service__info {
         border-radius: 10px 0;
         max-width: 221px;
-        padding: 27px 20px 30px 24px;
+        padding: 27px 15px 30px 15px;
     }
     .service__btn {
         display: block;
@@ -8073,11 +8087,8 @@ input:checked ~ .field-checkbox__name-text:after {
         padding-top: 88px;
         padding-bottom: 61px;
     }
-    .block-info__column {
-        flex: 0 0 50%;
-        max-width: 50%;
-        padding-left: 15px;
-        padding-right: 15px;
+    .quest {
+        max-width: 455px;
     }
     .quest__col-7 {
         flex: 0 0 55.83333%;
@@ -8094,6 +8105,9 @@ input:checked ~ .field-checkbox__name-text:after {
         padding-right: 15px;
         padding-left: 8px;
         padding-right: 8px;
+    }
+    .quest__btn {
+        margin-top: 0;
     }
     .developer {
         padding-top: 54px;
@@ -8425,6 +8439,7 @@ input:checked ~ .field-checkbox__name-text:after {
     .page {
         padding-top: 175px;
         padding-bottom: 110px;
+        overflow: visible;
     }
     .page h1, .page h2, .page h3, .page h4 {
         font-size: 40px;
@@ -8490,26 +8505,11 @@ input:checked ~ .field-checkbox__name-text:after {
         display: inline-flex !important;
     }
 }
-@media (prefers-reduced-motion: reduce) {
-    .modal.fade .modal-dialog {
-        transition: none;
-    }
-    .fade {
-        transition: none;
-    }
-    .collapsing {
-        transition: none;
-    }
-}
 @media (max-width: 1199px) {
     .main-block__title {
         font-size: 30px;
         font-weight: 500;
         line-height: 42px;
-    }
-    .contacts .title {
-        font-size: 30px;
-        text-align: center;
     }
     .reviews__title {
         font-size: 30px;
@@ -8541,5 +8541,22 @@ input:checked ~ .field-checkbox__name-text:after {
         width: 31px;
         height: 2px;
         background-color: #a5acb5;
+    }
+}
+@media (max-width: 767px) {
+    .contacts .title {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .modal.fade .modal-dialog {
+        transition: none;
+    }
+    .fade {
+        transition: none;
+    }
+    .collapsing {
+        transition: none;
     }
 }
