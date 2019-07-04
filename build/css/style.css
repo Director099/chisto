@@ -4518,8 +4518,6 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .reglament__tab {
     width: 100%;
-    border-radius: 10px;
-    overflow: hidden;
 }
 .reglament__tab img {
     max-width: inherit;
@@ -8303,6 +8301,7 @@ input:checked ~ .field-checkbox__name-text:after {
     .reglament__tab img {
         max-width: 100%;
         height: auto;
+        border-radius: 10px;
     }
     .cleaning__slider {
         padding-left: 85px;

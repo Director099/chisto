@@ -76,8 +76,6 @@
 
 .reglament__tab {
   width: 100%;
-  border-radius: 10px;
-  overflow: hidden;
 }
 
 .reglament__tab  img {
@@ -87,5 +85,6 @@
   @media (min-width: $screen-xl) {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
   }
 }
