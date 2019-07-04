@@ -128,12 +128,16 @@
 
 .page-header__social-link {
   display: inline-block;
-  margin-right: 15px;
   width: 15px;
   height: 15px;
+  margin-right: 10px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-width: $screen-md) {
+    margin-right: 15px;
+  }
 
   svg {
     fill: #a3acb7;

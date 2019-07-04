@@ -3013,9 +3013,9 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .page-header__social-link {
     display: inline-block;
-    margin-right: 15px;
     width: 15px;
     height: 15px;
+    margin-right: 10px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -6546,6 +6546,9 @@ input:checked ~ .field-checkbox__name-text:after {
         padding-left: 15px;
         padding-right: 15px;
         margin-bottom: 0;
+    }
+    .page-header__social-link {
+        margin-right: 15px;
     }
     .fullpage__row--xs-cr {
         flex-direction: row;
