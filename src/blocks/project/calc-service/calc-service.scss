@@ -21,7 +21,6 @@
   align-items: center;
   width: 100%;
   margin: 0;
-  //filter: grayscale(100%);
 
   @media (min-width: $screen-sm) {
     justify-content: flex-start;
@@ -101,7 +100,7 @@
   height: 23px;
   margin-right: 60px;
   border-radius: 12px;
-  background-color: #e0ebf2;
+  background-color: darken(#e0ebf2, 10%);
   cursor: pointer;
   transition: $time;
   flex-shrink: 0;

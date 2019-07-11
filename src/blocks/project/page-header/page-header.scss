@@ -140,18 +140,18 @@
   }
 
   svg {
-    fill: #a3acb7;
+    fill: $white;
   }
 
   &:last-child {
     margin-right: 0;
   }
 
-  &--telega svg {
-    fill: #2ea6d9;
-  }
+  // &--telega svg {
+  //   fill: #2ea6d9;
+  // }
 
-  &--whatsapp svg {
-    fill: #29a71a;
-  }
+  // &--whatsapp svg {
+  //   fill: #29a71a;
+  // }
 }
