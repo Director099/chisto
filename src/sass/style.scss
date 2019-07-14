@@ -70,6 +70,10 @@
   background-image: linear-gradient(to bottom,#1f2831 0%,#0e0f17 100%);
 }
 
+.footer-wrap .page-footer:first-child {
+  background: lighten(#181d26, 5%);
+}
+
 .visible-xl {
   display: none;
 
