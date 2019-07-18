@@ -3016,26 +3016,16 @@ input:checked ~ .field-checkbox__name-text:after {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     margin-right: 10px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     border-radius: 50px;
-    background: white;
 }
 .page-header__social-link svg {
     fill: white;
 }
 .page-header__social-link:last-child {
     margin-right: 0;
-}
-.page-header__social-link--telega svg {
-    fill: #2ea6d9;
-}
-.page-header__social-link--whatsapp svg {
-    fill: #29a71a;
 }
 .page-footer__top {
     padding-top: 48px;
@@ -6548,7 +6538,7 @@ input:checked ~ .field-checkbox__name-text:after {
         margin-bottom: 0;
     }
     .page-header__social {
-        margin-right: 35px;
+        margin-right: 25px;
     }
     .page-header__social-link {
         margin-right: 15px;
@@ -8402,11 +8392,13 @@ input:checked ~ .field-checkbox__name-text:after {
     }
     .calculator__left {
         max-width: 700px;
+        flex-shrink: 0;
         padding: 55px 38px 50px;
         background-color: #f3f5f7;
     }
     .calculator__right {
         display: block;
+        flex-grow: 1;
         width: auto;
         padding: 55px 38px 50px;
     }
