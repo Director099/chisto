@@ -88,6 +88,15 @@
   }
 }
 
+.main-block__list li a {
+  display: inline-block;
+  color: $white;
+
+  &:hover {
+    color: $white;
+  }
+}
+
 .main-block__btn {
   position: absolute;
   bottom: -398px;

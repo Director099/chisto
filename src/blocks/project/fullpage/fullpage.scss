@@ -105,8 +105,9 @@
 }
 
 .fullpage--service .page-header__phone {
-  background-color: $white;
-  background-image: url("../img/icon/phone-blue.svg");
+  // background-color: $white;
+  // background-image: url("../img/icon/phone-blue.svg");
+  background-image: url("../img/icon/phone-white.svg"), linear-gradient(to top, #006ef7 0%, #6aa5f5 100%);
 
   @media (min-width: $screen-xl) {
     background: transparent;

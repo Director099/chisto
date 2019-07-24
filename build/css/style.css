@@ -3100,8 +3100,7 @@ input:checked ~ .field-checkbox__name-text:after {
     padding-bottom: 51px;
 }
 .fullpage--service .page-header__phone {
-    background-color: white;
-    background-image: url("../img/icon/phone-blue.svg");
+    background-image: url("../img/icon/phone-white.svg"), linear-gradient(to top, #006ef7 0%, #6aa5f5 100%);
 }
 .fullpage--y-sb {
     display: flex;
@@ -3192,6 +3191,13 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .main-block__list li:last-child {
     margin-bottom: 0;
+}
+.main-block__list li a {
+    display: inline-block;
+    color: white;
+}
+.main-block__list li a:hover {
+    color: white;
 }
 .main-block__btn {
     position: absolute;
