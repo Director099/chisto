@@ -2369,6 +2369,12 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 .btn--main:hover, .btn--main:visited {
     color: white;
 }
+.btn--xl-hidden {
+    display: block;
+}
+.btn--xs-hidden {
+    display: none;
+}
 .burger {
     position: relative;
     font-size: 0;
@@ -2696,6 +2702,32 @@ input:checked ~ .field-checkbox__name-text:after {
     font-size: 52px;
     font-weight: 500;
     line-height: 62px;
+}
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    overflow: hidden;
+}
+.embed-responsive::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+}
+.embed-responsive iframe, .embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.embed-responsive--4-3::before {
+    padding-top: 75%;
 }
 .breadcrumbs {
     padding: 0;
@@ -3105,7 +3137,14 @@ input:checked ~ .field-checkbox__name-text:after {
 .fullpage--y-sb {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+.fullpage__wrapper {
+    flex-grow: 1;
+}
+.fullpage__wrapper--center {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 40px;
 }
 .fullpage__relative {
     position: relative;
@@ -3124,6 +3163,10 @@ input:checked ~ .field-checkbox__name-text:after {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+}
+.fullpage__column--as-c {
+    -ms-grid-row-align: center;
+    align-self: center;
 }
 .fullpage__mt {
     margin-top: 10px;
@@ -3176,9 +3219,16 @@ input:checked ~ .field-checkbox__name-text:after {
     font-weight: 300;
     line-height: 25px;
     margin-bottom: 29px;
+}
+.main-block__list li:last-child {
+    margin-bottom: 0;
+}
+.main-block__list li a {
+    display: inline-block;
+    color: white;
     padding-left: 50px;
 }
-.main-block__list li::after {
+.main-block__list li a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -3189,25 +3239,13 @@ input:checked ~ .field-checkbox__name-text:after {
     border-radius: 3px;
     border: 5px solid #6aa5f5;
 }
-.main-block__list li:last-child {
-    margin-bottom: 0;
-}
-.main-block__list li a {
-    display: inline-block;
-    color: white;
-}
 .main-block__list li a:hover {
     color: white;
 }
 .main-block__btn {
-    position: absolute;
-    bottom: -398px;
-    left: 0;
     z-index: 1;
-    font-size: 16px;
-    right: 0;
     max-width: 290px;
-    margin: auto;
+    margin: 40px auto 0px;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.45px;
@@ -6551,22 +6589,6 @@ input:checked ~ .field-checkbox__name-text:after {
         width: 30px;
         height: 30px;
     }
-    .fullpage__row--xs-cr {
-        flex-direction: row;
-    }
-    .fullpage__column {
-        flex: 0 0 50%;
-        max-width: 50%;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    .main-block__btn {
-        position: static;
-        padding: 24px 20px 19px;
-        max-width: 320px;
-        width: 100%;
-        font-size: 18px;
-    }
     .block-info__column {
         flex: 0 0 50%;
         max-width: 50%;
@@ -7698,6 +7720,12 @@ input:checked ~ .field-checkbox__name-text:after {
     .modal-xl {
         max-width: 1140px;
     }
+    .btn--xl-hidden {
+        display: none;
+    }
+    .btn--xs-hidden {
+        display: inline-block;
+    }
     .title {
         font-size: 40px;
         line-height: 56px;
@@ -7879,6 +7907,15 @@ input:checked ~ .field-checkbox__name-text:after {
     .fullpage--service .page-header__phone::after {
         background-image: url("../img/icon/phone-white.svg");
     }
+    .fullpage__row--xs-cr {
+        flex-direction: row;
+    }
+    .fullpage__column {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .fullpage__la {
         margin-left: auto;
     }
@@ -7903,6 +7940,14 @@ input:checked ~ .field-checkbox__name-text:after {
     .main-block__list {
         display: block;
         margin-bottom: 52px;
+    }
+    .main-block__btn {
+        position: static;
+        margin-top: 0px;
+        padding: 24px 20px 19px;
+        max-width: 320px;
+        width: 100%;
+        font-size: 18px;
     }
     .main-block__btn-form {
         font-size: 18px;
@@ -8366,6 +8411,8 @@ input:checked ~ .field-checkbox__name-text:after {
     }
     .calculator {
         margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
         box-shadow: 0 17px 62px rgba(176, 183, 192, 0.89);
     }
     .calculator__row {

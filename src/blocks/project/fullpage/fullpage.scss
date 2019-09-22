@@ -56,9 +56,6 @@
     background: rgba($black, 0.48%);
   }
 
-  // .page-header__social-link svg {
-  //   fill: $white;
-  // }
 }
 
 .fullpage--single {
@@ -78,10 +75,6 @@
       background: url("../img/icon/phone-blue.svg") no-repeat center/contain;
     }
   }
-
-  // .page-header__social-link svg {
-  //   fill: #2b84f7;
-  // }
 }
 
 .fullpage--service .page-header {
@@ -92,21 +85,8 @@
   }
 }
 
-.fullpage--service .burger {
-
-  // &::after,
-  // &::before {
-  //   background: $white;
-  // }
-
-  // .burger__span {
-  //   background: $white;
-  // }
-}
 
 .fullpage--service .page-header__phone {
-  // background-color: $white;
-  // background-image: url("../img/icon/phone-blue.svg");
   background-image: url("../img/icon/phone-white.svg"), linear-gradient(to top, #006ef7 0%, #6aa5f5 100%);
 
   @media (min-width: $screen-xl) {
@@ -121,7 +101,17 @@
 .fullpage--y-sb {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  //justify-content: space-between;
+}
+
+.fullpage__wrapper {
+  flex-grow: 1;
+
+  &--center {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 40px;
+  }
 }
 
 .fullpage__relative {
@@ -134,7 +124,7 @@
   &--xs-cr {
     flex-direction: column-reverse;
 
-    @media (min-width: $screen-md) {
+    @media (min-width: $screen-xl) {
       flex-direction: row;
     }
   }
@@ -143,7 +133,11 @@
 .fullpage__column {
   @include make-col-ready();
 
-  @media (min-width: $screen-md) {
+  &--as-c {
+    align-self: center;
+  }
+
+  @media (min-width: $screen-xl) {
     @include make-col(6);
   }
 }

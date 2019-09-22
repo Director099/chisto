@@ -84,3 +84,20 @@ $border-radius:               rem(3px) !default;
     }
   }
 }
+
+.btn {
+  &--xl-hidden {
+    display: block;
+    @media (min-width: $screen-xl) {
+      display: none;
+    }
+  }
+
+  &--xs-hidden {
+    display: none;
+
+    @media (min-width: $screen-xl) {
+      display: inline-block;
+    }
+  }
+}

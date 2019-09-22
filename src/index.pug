@@ -5,30 +5,28 @@ block meta
 block header
   .fullpage.fullpage--main.fullpage--y-sb(style="background-image: url('../img/decor/bg-main-1.jpg')")
     +page-header()
-    .container
-      .fullpage__relative
-        span.decor-text.fullpage__dec-text листай дальше
-        .fullpage__row.fullpage__row--xs-cr
-          .fullpage__column
-            .video-content
-              img(src="img/content/man.png", alt="Представитель «Чистоград»")
-              a.video-content__play(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk", aria-label="Воспроизведение видео" data-fancybox="")
-                span
-              .video-content__text-wrap
-                p Узнайте все об услугах, гарантиях, стоимостии и качестве за 30 секунд
-          .fullpage__column
-            section.main-block.fullpage__mt.fullpage__la
-              h1.title.main-block__title «Чистоград» — клининговая компания
-              p.main-block__tagline полный спектром частных и коммерческих услуг
-              ul.main-block__list
-                li
-                  a(href="#1") Уборка квартир, офисов, коттеджей, помещений коммерческого и промышленного назначения
-                li
-                  a(href="#1") Химчистка ковров и мягкой мебели, мойка окон, витрин и фасадов
-              a.btn.btn--main.main-block__btn(href="#main") Выбрать услугу
+    .fullpage__wrapper.fullpage__wrapper--center
+      .container
+        .fullpage__relative
+          span.decor-text.fullpage__dec-text листай дальше
+          .fullpage__row.fullpage__row--xs-cr
+            .fullpage__column.fullpage__column--as-c
+              .embed-responsive
+                iframe(src="https://www.youtube.com/embed/8g03t2kx9Vw" allowfullscreen)
+              a.btn.btn--main.btn--xl-hidden.main-block__btn(href="#main") Выбрать услугу
+            .fullpage__column
+              section.main-block.fullpage__mt.fullpage__la
+                h1.title.main-block__title «Чистоград» — клининговая компания
+                p.main-block__tagline полный спектром частных и коммерческих услуг
+                ul.main-block__list
+                  li
+                    a(href="#1") Уборка квартир, офисов, коттеджей, помещений коммерческого и промышленного назначения
+                  li
+                    a(href="#1") Химчистка ковров и мягкой мебели, мойка окон, витрин и фасадов
+                a.btn.btn--main.btn--xs-hidden.main-block__btn(href="#main") Выбрать услугу
 block content
   main.main-page(id="main")
-    section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')")
+    section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')" id="1")
       .block-serv__wrap.block-serv__wrap--service
         .container
           .service
