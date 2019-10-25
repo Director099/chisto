@@ -3,9 +3,40 @@ mixin menu()
     .menu__main
       button.burger.menu__close(data-fancybox-close="" aria-label="Закрыть меню")
         span.burger__span
-      //- button.menu__close(data-fancybox-close="" aria-label="Закрыть меню")
-      h3.menu__title(data-menu-toggle="") УСЛУГИ
-      .menu__submenu
+      header.menu__main-header
+        h3.menu__title(data-menu-toggle="") УСЛУГИ
+        .menu__main-links
+          a.menu__title.menu__title--middle(href="#") Главная
+          a.menu__title.menu__title--middle(href="#") О компании
+          a.menu__title.menu__title--middle(href="#") Контакты
+          a.menu__title.menu__title--middle(href="#") Вакансии
+          a.menu__title.menu__title--middle.js-news(href="#") Статьи
+      .menu__sub.menu__sub--news.js-news-collapse
+        .menu__submenu
+          section.menu__submenu-item
+            h4.menu__submenu-title Уборка квартир. Статьи
+            ul.menu__submenu-menu
+              li
+                a(href="#") Как быстрее убрать квартиру?
+              li
+                a(href="#") Счего начать уборку?
+              li
+                a(href="#") Какой тряпкой вытерать пыль
+          section.menu__submenu-item
+            h4.menu__submenu-title Лайфхаки по уборки
+            ul.menu__submenu-menu
+              li
+                a(href="#") Как отмыть кровь с любой поверхности?
+              li
+                a(href="#") Как удалить жир?
+          section.menu__submenu-item
+            h4.menu__submenu-title Советы проффесионалов
+            ul.menu__submenu-menu
+              li
+                a(href="#") Безвредная химия
+              li
+                a(href="#") Цена на химчистку
+      .menu__submenu.js-collapse-service
         section.menu__submenu-item
           h4.menu__submenu-title УБОРКА
           ul.menu__submenu-menu
@@ -42,8 +73,6 @@ mixin menu()
               a(href="#") уборка снега
             li
               a(href="#") услуги ассенизатора
-      a.menu__title.menu__title--middle(href="#") О компании
-      a.menu__title.menu__title--middle(href="#") Контакты
       ul.menu__messager
         li.menu__messager-item
           a.menu__messager-link(href="#") WhatsApp

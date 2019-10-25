@@ -71,6 +71,12 @@ $border-radius:               rem(3px) !default;
     }
   }
 
+  &--success {
+    color: $white;
+    background-color: #22B573;
+    border-radius: 6px;
+    border-color: #22B573;
+  }
 
   &--main {
     color: $white;

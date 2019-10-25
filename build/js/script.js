@@ -179,7 +179,7 @@ $(document).ready(function() {
 
     $('[data-menu-toggle]').click(function () {
       $(this).toggleClass("menu__title--active")
-      $(this).siblings(".menu__submenu").slideToggle("slow", function () {
+      $(this).parents(".menu__main").find(".js-collapse-service").slideToggle("slow", function () {
 
       });
       return false;
@@ -198,14 +198,24 @@ $(document).ready(function() {
       return false;
   });
 
-  // Плавный скол с навигации
+  $(".service__subcategories-text").on("click", function() {
+    $(".service__subcategories-text").removeClass("service__subcategories-text--active");
+    $(this).addClass("service__subcategories-text--active");
 
-  /* $(".scrollto > a").click(function () {
-    var elementClick = $(this).attr("href")
-    var destination = $(elementClick).offset().top;
-    jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
-    return false;
-  }); */
+    // var dataPrice = $(this).data("price");
+    // var dataTime = $(this).data("time");
+    //
+    // $(this).parents(".service__tab-wrap").find(".js-price").text(dataPrice);
+    // $(this).parents(".service__tab-wrap").find(".js-time").text(dataTime);
 
-  // Плавный скол с навигации
+    $('[data-filter]').removeClass("service__subcategories-pane--active");
+
+    $(".service__subcategories-text--active").each(function(){
+      $('[data-filter="'+$(this).data("btn-filter")+'"]').addClass("service__subcategories-pane--active");
+    });
+  })
+
+  $(".js-news").on("click", function() {
+    $(this).parents(".menu__main").find(".js-news-collapse").slideToggle();
+  })
 });

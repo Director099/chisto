@@ -3,7 +3,7 @@ extends pug/layout.pug
 block meta
   title Услуги
 block header
-  .fullpage.fullpage--service.fullpage--y-sb(style="background-image: url('../img/decor/bg-main-2.jpg')")
+  .fullpage.fullpage--service.fullpage--y-sb(style="background-image: url('img/decor/bg-main-2.jpg')")
     +page-header()
     .container
       section.main-block.main-block--big
@@ -37,7 +37,7 @@ block header
 block content
   main
     +calculator()
-    section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')")
+    section.block-serv(style="background-image: url('img/decor/bg-section-1.jpg')")
       .block-serv__wrap.block-serv__wrap--action
         .container
           .block-serv__relative
@@ -78,7 +78,84 @@ block content
                   'img/content/img-action-6.png',
                   ''
                 )
-    section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')")
+    section.block-serv.block-serv--reserv
+      .block-serv__wrap(style="background-image: url('img/decor/reserv-bg.jpg')")
+        .container
+          .reserv
+            h3.title.reserv__title Стань клиентом компании «Чистоград»
+            p.reserv__tagline Оставьте свой номер телефона и за ним мы закрепим акцию на 2 недели. #[br] Вне зависимости от срока действия акции!
+            form.form.reserv__form
+              .reserv__form-wrapper
+                .reserv__form-row.reserv__form-row--end
+                  .reserv__form-col.reserv__form-col--xl-4
+                    .reserve__field
+                      +field-text({
+                        title: 'Введите телефон*',
+                        mods: 'reserv',
+                        val: '',
+                        attrs: {
+                          name: 'comment',
+                          type: 'tel',
+                          placeholder: '+7 (___) ___ __ __',
+                          required: ''
+                        }
+                      })
+                  .reserv__form-col.reserv__form-col--xl-4
+                    .reserve__field
+                      +field-select(
+                        'Выберите акцию:',
+                        {
+                          name: 'select',
+                          id: 'select',
+                          required: ''
+                        },
+                        [
+                          {
+                            title: 'Скидка 10% на уборку при заказе с сайта',
+                            attrs: {
+                              value: '',
+                            }
+                          },
+                          {
+                            title: 'Скидка 5% изменникам',
+                            attrs: {
+                              value: '',
+                            }
+                          },
+                          {
+                            title: 'Скидка 15% на химчистку мебели',
+                            attrs: {
+                              value: '',
+                            }
+                          },
+                          {
+                            title: 'Бесплатно помыть посуду',
+                            attrs: {
+                              value: '',
+                            }
+                          },
+                          {
+                            title: 'Бесплатно помыть холодильник',
+                            attrs: {
+                              value: '',
+                            }
+                          },
+                        ],
+                        ''
+                      )
+                  .reserv__form-col.reserv__form-col--xl-4
+                    button.btn.btn--success.reserv__btn Стать клиентом
+                +field-checkbox([
+                  {
+                    title: 'Я даю свое согласие на обработку <a href="#">персональных данных</a>',
+                    mods: '',
+                    attrs: {
+                      name: 'check1',
+                      checked: true,
+                    }
+                  }
+                ])
+    section.block-serv(style="background-image: url('img/decor/bg-section-1.jpg')")
       .block-serv__wrap.block-serv__wrap--reglament
         .container
           .reglament
@@ -103,8 +180,7 @@ block content
               .tab-pane.reglament__tab.fade(id="reg-tab3" role="tabpanel")
                 img(src="img/content/img-regl-1.jpg", alt="Уборка")
     +cleaning()
-
-    section.block-result.block-result--pt.block-result--reverse(style="background-image: url('../img/decor/bg-section-1.jpg')")
+    section.block-result.block-result--pt.block-result--reverse(style="background-image: url('img/decor/bg-section-1.jpg')")
       .container
         .block-serv__relative
           span.decor-text.block-serv__center-text сотрудники компании
@@ -140,7 +216,7 @@ block content
                   img(src="img/content/result-1.jpg", alt="Результат работ")
                   span.result__play
                     span
-  section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')")
+  section.block-serv(style="background-image: url('img/decor/bg-section-1.jpg')")
       .block-serv__wrap
         .container
           .block-serv__relative
@@ -179,5 +255,39 @@ block content
                   .faq__footer.collapse(id="col-5")
                     .faq__content
                       p С другой стороны постоянный количественный рост и сфера нашей активности требуют определения и уточнения соответствующий условий активизации. Задача организации, в особенности же начало повседневной работы по формированию позиции в значительной степени обуславливает создание форм развития.
+  section.block-serv.block-serv--reserv
+    .block-serv__wrap(style="background-image: url('img/decor/reserv-bg.jpg')")
+      .container
+        .reserv
+          h3.title.reserv__title Закажите уборку прямо сейчас!
+          p.reserv__tagline Впервые на нашем сайте, получите скидку 10% на первый заказ
+          form.form.reserv__form
+            .reserv__form-wrapper.reserv__form-wrapper--width
+              .reserv__form-row.reserv__form-row--end
+                .reserv__form-col.reserv__form-col--xl-6
+                  .reserve__field
+                    +field-text({
+                      title: 'Введите телефон*',
+                      mods: 'reserv',
+                      val: '',
+                      attrs: {
+                        name: 'comment',
+                        type: 'tel',
+                        placeholder: '+7 (___) ___ __ __',
+                        required: ''
+                      }
+                    })
+                .reserv__form-col.reserv__form-col--xl-6
+                  button.btn.btn--success.reserv__btn Заказать уборку
+              +field-checkbox([
+                {
+                  title: 'Я даю свое согласие на обработку <a href="#">персональных данных</a>',
+                  mods: '',
+                  attrs: {
+                    name: 'check1',
+                    checked: true,
+                  }
+                }
+              ])
 block footer
   +page-footer()

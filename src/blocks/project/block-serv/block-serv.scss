@@ -93,6 +93,23 @@
   overflow: hidden;
 }
 
+.block-serv--reserv {
+  padding: 0;
+
+  .block-serv__wrap {
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+
+    @media (min-width: $screen-xl) {
+      padding-bottom: 80px;
+      padding-top: 80px;
+    }
+  }
+
+}
+
 
 .block-serv__wrap--service {
   padding-top: 46px;

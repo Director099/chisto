@@ -43,6 +43,38 @@
   margin: auto;
 }
 
+.menu__main-header {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media (min-width: $screen-xl) {
+    display: flex;
+    margin-bottom: 35px;
+    flex-direction: row;
+  }
+}
+
+.menu__main-links {
+
+
+  @media (min-width: $screen-xl) {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 3px;
+  }
+}
+
+.menu__main-links .menu__title {
+
+  @media (min-width: $screen-xl) {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
 .menu__title {
   display: block;
   font-size: 30px;
@@ -74,7 +106,7 @@
   &::after {
     content: '';
     position: absolute;
-    right: -35px;
+    right: -0px;
     top: 50%;
     margin-top: -8.5px;
     width: 12px;
@@ -236,4 +268,19 @@
   // &::before {
   //   transform: translate(-50%,-50%) rotate(45deg)
   // }
+}
+
+.menu__sub--news {
+
+  .menu__submenu {
+    display: block;
+  }
+
+  @media (min-width: $screen-xl) {
+    display: none;
+
+    .menu__submenu {
+      display: flex;
+    }
+  }
 }

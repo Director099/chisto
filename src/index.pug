@@ -47,8 +47,58 @@ block content
                   span.decor-text услуги химчистки
               .service__col-9
                 .tab-content.service__content
-                  .tab-pane.service__tab.fade.show.active(id="tab-0" role="tabpanel" style="background-image: url('../img/decor/service-1.jpg')")
-                    +service__info()
+                  .tab-pane.service__tab.fade.show.active(id="tab-0" role="tabpanel")
+                    .service__tab-wrap
+                      ul.service__subcategories
+                        li.service__subcategories-item
+                          span.service__subcategories-text.service__subcategories-text--active(data-price="130" data-time="9" data-btn-filter="1") Генеральная уборка
+                        li.service__subcategories-item
+                          span.service__subcategories-text(data-price="190" data-time="3" data-btn-filter="2") Текущая уборка
+                        li.service__subcategories-item
+                          span.service__subcategories-text(data-price="180" data-time="4" data-btn-filter="3") Послетроительная уборка
+                      .service__subcategories-tabs
+                        .service__subcategories-pane.service__subcategories-pane--active(data-filter="1")
+                          img.service__subcategories-img(src="img/decor/service-1.jpg", alt="Изображение")
+                          section.service__info
+                            h3.service__title Генеральная уборка
+                            table.table.service__table
+                              tr
+                                td
+                                  span.service__numb.service__numb--price #[sup от] #[b(class="js-price") 130] #[sub р/м #[sup 2]]
+                                td
+                                  span.service__numb.service__numb--time #[b(class="js-time") ~9] #[sub ч]
+                            p Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты
+                            .service__btn
+                              a.btn.btn--light(href="service.html") Подробнее
+                              a.btn.btn--main(href="#") Заказать
+                        .service__subcategories-pane(data-filter="2")
+                          img.service__subcategories-img(src="img/decor/service-2.jpg", alt="Изображение")
+                          section.service__info
+                            h3.service__title Текущая уборка
+                            table.table.service__table
+                              tr
+                                td
+                                  span.service__numb.service__numb--price #[sup от] #[b(class="js-price") 190] #[sub р/м #[sup 2]]
+                                td
+                                  span.service__numb.service__numb--time #[b(class="js-time") ~3] #[sub ч]
+                            p Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты
+                            .service__btn
+                              a.btn.btn--light(href="service.html") Подробнее
+                              a.btn.btn--main(href="#") Заказать
+                        .service__subcategories-pane(data-filter="3")
+                          img.service__subcategories-img(src="img/decor/service-3.jpg", alt="Изображение")
+                          section.service__info
+                            h3.service__title Послетроительная уборка
+                            table.table.service__table
+                              tr
+                                td
+                                  span.service__numb.service__numb--price #[sup от] #[b(class="js-price") 180] #[sub р/м #[sup 2]]
+                                td
+                                  span.service__numb.service__numb--time #[b(class="js-time") ~4] #[sub ч]
+                            p Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты
+                            .service__btn
+                              a.btn.btn--light(href="service.html") Подробнее
+                              a.btn.btn--main(href="#") Заказать
                   .tab-pane.service__tab.fade(id="tab-1" role="tabpanel" style="background-image: url('../img/decor/service-2.jpg')")
                     +service__info()
                   .tab-pane.service__tab.fade(id="tab-2" role="tabpanel" style="background-image: url('../img/decor/service-3.jpg')")

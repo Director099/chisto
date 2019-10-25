@@ -212,10 +212,11 @@
   width: 100%;
   background-color: $white;
   padding: 17px 20px 26px 24px;
+  z-index: 2;
 
   @media (min-width: $screen-xl) {
     border-radius: 10px 0;
-    max-width: 221px;
+    max-width: 235px;
     padding: 27px 15px 30px 15px;
   }
 }
@@ -288,19 +289,19 @@
   font-weight: 300;
   line-height: 27px;
 
-  &--price {
-    padding-right: 17px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 5px;
-      right: 0;
-      width: 10px;
-      height: 16px;
-      background: url("../img/icon/ruble.svg") no-repeat center / cover;
-    }
-  }
+  //&--price {
+  //  padding-right: 17px;
+  //
+  //  &::after {
+  //    content: "";
+  //    position: absolute;
+  //    bottom: 5px;
+  //    right: 0;
+  //    width: 10px;
+  //    height: 16px;
+  //    background: url("../img/icon/ruble.svg") no-repeat center / cover;
+  //  }
+  //}
 }
 
 .service__numb sup {
@@ -342,3 +343,72 @@
   }
 }
 
+.service__subcategories {
+  @include ul-none();
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  display: flex;
+  text-align: center;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-right: 270px;
+  z-index: 1;
+}
+
+.service__subcategories-item {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+.service__subcategories-text {
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 12px;
+  padding: 13.5px 9px 15.5px;
+  color: $black;
+  background: $white;
+  cursor: pointer;
+
+  &--active {
+    color: $white;
+    background: linear-gradient(to top,#006ef7 0%,#6aa5f5 100%);
+  }
+}
+
+.service__numb b {
+  font-weight: 300;
+  color: #54585f;
+}
+
+.service__tab-wrap {
+  height: 100%;
+  width: 100%;
+}
+
+.service__subcategories-tabs {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.service__subcategories-pane {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: $time;
+  opacity: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &--active {
+    opacity: 1;
+  }
+}

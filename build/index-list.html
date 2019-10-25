@@ -71,8 +71,37 @@
     <div class="menu" id="menu">
         <div class="menu__main">
             <button class="burger menu__close" data-fancybox-close="" aria-label="Закрыть меню"><span class="burger__span"></span></button>
-            <h3 class="menu__title" data-menu-toggle="">УСЛУГИ</h3>
-            <div class="menu__submenu">
+            <header class="menu__main-header">
+                <h3 class="menu__title" data-menu-toggle="">УСЛУГИ</h3>
+                <div class="menu__main-links"><a class="menu__title menu__title--middle" href="#">Главная</a><a class="menu__title menu__title--middle" href="#">О компании</a><a class="menu__title menu__title--middle" href="#">Контакты</a><a class="menu__title menu__title--middle" href="#">Вакансии</a><a class="menu__title menu__title--middle js-news" href="#">Статьи</a></div>
+            </header>
+            <div class="menu__sub menu__sub--news js-news-collapse">
+                <div class="menu__submenu">
+                    <section class="menu__submenu-item">
+                        <h4 class="menu__submenu-title">Уборка квартир. Статьи</h4>
+                        <ul class="menu__submenu-menu">
+                            <li><a href="#">Как быстрее убрать квартиру?</a></li>
+                            <li><a href="#">Счего начать уборку?</a></li>
+                            <li><a href="#">Какой тряпкой вытерать пыль</a></li>
+                        </ul>
+                    </section>
+                    <section class="menu__submenu-item">
+                        <h4 class="menu__submenu-title">Лайфхаки по уборки</h4>
+                        <ul class="menu__submenu-menu">
+                            <li><a href="#">Как отмыть кровь с любой поверхности?</a></li>
+                            <li><a href="#">Как удалить жир?</a></li>
+                        </ul>
+                    </section>
+                    <section class="menu__submenu-item">
+                        <h4 class="menu__submenu-title">Советы проффесионалов</h4>
+                        <ul class="menu__submenu-menu">
+                            <li><a href="#">Безвредная химия</a></li>
+                            <li><a href="#">Цена на химчистку</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="menu__submenu js-collapse-service">
                 <section class="menu__submenu-item">
                     <h4 class="menu__submenu-title">УБОРКА</h4>
                     <ul class="menu__submenu-menu">
@@ -105,7 +134,7 @@
                         <li><a href="#">услуги ассенизатора</a></li>
                     </ul>
                 </section>
-            </div><a class="menu__title menu__title--middle" href="#">О компании</a><a class="menu__title menu__title--middle" href="#">Контакты</a>
+            </div>
             <ul class="menu__messager">
                 <li class="menu__messager-item"><a class="menu__messager-link" href="#">WhatsApp</a></li>
                 <li class="menu__messager-item"><a class="menu__messager-link" href="#">Telegram</a></li>

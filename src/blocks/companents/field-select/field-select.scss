@@ -17,7 +17,7 @@ $border-radius:               rem(3px) !default;
   margin-bottom: 1rem;
 
   &__name {
-    @include field-name;
+    //@include field-name;
   }
 
   &__input-wrap {}
@@ -34,9 +34,9 @@ $border-radius:               rem(3px) !default;
     border-radius: $border-radius;
     appearance: none;
     background-color: #fff;
-    background-image: svg-load('../blocks/field-select/bg-img/select-down.svg');
+    background-image: url('../img/icon/select-down.svg');
     background-repeat: no-repeat;
-    background-position: right 0.3em center;
+    background-position: center right 10px;
     background-size: 1.063em 0.688em;
 
     &[multiple] {
@@ -50,7 +50,7 @@ $border-radius:               rem(3px) !default;
 
     &:active,
     &:focus {
-      @include field-focus;
+      //@include field-focus;
     }
 
     &[disabled],
@@ -61,6 +61,6 @@ $border-radius:               rem(3px) !default;
   }
 
   &__help-text {
-    @include field-help-text;
+    //@include field-help-text;
   }
 }

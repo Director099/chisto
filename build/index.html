@@ -92,26 +92,63 @@
                             </div>
                             <div class="service__col-9">
                                 <div class="tab-content service__content">
-                                    <div class="tab-pane service__tab fade show active" id="tab-0" role="tabpanel" style="background-image: url('../img/decor/service-1.jpg')">
-                                        <section class="service__info">
-                                            <h3 class="service__title">Уборка квартир</h3>
-                                            <table class="table service__table">
-                                                <tr>
-                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> 1350</span></td>
-                                                    <td><span class="service__numb service__numb--time">~2,5 <sub>ч</sub></span></td>
-                                                </tr>
-                                            </table>
-                                            <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
-                                            <div class="service__btn"><a class="btn btn--light" href="service.html">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
-                                        </section>
+                                    <div class="tab-pane service__tab fade show active" id="tab-0" role="tabpanel">
+                                        <div class="service__tab-wrap">
+                                            <ul class="service__subcategories">
+                                                <li class="service__subcategories-item"><span class="service__subcategories-text service__subcategories-text--active" data-price="130" data-time="9" data-btn-filter="1">Генеральная уборка</span></li>
+                                                <li class="service__subcategories-item"><span class="service__subcategories-text" data-price="190" data-time="3" data-btn-filter="2">Текущая уборка</span></li>
+                                                <li class="service__subcategories-item"><span class="service__subcategories-text" data-price="180" data-time="4" data-btn-filter="3">Послетроительная уборка</span></li>
+                                            </ul>
+                                            <div class="service__subcategories-tabs">
+                                                <div class="service__subcategories-pane service__subcategories-pane--active" data-filter="1"><img class="service__subcategories-img" src="img/decor/service-1.jpg" alt="Изображение">
+                                                    <section class="service__info">
+                                                        <h3 class="service__title">Генеральная уборка</h3>
+                                                        <table class="table service__table">
+                                                            <tr>
+                                                                <td><span class="service__numb service__numb--price"><sup>от</sup> <b class="js-price">130</b> <sub>р/м <sup>2</sup></sub></span></td>
+                                                                <td><span class="service__numb service__numb--time"><b class="js-time">~9</b> <sub>ч</sub></span></td>
+                                                            </tr>
+                                                        </table>
+                                                        <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
+                                                        <div class="service__btn"><a class="btn btn--light" href="service.html">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
+                                                    </section>
+                                                </div>
+                                                <div class="service__subcategories-pane" data-filter="2"><img class="service__subcategories-img" src="img/decor/service-2.jpg" alt="Изображение">
+                                                    <section class="service__info">
+                                                        <h3 class="service__title">Текущая уборка</h3>
+                                                        <table class="table service__table">
+                                                            <tr>
+                                                                <td><span class="service__numb service__numb--price"><sup>от</sup> <b class="js-price">190</b> <sub>р/м <sup>2</sup></sub></span></td>
+                                                                <td><span class="service__numb service__numb--time"><b class="js-time">~3</b> <sub>ч</sub></span></td>
+                                                            </tr>
+                                                        </table>
+                                                        <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
+                                                        <div class="service__btn"><a class="btn btn--light" href="service.html">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
+                                                    </section>
+                                                </div>
+                                                <div class="service__subcategories-pane" data-filter="3"><img class="service__subcategories-img" src="img/decor/service-3.jpg" alt="Изображение">
+                                                    <section class="service__info">
+                                                        <h3 class="service__title">Послетроительная уборка</h3>
+                                                        <table class="table service__table">
+                                                            <tr>
+                                                                <td><span class="service__numb service__numb--price"><sup>от</sup> <b class="js-price">180</b> <sub>р/м <sup>2</sup></sub></span></td>
+                                                                <td><span class="service__numb service__numb--time"><b class="js-time">~4</b> <sub>ч</sub></span></td>
+                                                            </tr>
+                                                        </table>
+                                                        <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
+                                                        <div class="service__btn"><a class="btn btn--light" href="service.html">Подробнее</a><a class="btn btn--main" href="#">Заказать</a></div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="tab-pane service__tab fade" id="tab-1" role="tabpanel" style="background-image: url('../img/decor/service-2.jpg')">
                                         <section class="service__info">
-                                            <h3 class="service__title">Уборка квартир</h3>
+                                            <h3 class="service__title">Генеральная уборка квартир</h3>
                                             <table class="table service__table">
                                                 <tr>
-                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> 1350</span></td>
-                                                    <td><span class="service__numb service__numb--time">~2,5 <sub>ч</sub></span></td>
+                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> <b class="js-price">130</b> <sub>р/м <sup>2</sup></sub></span></td>
+                                                    <td><span class="service__numb service__numb--time"><b class="js-time">~9</b> <sub>ч</sub></span></td>
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
@@ -120,11 +157,11 @@
                                     </div>
                                     <div class="tab-pane service__tab fade" id="tab-2" role="tabpanel" style="background-image: url('../img/decor/service-3.jpg')">
                                         <section class="service__info">
-                                            <h3 class="service__title">Уборка квартир</h3>
+                                            <h3 class="service__title">Генеральная уборка квартир</h3>
                                             <table class="table service__table">
                                                 <tr>
-                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> 1350</span></td>
-                                                    <td><span class="service__numb service__numb--time">~2,5 <sub>ч</sub></span></td>
+                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> <b class="js-price">130</b> <sub>р/м <sup>2</sup></sub></span></td>
+                                                    <td><span class="service__numb service__numb--time"><b class="js-time">~9</b> <sub>ч</sub></span></td>
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
@@ -133,11 +170,11 @@
                                     </div>
                                     <div class="tab-pane service__tab fade" id="tab-3" role="tabpanel" style="background-image: url('../img/decor/service-4.jpg')">
                                         <section class="service__info">
-                                            <h3 class="service__title">Уборка квартир</h3>
+                                            <h3 class="service__title">Генеральная уборка квартир</h3>
                                             <table class="table service__table">
                                                 <tr>
-                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> 1350</span></td>
-                                                    <td><span class="service__numb service__numb--time">~2,5 <sub>ч</sub></span></td>
+                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> <b class="js-price">130</b> <sub>р/м <sup>2</sup></sub></span></td>
+                                                    <td><span class="service__numb service__numb--time"><b class="js-time">~9</b> <sub>ч</sub></span></td>
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
@@ -188,11 +225,11 @@
                                 <div class="tab-content service__content">
                                     <div class="tab-pane service__tab fade show active" id="tab-4" role="tabpanel" style="background-image: url('../img/decor/service-5.jpg')">
                                         <section class="service__info">
-                                            <h3 class="service__title">Уборка квартир</h3>
+                                            <h3 class="service__title">Генеральная уборка квартир</h3>
                                             <table class="table service__table">
                                                 <tr>
-                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> 1350</span></td>
-                                                    <td><span class="service__numb service__numb--time">~2,5 <sub>ч</sub></span></td>
+                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> <b class="js-price">130</b> <sub>р/м <sup>2</sup></sub></span></td>
+                                                    <td><span class="service__numb service__numb--time"><b class="js-time">~9</b> <sub>ч</sub></span></td>
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
@@ -201,11 +238,11 @@
                                     </div>
                                     <div class="tab-pane service__tab fade" id="tab-5" role="tabpanel" style="background-image: url('../img/decor/service-6.jpg')">
                                         <section class="service__info">
-                                            <h3 class="service__title">Уборка квартир</h3>
+                                            <h3 class="service__title">Генеральная уборка квартир</h3>
                                             <table class="table service__table">
                                                 <tr>
-                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> 1350</span></td>
-                                                    <td><span class="service__numb service__numb--time">~2,5 <sub>ч</sub></span></td>
+                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> <b class="js-price">130</b> <sub>р/м <sup>2</sup></sub></span></td>
+                                                    <td><span class="service__numb service__numb--time"><b class="js-time">~9</b> <sub>ч</sub></span></td>
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
@@ -258,11 +295,11 @@
                                 <div class="tab-content service__content">
                                     <div class="tab-pane service__tab fade show active" id="tab-6" role="tabpanel" style="background-image: url('../img/decor/service-5.jpg')">
                                         <section class="service__info">
-                                            <h3 class="service__title">Уборка квартир</h3>
+                                            <h3 class="service__title">Генеральная уборка квартир</h3>
                                             <table class="table service__table">
                                                 <tr>
-                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> 1350</span></td>
-                                                    <td><span class="service__numb service__numb--time">~2,5 <sub>ч</sub></span></td>
+                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> <b class="js-price">130</b> <sub>р/м <sup>2</sup></sub></span></td>
+                                                    <td><span class="service__numb service__numb--time"><b class="js-time">~9</b> <sub>ч</sub></span></td>
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
@@ -271,11 +308,11 @@
                                     </div>
                                     <div class="tab-pane service__tab fade" id="tab-7" role="tabpanel" style="background-image: url('../img/decor/service-6.jpg')">
                                         <section class="service__info">
-                                            <h3 class="service__title">Уборка квартир</h3>
+                                            <h3 class="service__title">Генеральная уборка квартир</h3>
                                             <table class="table service__table">
                                                 <tr>
-                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> 1350</span></td>
-                                                    <td><span class="service__numb service__numb--time">~2,5 <sub>ч</sub></span></td>
+                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> <b class="js-price">130</b> <sub>р/м <sup>2</sup></sub></span></td>
+                                                    <td><span class="service__numb service__numb--time"><b class="js-time">~9</b> <sub>ч</sub></span></td>
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
@@ -284,11 +321,11 @@
                                     </div>
                                     <div class="tab-pane service__tab fade" id="tab-8" role="tabpanel" style="background-image: url('../img/decor/service-5.jpg')">
                                         <section class="service__info">
-                                            <h3 class="service__title">Уборка квартир</h3>
+                                            <h3 class="service__title">Генеральная уборка квартир</h3>
                                             <table class="table service__table">
                                                 <tr>
-                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> 1350</span></td>
-                                                    <td><span class="service__numb service__numb--time">~2,5 <sub>ч</sub></span></td>
+                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> <b class="js-price">130</b> <sub>р/м <sup>2</sup></sub></span></td>
+                                                    <td><span class="service__numb service__numb--time"><b class="js-time">~9</b> <sub>ч</sub></span></td>
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
@@ -297,11 +334,11 @@
                                     </div>
                                     <div class="tab-pane service__tab fade" id="tab-9" role="tabpanel" style="background-image: url('../img/decor/service-6.jpg')">
                                         <section class="service__info">
-                                            <h3 class="service__title">Уборка квартир</h3>
+                                            <h3 class="service__title">Генеральная уборка квартир</h3>
                                             <table class="table service__table">
                                                 <tr>
-                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> 1350</span></td>
-                                                    <td><span class="service__numb service__numb--time">~2,5 <sub>ч</sub></span></td>
+                                                    <td><span class="service__numb service__numb--price"><sup>от</sup> <b class="js-price">130</b> <sub>р/м <sup>2</sup></sub></span></td>
+                                                    <td><span class="service__numb service__numb--time"><b class="js-time">~9</b> <sub>ч</sub></span></td>
                                                 </tr>
                                             </table>
                                             <p>Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты</p>
@@ -756,8 +793,37 @@
     <div class="menu" id="menu">
         <div class="menu__main">
             <button class="burger menu__close" data-fancybox-close="" aria-label="Закрыть меню"><span class="burger__span"></span></button>
-            <h3 class="menu__title" data-menu-toggle="">УСЛУГИ</h3>
-            <div class="menu__submenu">
+            <header class="menu__main-header">
+                <h3 class="menu__title" data-menu-toggle="">УСЛУГИ</h3>
+                <div class="menu__main-links"><a class="menu__title menu__title--middle" href="#">Главная</a><a class="menu__title menu__title--middle" href="#">О компании</a><a class="menu__title menu__title--middle" href="#">Контакты</a><a class="menu__title menu__title--middle" href="#">Вакансии</a><a class="menu__title menu__title--middle js-news" href="#">Статьи</a></div>
+            </header>
+            <div class="menu__sub menu__sub--news js-news-collapse">
+                <div class="menu__submenu">
+                    <section class="menu__submenu-item">
+                        <h4 class="menu__submenu-title">Уборка квартир. Статьи</h4>
+                        <ul class="menu__submenu-menu">
+                            <li><a href="#">Как быстрее убрать квартиру?</a></li>
+                            <li><a href="#">Счего начать уборку?</a></li>
+                            <li><a href="#">Какой тряпкой вытерать пыль</a></li>
+                        </ul>
+                    </section>
+                    <section class="menu__submenu-item">
+                        <h4 class="menu__submenu-title">Лайфхаки по уборки</h4>
+                        <ul class="menu__submenu-menu">
+                            <li><a href="#">Как отмыть кровь с любой поверхности?</a></li>
+                            <li><a href="#">Как удалить жир?</a></li>
+                        </ul>
+                    </section>
+                    <section class="menu__submenu-item">
+                        <h4 class="menu__submenu-title">Советы проффесионалов</h4>
+                        <ul class="menu__submenu-menu">
+                            <li><a href="#">Безвредная химия</a></li>
+                            <li><a href="#">Цена на химчистку</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <div class="menu__submenu js-collapse-service">
                 <section class="menu__submenu-item">
                     <h4 class="menu__submenu-title">УБОРКА</h4>
                     <ul class="menu__submenu-menu">
@@ -790,7 +856,7 @@
                         <li><a href="#">услуги ассенизатора</a></li>
                     </ul>
                 </section>
-            </div><a class="menu__title menu__title--middle" href="#">О компании</a><a class="menu__title menu__title--middle" href="#">Контакты</a>
+            </div>
             <ul class="menu__messager">
                 <li class="menu__messager-item"><a class="menu__messager-link" href="#">WhatsApp</a></li>
                 <li class="menu__messager-item"><a class="menu__messager-link" href="#">Telegram</a></li>

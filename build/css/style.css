@@ -2360,6 +2360,12 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     border: 1px solid #3b8ef7;
     color: #3c8df7;
 }
+.btn--success {
+    color: white;
+    background-color: #22b573;
+    border-radius: 6px;
+    border-color: #22b573;
+}
 .btn--main {
     color: white;
     border: none;
@@ -2565,6 +2571,40 @@ textarea.field-text__input {
 .field-text--calculator .field-text__input:checked + .field-text__input-wrap {
     color: white;
     background-image: linear-gradient(to top, #006ef7 0%, #6aa5f5 100%);
+}
+.field-select {
+    display: block;
+    margin-bottom: 1rem;
+}
+.field-select__select {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    line-height: 1.5;
+    padding: 0.3em 0.7em;
+    font-size: inherit;
+    font-family: inherit;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: #ffffff;
+    background-image: url("../img/icon/select-down.svg");
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+    background-size: 1.063em 0.688em;
+}
+.field-select__select[multiple] {
+    background-image: none;
+    min-height: 6.8em;
+}
+.field-select__select::-ms-expand {
+    display: none;
+}
+.field-select__select[disabled], .field-select__select[readonly] {
+    cursor: default;
+    background-color: #e6e6e6;
 }
 .field-checkbox {
     display: block;
@@ -2799,6 +2839,10 @@ input:checked ~ .field-checkbox__name-text:after {
     max-width: 1050px;
     margin: auto;
 }
+.menu__main-header {
+    display: flex;
+    flex-direction: column-reverse;
+}
 .menu__title {
     display: block;
     font-size: 30px;
@@ -2820,7 +2864,7 @@ input:checked ~ .field-checkbox__name-text:after {
 .menu__title[data-menu-toggle=""]::after {
     content: "";
     position: absolute;
-    right: -35px;
+    right: -0px;
     top: 50%;
     margin-top: -8.5px;
     width: 12px;
@@ -2893,6 +2937,9 @@ input:checked ~ .field-checkbox__name-text:after {
     position: absolute;
     top: -55px;
     left: -20px;
+}
+.menu__sub--news .menu__submenu {
+    display: block;
 }
 .order-page {
     display: flex;
@@ -3346,6 +3393,15 @@ input:checked ~ .field-checkbox__name-text:after {
     z-index: 1;
     overflow: hidden;
 }
+.block-serv--reserv {
+    padding: 0;
+}
+.block-serv--reserv .block-serv__wrap {
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
 .block-serv__wrap--service {
     padding-top: 46px;
 }
@@ -3540,6 +3596,7 @@ input:checked ~ .field-checkbox__name-text:after {
     width: 100%;
     background-color: white;
     padding: 17px 20px 26px 24px;
+    z-index: 2;
 }
 .service__btn {
     display: flex;
@@ -3580,18 +3637,6 @@ input:checked ~ .field-checkbox__name-text:after {
     font-weight: 300;
     line-height: 27px;
 }
-.service__numb--price {
-    padding-right: 17px;
-}
-.service__numb--price::after {
-    content: "";
-    position: absolute;
-    bottom: 5px;
-    right: 0;
-    width: 10px;
-    height: 16px;
-    background: url("../img/icon/ruble.svg") no-repeat center/cover;
-}
 .service__numb sup {
     top: -10px;
     display: inline-block;
@@ -3619,6 +3664,68 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .service__table td:last-child {
     padding-left: 11px;
+}
+.service__subcategories {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    display: flex;
+    text-align: center;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-right: 270px;
+    z-index: 1;
+}
+.service__subcategories-item {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+.service__subcategories-text {
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 13.5px 9px 15.5px;
+    color: black;
+    background: white;
+    cursor: pointer;
+}
+.service__subcategories-text--active {
+    color: white;
+    background: linear-gradient(to top, #006ef7 0%, #6aa5f5 100%);
+}
+.service__numb b {
+    font-weight: 300;
+    color: #54585f;
+}
+.service__tab-wrap {
+    height: 100%;
+    width: 100%;
+}
+.service__subcategories-tabs {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.service__subcategories-pane {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    opacity: 0;
+}
+.service__subcategories-pane img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.service__subcategories-pane--active {
+    opacity: 1;
 }
 .block-info {
     padding-top: 39px;
@@ -5431,6 +5538,79 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .social-fix__link--facebook {
     background-image: url("../img/icon-messager/facebook.svg");
+}
+.reserv__title {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+.reserv__tagline {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+.reserv__form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.reserv__form-row > * {
+    flex-basis: 100%;
+}
+.reserv__form-row--end {
+    align-items: flex-end;
+}
+.reserv__form-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.reserv__form-inputs {
+    display: flex;
+}
+.reserv__btn {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 13px 20px;
+}
+.reserve__field {
+    color: white;
+}
+.reserve__field .field-text__name, .reserve__field .field-select__name {
+    display: block;
+    margin-bottom: 15px;
+}
+.reserve__field .field-text__input {
+    border-radius: 4px;
+    padding: 12.5px 15px;
+}
+.reserve__field .field-select__select {
+    border-radius: 4px;
+    padding: 13px 25px 13px 15px;
+}
+.reserv__form .field-checkbox {
+    margin-top: 10px;
+    color: white;
+}
+.reserv__form-wrapper--width {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.field-checkbox__name-text {
+    margin: 2px 0 0 5px;
+}
+.field-checkbox__name-text a {
+    color: white;
+}
+.field-checkbox__name-text::after {
+    top: 6px;
+    left: 5px;
+    width: 13px;
+    height: 5px;
 }
 .footer-wrap {
     background-image: linear-gradient(to bottom, #1f2831 0%, #0e0f17 100%);
@@ -7750,6 +7930,22 @@ input:checked ~ .field-checkbox__name-text:after {
     .menu {
         padding: 129px 0 55px;
     }
+    .menu__main-header {
+        display: flex;
+        margin-bottom: 35px;
+        flex-direction: row;
+    }
+    .menu__main-links {
+        display: flex;
+        margin-left: 60px;
+        margin-top: 3px;
+    }
+    .menu__main-links .menu__title {
+        margin-right: 25px;
+    }
+    .menu__main-links .menu__title:last-child {
+        margin-right: 0;
+    }
     .menu__title {
         font-size: 40px;
     }
@@ -7790,6 +7986,12 @@ input:checked ~ .field-checkbox__name-text:after {
     .menu__close {
         left: -55px;
         top: -90px;
+    }
+    .menu__sub--news {
+        display: none;
+    }
+    .menu__sub--news .menu__submenu {
+        display: flex;
     }
     .advantages {
         max-width: 1170px;
@@ -7982,6 +8184,10 @@ input:checked ~ .field-checkbox__name-text:after {
         padding-top: 105px;
         padding-bottom: 77px;
     }
+    .block-serv--reserv .block-serv__wrap {
+        padding-bottom: 80px;
+        padding-top: 80px;
+    }
     .block-serv__wrap--service {
         padding-top: 129px;
     }
@@ -8105,7 +8311,7 @@ input:checked ~ .field-checkbox__name-text:after {
     }
     .service__info {
         border-radius: 10px 0;
-        max-width: 221px;
+        max-width: 235px;
         padding: 27px 15px 30px 15px;
     }
     .service__btn {
@@ -8517,6 +8723,34 @@ input:checked ~ .field-checkbox__name-text:after {
     }
     .page__previev {
         margin-bottom: 90px;
+    }
+    .reserv__title {
+        margin-bottom: 40px;
+        line-height: 54px;
+        font-size: 45px;
+    }
+    .reserv__tagline {
+        margin-bottom: 40px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .reserv__form-col--xl-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .reserv__form-col--xl-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .reserve__field .field-select {
+        margin-bottom: 0;
+    }
+    .reserve__field .field-text {
+        margin-bottom: 0;
     }
     .visible-xl {
         display: block;

@@ -1,12 +1,12 @@
 mixin service__info()
   section.service__info
-    h3.service__title Уборка квартир
+    h3.service__title Генеральная уборка квартир
     table.table.service__table
       tr
         td
-          span.service__numb.service__numb--price #[sup от] 1350
+          span.service__numb.service__numb--price #[sup от] #[b(class="js-price") 130] #[sub р/м #[sup 2]]
         td
-          span.service__numb.service__numb--time ~2,5 #[sub ч]
+          span.service__numb.service__numb--time #[b(class="js-time") ~9] #[sub ч]
     p Нажмите подробнее, что бы ознакомится с видами услуг и узнать точную стоимость уборки кварты
     .service__btn
       a.btn.btn--light(href="service.html") Подробнее
