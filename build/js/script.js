@@ -169,22 +169,31 @@ $(document).ready(function() {
       }
     });
 
-    $(document).click(function (event) {
-      if ($(event.target).closest(".menu__submenu").length) return;
-      $(".menu__submenu").slideUp("slow", function () {
-        // $(this).css('display', 'flex');
-      });
-      event.stopPropagation();
-    });
+    // $(document).click(function (event) {
+    //   // if ($(event.target).closest(".menu__submenu").length) return;
+    //   // $(".menu__submenu").slideUp("slow", function () {
+    //   //   // $(this).css('display', 'flex');
+    //   // });
+    //   // event.stopPropagation();
+    // });
+  }
 
-    $('[data-menu-toggle]').click(function () {
-      $(this).toggleClass("menu__title--active")
+  $('[data-menu-toggle]').click(function () {
+    if($('.js-news-collapse').is(":visible") && $(window).width() >= 1200) {
+      $(this).toggleClass("menu__title--active");
+      $(".js-news-collapse").slideToggle();
       $(this).parents(".menu__main").find(".js-collapse-service").slideToggle("slow", function () {
 
       });
       return false;
-    });
-  }
+    } else {
+      $(this).toggleClass("menu__title--active");
+      $(this).parents(".menu__main").find(".js-collapse-service").slideToggle("slow", function () {
+
+      });
+      return false;
+    }
+  });
 
   $(".social-fix__btn").on("click", function() {
     $(".social-fix__btn").toggleClass("social-fix__btn--close");
@@ -202,12 +211,6 @@ $(document).ready(function() {
     $(".service__subcategories-text").removeClass("service__subcategories-text--active");
     $(this).addClass("service__subcategories-text--active");
 
-    // var dataPrice = $(this).data("price");
-    // var dataTime = $(this).data("time");
-    //
-    // $(this).parents(".service__tab-wrap").find(".js-price").text(dataPrice);
-    // $(this).parents(".service__tab-wrap").find(".js-time").text(dataTime);
-
     $('[data-filter]').removeClass("service__subcategories-pane--active");
 
     $(".service__subcategories-text--active").each(function(){
@@ -215,7 +218,14 @@ $(document).ready(function() {
     });
   })
 
+
+
   $(".js-news").on("click", function() {
-    $(this).parents(".menu__main").find(".js-news-collapse").slideToggle();
+    if($('.js-collapse-service').is(":visible") && $(window).width() >= 1200) {
+      $(".js-news-collapse").slideToggle();
+      $(".js-collapse-service").slideToggle();
+    } else {
+      $(".js-news-collapse").slideToggle();
+    }
   })
 });

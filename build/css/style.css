@@ -2860,6 +2860,8 @@ input:checked ~ .field-checkbox__name-text:after {
 .menu__title[data-menu-toggle=""] {
     display: inline-block;
     position: relative;
+    width: 100%;
+    cursor: pointer;
 }
 .menu__title[data-menu-toggle=""]::after {
     content: "";
