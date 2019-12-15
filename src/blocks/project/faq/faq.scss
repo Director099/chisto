@@ -1,0 +1,66 @@
+.faq {
+
+  @media (min-width: $screen-xl) {
+    padding-bottom: 60px;
+  }
+}
+
+.faq__list {
+  @include ul-none();
+  background: $white;
+  box-shadow: 0 17px 62px rgba(223, 224, 227, 0.89);
+  border-radius: 10px;
+  max-width: 766px;
+}
+
+.faq__item {
+  padding: 27px 13px;
+  border-bottom: 1px solid #f0f5fb;
+
+  @media (min-width: $screen-xl) {
+    padding: 36px;
+  }
+}
+
+.faq__title {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  padding-right: 15px;
+
+  color: #333333;
+  margin: 0;
+  cursor: pointer;
+
+  @media (min-width: $screen-xl) {
+    font-size: 18px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 14px;
+    height: 20px;
+    background: url("../img/icon/arrow.svg") no-repeat center / cover;
+    transition: $time;
+  }
+
+  &.collapsed {
+    &::after {
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.faq__content {
+  margin-top: 11px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.faq__content p {
+  margin: 0;
+}

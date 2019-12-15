@@ -1,13 +1,40 @@
 .advantages {
   position: relative;
-  padding: 63px 25px;
+  padding: 45px 15px 40px;
+  margin: 0 15px;
   box-shadow: 0 15px 24px rgba(223, 224, 227, 0.89);
   border-radius: 10px;
   background-image: linear-gradient(to top, #ebeef1 0%, #ffffff 100%);
   z-index: 9;
-  // bottom: -35px;
-  max-width: 1170px;
-  margin: 0 auto -35px;
+
+
+  @media (min-width: $screen-xl) {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 63px 25px;
+  }
+}
+
+.advantages--ident {
+
+  @media (min-width: $screen-xl) {
+    transform: translateY(35px);
+  }
+}
+
+.advantages--shadow {
+  box-shadow: 0 15px 24px rgba($black, 0.19%);
+}
+
+.advantages--top {
+  transform: translateY(-20px);
+  @media (min-width: $screen-xl) {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    right: 0;
+    transform: translateY(-0px);
+  }
 }
 
 .advantages__list {
@@ -17,19 +44,39 @@
 
 .advantages__column {
   @include make-col-ready();
-  @include make-col(4);
+  margin-bottom: 44px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $screen-md) {
+    @include make-col(4);
+    margin-bottom: 0;
+  }
 }
 
 .advantages__item {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+
+  @media (min-width: $screen-xl) {
+    flex-direction: row;
+    text-align: left;
+  }
 }
 
 .advantages__item p {
   margin: 0;
   font-size: 14px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 21px;
+
+  @media (min-width: $screen-xl) {
+    line-height: 27px;
+  }
 
   a {
     display: inline-block;
@@ -42,24 +89,17 @@
   position: relative;
   display: block;
   flex-shrink: 0;
-  margin-right: 25px;
-  width: 100px;
+  width: 110px;
   height: 110px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 1;
+  margin-bottom: 30px;
 
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   width: 80px;
-  //   height: 80px;
-  //   border-radius: 50px;
-  //   transform: translate(-50%, -50%);
-  //   box-shadow: 0 11px 43px rgba(39, 131, 247, 0.41);
-  //   z-index: -1;
-  // }
+  @media (min-width: $screen-xl) {
+    width: 100px;
+    margin-right: 25px;
+    margin-bottom: 0;
+  }
 }

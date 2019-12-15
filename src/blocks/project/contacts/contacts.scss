@@ -2,8 +2,19 @@
 
 }
 
+.contacts .title {
+  @media (max-width: 767px) {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
 .contacts__header {
-  margin-bottom: 68px;
+  margin-bottom: 40px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 50px;
+  }
 }
 
 .contacts__row {
@@ -12,9 +23,11 @@
 
 .contacts__column-8 {
   @include make-col-ready();
+  margin-bottom: 34px;
 
   @media (min-width: $screen-xl) {
-    @include make-col(8);
+    @include make-col(7.4);
+    margin-bottom: 0;
   }
 }
 
@@ -22,20 +35,24 @@
   @include make-col-ready();
 
   @media (min-width: $screen-xl) {
-    @include make-col(4);
+    @include make-col(4.6);
   }
 }
 
 .contacts__wrap {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 
   &:last-child {
     margin-bottom: 0;
   }
 
   &--ident {
+    margin-right: 46px;
+
     @media (min-width: $screen-xl) {
-      margin-bottom: 53px;
+      margin-bottom: 30px;
+      margin-top: 3px;
+      margin-right: 0;
     }
   }
 }
@@ -95,7 +112,19 @@
 }
 
 .contacts__info {
-  margin-left: 35px;
+  margin-left: 30px;
+
+  @media (min-width: $screen-xl) {
+    margin-left: 35px;
+  }
+}
+
+.contacts__row-message {
+  display: flex;
+
+  @media (min-width: $screen-xl) {
+    display: block;
+  }
 }
 
 .contacts__info-text {
@@ -110,7 +139,6 @@
     color: lighten(#a3acb7, 30%);
   }
 }
-
 
 .contacts__social {
   margin-top: 20px;
@@ -129,23 +157,30 @@
     margin-right: 0;
   }
 
-  &--insta {
-    background-image: url("../img/icon/instagram.svg");
+  &--insta svg {
+    fill: red;
+    // background-image: url("../img/icon/instagram.svg");
   }
 
-  &--youtube {
-    background-image: url("../img/icon/youtube.svg");
+  &--youtube svg {
+    fill: #ff0000;
+    // background-image: url("../img/icon/youtube.svg");
   }
 
-  &--vk {
-    background-image: url("../img/icon/vk.svg");
+  &--vk svg {
+    fill: #4a76a8;
+    // background-image: url("../img/icon/vk.svg");
   }
 
-  &--whatsapp {
-    background-image: url("../img/icon/viber.svg");
+  &--whatsapp svg {
+    fill: #29a71a;
+    // background-image: url("../img/icon/viber.svg");
   }
 
-  &--telega {
-    background-image: url("../img/icon/telegram.svg");
+  &--telega svg {
+    fill: #2ea6d9 ;
+    // background-image: url("../img/icon/telegram.svg");
   }
 }
+
+

@@ -1,0 +1,293 @@
+extends pug/layout.pug
+
+block meta
+  title Услуги
+block header
+  .fullpage.fullpage--service.fullpage--y-sb(style="background-image: url('img/decor/bg-main-2.jpg')")
+    +page-header()
+    .container
+      section.main-block.main-block--big
+        h1.title.title--big.main-block__title Уборка квартир
+        p.main-block__tagline.main-block__tagline--big Клининговая уборка квартир и домов в Уфе.Мы  предлагаем поддерживающую уборку, генеральную, профессиональную уборку после ремонта и форс-мажоров
+        form.form.main-block__form
+          .main-block__form-row
+            .main-block__form-wrap
+              +field-text({
+                isTextarea: false,
+                mods: '',
+                val: '',
+                attrs: {
+                  name: 'contact',
+                  placeholder: '+7 (___) ___ - __ - __',
+                  type: 'tel'
+                }
+              })
+            button.btn.btn--main.main-block__btn-form Заказать уборку
+          +field-checkbox([
+            {
+              title: 'Я даю свое согласие на обработку <a href="#">персональных данных</a>',
+              mods: 'service',
+              attrs: {
+                name: 'check0',
+                checked: ""
+              }
+            },
+          ])
+
+block content
+  main
+    +calculator()
+    section.block-serv(style="background-image: url('img/decor/bg-section-1.jpg')")
+      .block-serv__wrap.block-serv__wrap--action
+        .container
+          .block-serv__relative
+            span.decor-text.block-serv__center-text Скидки и акции
+            .block-serv__row.owl-carousel.owl-theme
+              .block-serv__column-4
+                +action(
+                  'Скидка 30% на мойку окон',
+                  'img/content/img-action-1.png',
+                  '*При заказе ген уборки'
+                )
+              .block-serv__column-4
+                +action(
+                  'Скидка 30% на химчистку одного элемента',
+                  'img/content/img-action-2.png',
+                  '*При заказе ген уборки'
+                )
+              .block-serv__column-4
+                +action(
+                  'Скидка 30% на химчистку детского матраса',
+                  'img/content/img-action-3.png'
+                )
+              .block-serv__column-4
+                +action(
+                  'Скидка 5% при подписке на Instagram',
+                  'img/content/img-action-4.png',
+                  '*На одну уборку'
+                )
+              .block-serv__column-4
+                +action(
+                  'Скидка 15% при рекомендации',
+                  'img/content/img-action-5.png',
+                  '*При заказе ген уборки'
+                )
+              .block-serv__column-4
+                +action(
+                  '1500 ₽ минимальная стоимость выезда',
+                  'img/content/img-action-6.png',
+                  ''
+                )
+    section.block-serv.block-serv--reserv
+      .block-serv__wrap(style="background-image: url('img/decor/reserv-bg.jpg')")
+        .container
+          .reserv
+            h3.title.reserv__title Стань клиентом компании «Чистоград»
+            p.reserv__tagline Оставьте свой номер телефона и за ним мы закрепим акцию на 2 недели. #[br] Вне зависимости от срока действия акции!
+            form.form.reserv__form
+              .reserv__form-wrapper
+                .reserv__form-row.reserv__form-row--end
+                  .reserv__form-col.reserv__form-col--xl-4
+                    .reserve__field
+                      +field-text({
+                        title: 'Введите телефон*',
+                        mods: 'reserv',
+                        val: '',
+                        attrs: {
+                          name: 'comment',
+                          type: 'tel',
+                          placeholder: '+7 (___) ___ __ __',
+                          required: ''
+                        }
+                      })
+                  .reserv__form-col.reserv__form-col--xl-4
+                    .reserve__field
+                      +field-select(
+                        'Выберите акцию:',
+                        {
+                          name: 'select',
+                          id: 'select',
+                          required: ''
+                        },
+                        [
+                          {
+                            title: 'Скидка 10% на уборку при заказе с сайта',
+                            attrs: {
+                              value: '',
+                            }
+                          },
+                          {
+                            title: 'Скидка 5% изменникам',
+                            attrs: {
+                              value: '',
+                            }
+                          },
+                          {
+                            title: 'Скидка 15% на химчистку мебели',
+                            attrs: {
+                              value: '',
+                            }
+                          },
+                          {
+                            title: 'Бесплатно помыть посуду',
+                            attrs: {
+                              value: '',
+                            }
+                          },
+                          {
+                            title: 'Бесплатно помыть холодильник',
+                            attrs: {
+                              value: '',
+                            }
+                          },
+                        ],
+                        ''
+                      )
+                  .reserv__form-col.reserv__form-col--xl-4
+                    button.btn.btn--success.reserv__btn Стать клиентом
+                +field-checkbox([
+                  {
+                    title: 'Я даю свое согласие на обработку <a href="#">персональных данных</a>',
+                    mods: '',
+                    attrs: {
+                      name: 'check1',
+                      checked: true,
+                    }
+                  }
+                ])
+    section.block-serv(style="background-image: url('img/decor/bg-section-1.jpg')")
+      .block-serv__wrap.block-serv__wrap--reglament
+        .container
+          .reglament
+            header.reglament__header
+              h2.title.reglament__title Уборка выполняется по строгому регламенту с высоком контролем качества
+              ul.nav.reglament__nav(id="myTab")
+                li.reglament__nav-item
+                  a.reglament__nav-link.active(data-toggle="tab" href="#reg-tab0" ) Комнаты
+                li.reglament__nav-item
+                  a.reglament__nav-link(data-toggle="tab" href="#reg-tab1") Коридор
+                li.reglament__nav-item
+                  a.reglament__nav-link(data-toggle="tab" href="#reg-tab2") Кухня
+                li.reglament__nav-item
+                  a.reglament__nav-link(data-toggle="tab" href="#reg-tab3") Ванная
+            .tab-content.reglament__content
+              .tab-pane.reglament__tab.fade.show.active(id="reg-tab0" role="tabpanel")
+                img(src="img/content/img-regl-1.jpg", alt="Уборка")
+              .tab-pane.reglament__tab.fade(id="reg-tab1" role="tabpanel")
+                img(src="img/content/img-regl-1.jpg", alt="Уборка")
+              .tab-pane.reglament__tab.fade(id="reg-tab2" role="tabpanel")
+                img(src="img/content/img-regl-1.jpg", alt="Уборка")
+              .tab-pane.reglament__tab.fade(id="reg-tab3" role="tabpanel")
+                img(src="img/content/img-regl-1.jpg", alt="Уборка")
+    +cleaning()
+    section.block-result.block-result--pt.block-result--reverse(style="background-image: url('img/decor/bg-section-1.jpg')")
+      .container
+        .block-serv__relative
+          span.decor-text.block-serv__center-text сотрудники компании
+          .results
+            header.block-result__header
+              h2.title.title--white.block-result__title Оцените результат наших работ
+            .results__slider.owl-carousel.owl-theme
+              .results__slider-item
+                .result()
+                  p.result__text Поддерживающая уборка
+                  a(href="img/content/result-1.jpg" data-fancybox="")
+                    img(src="img/content/result-1.jpg", alt="Результат работ")
+                  .result__footer
+                    a.btn.btn--main.result__btn(href="#") Подробнее
+                    span.result__hash #До
+              .results__slider-item
+                .result()
+                  p.result__text Поддерживающая уборка
+                  a(href="img/content/result-2.jpg" data-fancybox="")
+                    img(src="img/content/result-2.jpg", alt="Результат работ")
+                  .result__footer
+                    a.btn.btn--main.result__btn(href="#") Подробнее
+                    span.result__hash #После
+              .results__slider-item
+                a.result.result--video(href="https://www.youtube.com/watch?v=0X-pKZ8-7Nw&list=PLsgc2PQGF1hAy_BO5vfpWFTfcpi-f05VE&index=1" data-fancybox="")
+                  p.result__text Генеральная уборка
+                  img(src="img/content/result-1.jpg", alt="Результат работ")
+                  span.result__play
+                    span
+              .results__slider-item
+                a.result.result--video(href="https://www.youtube.com/watch?v=0X-pKZ8-7Nw&list=PLsgc2PQGF1hAy_BO5vfpWFTfcpi-f05VE&index=1" data-fancybox="")
+                  p.result__text Генеральная уборка
+                  img(src="img/content/result-1.jpg", alt="Результат работ")
+                  span.result__play
+                    span
+  section.block-serv(style="background-image: url('img/decor/bg-section-1.jpg')")
+      .block-serv__wrap
+        .container
+          .block-serv__relative
+            span.decor-text.block-serv__center-text сотрудники компании
+            header.block-serv__header
+              h2.title.block-serv__title Часто задаваемые #[br] вопросы
+            .faq.block-serv__faq
+              ul.faq__list
+                li.faq__item
+                  .faq__header
+                    h3.faq__title(data-toggle="collapse" data-target="#col-1") Как долго длится уборка?
+                  .faq__footer.collapse.show(id="col-1")
+                    .faq__content
+                      p С другой стороны постоянный количественный рост и сфера нашей активности требуют определения и уточнения соответствующий условий активизации. Задача организации, в особенности же начало повседневной работы по формированию позиции в значительной степени обуславливает создание форм развития.
+                li.faq__item
+                  .faq__header
+                    h3.faq__title(data-toggle="collapse" data-target="#col-2") Возможно ли уборка без моего присутствия?
+                  .faq__footer.collapse(id="col-2")
+                    .faq__content
+                      p С другой стороны постоянный количественный рост и сфера нашей активности требуют определения и уточнения соответствующий условий активизации. Задача организации, в особенности же начало повседневной работы по формированию позиции в значительной степени обуславливает создание форм развития.
+                li.faq__item
+                  .faq__header
+                    h3.faq__title(data-toggle="collapse" data-target="#col-3") Возможно ли уборка без моего присутствия?
+                  .faq__footer.collapse(id="col-3")
+                    .faq__content
+                      p С другой стороны постоянный количественный рост и сфера нашей активности требуют определения и уточнения соответствующий условий активизации. Задача организации, в особенности же начало повседневной работы по формированию позиции в значительной степени обуславливает создание форм развития.
+                li.faq__item
+                  .faq__header
+                    h3.faq__title(data-toggle="collapse" data-target="#col-4") Почему я должен быть уверен, что мои вещи никто не тронет?
+                  .faq__footer.collapse(id="col-4")
+                    .faq__content
+                      p С другой стороны постоянный количественный рост и сфера нашей активности требуют определения и уточнения соответствующий условий активизации. Задача организации, в особенности же начало повседневной работы по формированию позиции в значительной степени обуславливает создание форм развития.
+                li.faq__item
+                  .faq__header
+                    h3.faq__title(data-toggle="collapse" data-target="#col-5") Если мне не понравится качество выполненных работ?
+                  .faq__footer.collapse(id="col-5")
+                    .faq__content
+                      p С другой стороны постоянный количественный рост и сфера нашей активности требуют определения и уточнения соответствующий условий активизации. Задача организации, в особенности же начало повседневной работы по формированию позиции в значительной степени обуславливает создание форм развития.
+  section.block-serv.block-serv--reserv
+    .block-serv__wrap(style="background-image: url('img/decor/reserv-bg.jpg')")
+      .container
+        .reserv
+          h3.title.reserv__title Закажите уборку прямо сейчас!
+          p.reserv__tagline Впервые на нашем сайте, получите скидку 10% на первый заказ
+          form.form.reserv__form
+            .reserv__form-wrapper.reserv__form-wrapper--width
+              .reserv__form-row.reserv__form-row--end
+                .reserv__form-col.reserv__form-col--xl-6
+                  .reserve__field
+                    +field-text({
+                      title: 'Введите телефон*',
+                      mods: 'reserv',
+                      val: '',
+                      attrs: {
+                        name: 'comment',
+                        type: 'tel',
+                        placeholder: '+7 (___) ___ __ __',
+                        required: ''
+                      }
+                    })
+                .reserv__form-col.reserv__form-col--xl-6
+                  button.btn.btn--success.reserv__btn Заказать уборку
+              +field-checkbox([
+                {
+                  title: 'Я даю свое согласие на обработку <a href="#">персональных данных</a>',
+                  mods: '',
+                  attrs: {
+                    name: 'check1',
+                    checked: true,
+                  }
+                }
+              ])
+block footer
+  +page-footer()

@@ -1,8 +1,8 @@
 .burger {
   position: relative;
   font-size: 0;
-  width: 30px;
-  height: 30px;
+  width: 31px;
+  height: 31px;
   transition: $time;
   background: transparent;
   border: none;
@@ -35,28 +35,9 @@
     background: #1d7df6;
   }
 
-  // &.active {
-
-  //   .toggle__span {
-  //     width: 0;
-  //   }
-
-  //   &::after {
-  //     top: 50%;
-  //     transform: rotate(-45deg);
-  //     height: 2px;
-  //   }
-
-  //   &::before {
-  //     top: 50%;
-  //     margin-top: 0;
-  //     transform: rotate(45deg);
-  //   }
-  // }
-
-  // @media(min-width: @screen-lg) {
-  //   display: none;
-  // }
+  &:focus {
+    outline: none;
+  }
 }
 
 .burger__span {
@@ -67,4 +48,23 @@
   height: 2px;
   background: #1d7df6;
   transition: $time;
+}
+
+.burger--active {
+
+  .burger__span {
+    width: 0;
+  }
+
+  &::after {
+    top: 50%;
+    transform: rotate(-45deg);
+    height: 2px;
+  }
+
+  &::before {
+    top: 50%;
+    margin-top: 0;
+    transform: rotate(45deg);
+  }
 }

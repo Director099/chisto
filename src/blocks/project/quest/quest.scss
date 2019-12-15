@@ -1,13 +1,22 @@
 .quest {
+  margin-left: auto;
 
+  @media (min-width: $screen-xl) {
+    max-width: 455px;
+  }
 }
 
 .quest__header {
-  margin-bottom: 39px;
+  margin-bottom: 31px;
+  text-align: center;
+
+  @media (min-width: $screen-md) {
+    text-align: left;
+  }
 }
 
 .quest__title {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .quest__signature {
@@ -33,7 +42,7 @@
   padding-right: 8px;
 
   @media (min-width: $screen-xl) {
-    @include make-col(7);
+    @include make-col(6.7);
     padding-left: 8px;
     padding-right: 8px;
   }
@@ -45,7 +54,7 @@
   padding-right: 8px;
 
   @media (min-width: $screen-xl) {
-    @include make-col(5);
+    @include make-col(5.3);
     padding-left: 8px;
     padding-right: 8px;
   }
@@ -64,7 +73,12 @@
   font-weight: 400;
   box-shadow: none;
   padding-top: 19px;
+  margin-top: 15px;
   padding-bottom: 17px;
+
+  @media (min-width: $screen-xl) {
+    margin-top: 0;
+  }
 }
 
 .quest .field-checkbox {

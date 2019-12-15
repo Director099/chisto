@@ -87,6 +87,20 @@ $border-radius:               rem(3px) !default;
   }
 }
 
+.field-text--user .field-text__input {
+  background-image: url("../img/icon/user.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 50%;
+  background-size: 15px;
+}
+
+.field-text--phone .field-text__input {
+  background-image: url("../img/icon/phone-tr.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 50%;
+  background-size: 15px;
+}
+
 .field-text--tr .field-text__input {
   font-size: 12px;
   font-weight: 300;
@@ -98,4 +112,30 @@ $border-radius:               rem(3px) !default;
   &::placeholder {
     color: $white;
   }
+}
+
+.field-text--calculator {
+  cursor: pointer;
+  margin-bottom: 12px;
+  .field-text__input {
+    display: none;
+  }
+
+  .field-text__input-wrap {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-align: center;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 5px 18px rgba(182, 186, 192, 0.35);
+    border-radius: 10px;
+    background-color: $white;
+    transition: $time
+  }
+}
+
+.field-text--calculator .field-text__input:checked + .field-text__input-wrap {
+  color: $white;
+  background-image: linear-gradient(to top, #006ef7 0%, #6aa5f5 100%);
 }

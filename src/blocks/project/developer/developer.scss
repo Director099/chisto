@@ -1,8 +1,13 @@
 .developer {
   position: relative;
-  padding-top: 44px;
-  padding-bottom: 38px;
+  padding-top: 31px;
+  padding-bottom: 44px;
   border-top: 1px solid #1f2831;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 54px;
+    padding-bottom: 50px;
+  }
 }
 
 .developer__row {
@@ -24,13 +29,14 @@
 
 .developer__text {
   display: inline-block;
-  margin: 0 0 46px;
+  margin: 0 0 17px;
   color: #a3acb7;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
   text-decoration: underline;
 
   @media(min-width: $screen-md) {
+    font-size: 12px;
     margin-bottom: 0px;
   }
 }

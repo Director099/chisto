@@ -9,42 +9,95 @@
 .clients__title {
   color: $white;
   max-width: 560px;
-  margin-left: auto;
-  margin-bottom: 75px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 65px;
+    margin-left: auto;
+  }
+}
+
+.clients__right {
+  padding-left: 63px;
+
+  @media (min-width: $screen-xl) {
+    padding-left: 0;
+  }
 }
 
 .clients__left {
+  display: none;
+  position: relative;
   flex-shrink: 0;
-  max-width: 225px;
+  max-width: 220px;
   width: 100%;
+
+  @media (min-width: $screen-xl) {
+    display: block;
+  }
+}
+
+.clients__dec-text {
+  left: -129px;
+  top: 46px;
+  color: #d7dbe0;
+
+  @media (min-width: $screen-xl) {
+    &::after {
+      background: #d7dbe0;
+    }
+  }
 }
 
 .clients__title-big {
-  font-size: 119px;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #ecf0f5;
-  opacity: 0.1;
-  margin-top: 620px;
-  transform: rotate(-90deg);
+
+  @media (min-width: $screen-xl) {
+    font-size: 149px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ecf0f5;
+    opacity: .1;
+    margin-top: 678px;
+    transform: rotate(-90deg);
+    margin-right: 75px;
+  }
+
 }
 
 .clients__list {
   @include ul-none();
   display: flex;
   flex-wrap: wrap;
-  // padding-bottom: 150px;
-  // padding-left: 44px;
+  justify-content: space-between;
+
+  @media (min-width: $screen-md) {
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $screen-lg) {
+    justify-content: space-between;
+  }
 }
 
 .clients__item {
-  max-width: 234px;
-  width: 100%;
-  height: 100px;
   display: flex;
-  margin-bottom: 80px;
+  max-width: 110px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 36px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 75px;
+    max-width: 234px;
+    height: 100px;
+  }
 
   img {
     margin: auto;
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }

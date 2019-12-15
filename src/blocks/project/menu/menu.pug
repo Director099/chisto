@@ -1,0 +1,89 @@
+mixin menu()
+  .menu(id="menu")
+    .menu__main
+      button.burger.menu__close(data-fancybox-close="" aria-label="Закрыть меню")
+        span.burger__span
+      header.menu__main-header
+        .d-none.d-xl-block
+          h3.menu__title(data-menu-toggle="") УСЛУГИ
+        .menu__main-links
+          a.menu__title.menu__title--middle(href="#") Главная
+          a.menu__title.menu__title--middle(href="#") О компании
+          a.menu__title.menu__title--middle(href="#") Контакты
+          a.menu__title.menu__title--middle(href="#") Вакансии
+          a.menu__title.menu__title--middle.js-news(href="#") Статьи
+      .menu__submenu.js-news-collapse(style="display: none")
+        section.menu__submenu-item
+          h4.menu__submenu-title Уборка квартир. Статьи
+          ul.menu__submenu-menu
+            li
+              a(href="#") Как быстрее убрать квартиру?
+            li
+              a(href="#") Счего начать уборку?
+            li
+              a(href="#") Какой тряпкой вытерать пыль
+        section.menu__submenu-item
+          h4.menu__submenu-title Лайфхаки по уборки
+          ul.menu__submenu-menu
+            li
+              a(href="#") Как отмыть кровь с любой поверхности?
+            li
+              a(href="#") Как удалить жир?
+        section.menu__submenu-item
+          h4.menu__submenu-title Советы проффесионалов
+          ul.menu__submenu-menu
+            li
+              a(href="#") Безвредная химия
+            li
+              a(href="#") Цена на химчистку
+      .d-xl-none
+        h3.menu__title(data-menu-toggle="") УСЛУГИ
+      .menu__submenu.js-collapse-service
+        section.menu__submenu-item
+          h4.menu__submenu-title УБОРКА
+          ul.menu__submenu-menu
+            li
+              a(href="#") уборка квартир
+            li
+              a(href="#") уборка коттеджей
+            li
+              a(href="#") уборка офисов
+            li
+              a(href="#") уборка помещений
+        section.menu__submenu-item
+          h4.menu__submenu-title МОЙКА
+          ul.menu__submenu-menu
+            li
+              a(href="#") мойка окон
+            li
+              a(href="#") уборка коттеджей
+        section.menu__submenu-item
+          h4.menu__submenu-title ХИМЧИСТКА
+          ul.menu__submenu-menu
+            li
+              a(href="#") химчистка ковров
+            li
+              a(href="#") химчистка мягкой мебели
+            li
+              a(href="#") химчистка матрасов
+            li
+              a(href="#") устранение запахов
+        section.menu__submenu-item
+          h4.menu__submenu-title ДРУГОЕ
+          ul.menu__submenu-menu
+            li
+              a(href="#") уборка снега
+            li
+              a(href="#") услуги ассенизатора
+      ul.menu__messager
+        li.menu__messager-item
+          a.menu__messager-link(href="#") WhatsApp
+        li.menu__messager-item
+          a.menu__messager-link(href="#") Telegram
+        li.menu__messager-item
+          a.menu__messager-link(href="#") Vkontakte
+        li.menu__messager-item
+          a.menu__messager-link(href="#") Instagram
+        li.menu__messager-item
+          a.menu__messager-link(href="#") YouTube
+

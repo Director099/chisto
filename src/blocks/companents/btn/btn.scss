@@ -37,13 +37,13 @@ $border-radius:               rem(3px) !default;
   cursor: pointer;
   letter-spacing: 0.3px;
 
-  &:hover,
-  &:focus {
-    text-decoration: none;
-    color: $text-color;
-    background-color: darken($gray-lightest, 10%);
-    border-color: darken($gray-lighter, 12%);
-  }
+  //&:hover,
+  //&:focus {
+  //  text-decoration: none;
+  //  color: $text-color;
+  //  background-color: darken($gray-lightest, 10%);
+  //  border-color: darken($gray-lighter, 12%);
+  //}
 
   &:visited {
     // color: $text-color;
@@ -63,13 +63,47 @@ $border-radius:               rem(3px) !default;
     background: $white;
     border: 1px solid #3b8ef7;
     color: #3c8df7;
+
+    &:hover {
+      background: $white;
+      border: 1px solid #3b8ef7;
+      color: #3c8df7;
+    }
   }
 
+  &--success {
+    color: $white;
+    background-color: #22B573;
+    border-radius: 6px;
+    border-color: #22B573;
+  }
 
   &--main {
     color: $white;
     border: none;
     box-shadow: 0 9px 24px rgba(3, 81, 152, 0.39), 0 5px 0 #035198;
     background-image: linear-gradient(to top, #006ef7 0%, #6aa5f5 100%);
+
+    &:hover,
+    &:visited {
+      color: $white;
+    }
+  }
+}
+
+.btn {
+  &--xl-hidden {
+    display: block;
+    @media (min-width: $screen-xl) {
+      display: none;
+    }
+  }
+
+  &--xs-hidden {
+    display: none;
+
+    @media (min-width: $screen-xl) {
+      display: inline-block;
+    }
   }
 }

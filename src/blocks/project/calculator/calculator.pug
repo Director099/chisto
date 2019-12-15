@@ -1,0 +1,236 @@
+mixin calculator()
+  section.block-serv(style="background-image: url('../img/decor/bg-section-1.jpg')")
+    .advantages.advantages--top
+      ul.advantages__list
+        li.advantages__column
+          .advantages__item
+            span.advantages__icon(style="background-image: url('../img/icon/icon-1.png')" aria-label="Декоративная иконка")
+            p #[strong Перезваниваем через] 5 мин. Выезжаем на объект в день обращения
+        li.advantages__column
+          .advantages__item
+            span.advantages__icon(style="background-image: url('../img/icon/icon-2.png')" aria-label="Декоративная иконка")
+            p #[strong Несем полную] материальную ответственность. #[a(href="") Смотреть наш договор]
+        li.advantages__column
+          .advantages__item
+            span.advantages__icon(style="background-image: url('../img/icon/icon-3.png')" aria-label="Декоративная иконка")
+            p Клиент #[strong принимает объект] после проверки менеджера компании
+    .block-serv__wrap.block-serv__wrap--calculator
+      .container
+        .service
+          .service__img-text
+            img(src="img/content/text-img-5.png", alt="Калькулятор")
+        .calculator
+          .calculator__row
+            .calculator__left
+              section.calculator__content
+                h3.calculator__title Уборка квартир
+                .calculator__group
+                  .calculator__row-wrap.nav(id="nav-tab" )
+                    .calculator__col-4
+                      a.calculator__tab.active(data-toggle="tab" href="#serv-1") Поддерживающая
+                    .calculator__col-4
+                      a.calculator__tab(data-toggle="tab" href="#serv-2") Генеральная
+                    .calculator__col-4
+                      a.calculator__tab(data-toggle="tab" href="#serv-3") После ремонта
+                .tab-content(id="nav-tabContent")
+                  .tab-pane.fade.show.active(id="")
+                    .calculator__group
+                      .calculator__row-wrap
+                        .calculator__col-6
+                          .calc-service
+                            .calc-service__title
+                              span Количество комнат
+                              .field-num
+                                .field-num__wrap
+                                  button.field-num__btn.field-num__btn--minus
+                                  input.field-num__number(type="text" value="1" required="")
+                                  button.field-num__btn.field-num__btn--plus
+                        .calculator__col-6
+                          .calc-service
+                            .calc-service__title
+                              span Количество санузлов
+                              .field-num
+                                .field-num__wrap
+                                  button.field-num__btn.field-num__btn--minus
+                                  input.field-num__number(type="text" value="1" required="")
+                                  button.field-num__btn.field-num__btn--plus
+                    .calculator__group
+                        h4.calculator__title-middle С уборкой квартир часто заказывают
+                        .calculator__row-wrap
+                            .calculator__col-12
+                              .calc-service
+                                label.calc-service__wrap-chek
+                                  input.calc-service__check(type="checkbox")
+                                  span.calc-service__checkbox
+                                  span.calc-service__checkbox-text Мытье окон
+                                .calc-service__title
+                                  span Количество санузлов
+                                  .field-num
+                                    .field-num__wrap
+                                      button.field-num__btn.field-num__btn--minus
+                                      input.field-num__number(type="text" value="1" required="")
+                                      button.field-num__btn.field-num__btn--plus
+                            .calculator__col-12
+                              .calc-service
+                                label.calc-service__wrap-chek
+                                  input.calc-service__check(type="checkbox")
+                                  span.calc-service__checkbox
+                                  span.calc-service__checkbox-text Мытье лоджии
+                                .calc-service__title
+                                  span Количество окон
+                                  .field-num
+                                    .field-num__wrap
+                                      button.field-num__btn.field-num__btn--minus
+                                      input.field-num__number(type="text" value="1" required="")
+                                      button.field-num__btn.field-num__btn--plus
+                    .calculator__center
+                      a.calculator__link(data-toggle="collapse" href="#addService") Дополнительные виды услуг
+                    .collapse.calculator__collapse(id="addService")
+                      .calculator__card
+                        .calculator__row-wrap
+                          .calculator__col-12
+                            .calc-service
+                              label.calc-service__wrap-chek
+                                input.calc-service__check(type="checkbox")
+                                span.calc-service__checkbox
+                                span.calc-service__checkbox-text Мытье окон
+                              .calc-service__title
+                                span Количество санузлов
+                                .field-num
+                                  .field-num__wrap
+                                    button.field-num__btn.field-num__btn--minus
+                                    input.field-num__number(type="text" value="1" required="")
+                                    button.field-num__btn.field-num__btn--plus
+                          .calculator__col-12
+                            .calc-service
+                              label.calc-service__wrap-chek
+                                input.calc-service__check(type="checkbox")
+                                span.calc-service__checkbox
+                                span.calc-service__checkbox-text Мытье окон
+                              .calc-service__title
+                                span Количество санузлов
+                                .field-num
+                                  .field-num__wrap
+                                    button.field-num__btn.field-num__btn--minus
+                                    input.field-num__number(type="text" value="1" required="")
+                                    button.field-num__btn.field-num__btn--plus
+                          .calculator__col-12
+                            .calc-service
+                              label.calc-service__wrap-chek
+                                input.calc-service__check(type="checkbox")
+                                span.calc-service__checkbox
+                                span.calc-service__checkbox-text Прочистить трубы
+                  .tab-pane.fade(id="")
+                    .calculator__group
+                      .calculator__row-wrap
+                        .calculator__col-6
+                          .calc-service
+                            .calc-service__title
+                              span Количество комнат
+                              .field-num
+                                .field-num__wrap
+                                  button.field-num__btn.field-num__btn--minus
+                                  input.field-num__number(type="text" value="1" required="")
+                                  button.field-num__btn.field-num__btn--plus
+                        .calculator__col-6
+                          .calc-service
+                            .calc-service__title
+                              span Количество санузлов
+                              .field-num
+                                .field-num__wrap
+                                  button.field-num__btn.field-num__btn--minus
+                                  input.field-num__number(type="text" value="1" required="")
+                                  button.field-num__btn.field-num__btn--plus
+                  .tab-pane.fade(id="")
+                    .calculator__group
+                      .calculator__row-wrap
+                        .calculator__col-6
+                          .calc-service
+                            .calc-service__title
+                              span Количество комнат
+                              .field-num
+                                .field-num__wrap
+                                  button.field-num__btn.field-num__btn--minus
+                                  input.field-num__number(type="text" value="1" required="")
+                                  button.field-num__btn.field-num__btn--plus
+                        .calculator__col-6
+                          .calc-service
+                            .calc-service__title
+                              span Количество санузлов
+                              .field-num
+                                .field-num__wrap
+                                  button.field-num__btn.field-num__btn--minus
+                                  input.field-num__number(type="text" value="1" required="")
+                                  button.field-num__btn.field-num__btn--plus
+                    .calculator__center
+                      a.calculator__link(data-toggle="collapse" href="#addService") Дополнительные виды услуг
+                    .collapse.calculator__collapse(id="addService")
+                      .calculator__card
+                        .calculator__row-wrap
+                          .calculator__col-12
+                            .calc-service
+                              label.calc-service__wrap-chek
+                                input.calc-service__check(type="checkbox")
+                                span.calc-service__checkbox
+                                span.calc-service__checkbox-text Мытье окон
+                              .calc-service__title
+                                span Количество санузлов
+                                .field-num
+                                  .field-num__wrap
+                                    button.field-num__btn.field-num__btn--minus
+                                    input.field-num__number(type="text" value="1" required="")
+                                    button.field-num__btn.field-num__btn--plus
+                          .calculator__col-12
+                            .calc-service
+                              label.calc-service__wrap-chek
+                                input.calc-service__check(type="checkbox")
+                                span.calc-service__checkbox
+                                span.calc-service__checkbox-text Мытье окон
+                              .calc-service__title
+                                span Количество санузлов
+                                .field-num
+                                  .field-num__wrap
+                                    button.field-num__btn.field-num__btn--minus
+                                    input.field-num__number(type="text" value="1" required="")
+                                    button.field-num__btn.field-num__btn--plus
+                          .calculator__col-12
+                            .calc-service
+                              label.calc-service__wrap-chek
+                                input.calc-service__check(type="checkbox")
+                                span.calc-service__checkbox
+                                span.calc-service__checkbox-text Прочистить трубы
+            .calculator__right
+              section.calculator__desk(id="desk")
+                h3.calculator__title Что входит
+                .tab-content(id="nav-tabContent")
+                  .tab-pane.fade.show.active(id="serv-1")
+                    ul
+                      li Мойка полов, плинтусов, стен, потолка от  строительной пыли
+                      li Мойка осветительных приборов, люстр
+                      li Протирка пыли с бытовой техники и предметов  интерьера и мебели
+                      li Мойка розеток и выключателей
+                      li Мойка кухонного гарнитура внутри и снаружи  + мойка фартука
+                      li Дверных коробок, дверей, фурнитуры
+                      li Зеркальных поверхностей
+                      li Мойка санузла
+                      li Мойка шкафов и тумбочек внутри и снаружи
+                      li Вынос полиэтилена, картона и мусора
+                  .tab-pane.fade(id="serv-2")
+                    ul
+                      li Мойка полов, плинтусов, стен, потолка от  строительной пыли
+                      li Мойка осветительных приборов, люстр
+                      li Протирка пыли с бытовой техники и предметов  интерьера и мебели
+                  .tab-pane.fade(id="serv-3")
+                    ul
+                      li Мойка полов, плинтусов, стен, потолка от  строительной пыли
+                      li Мойка осветительных приборов, люстр
+                      li Протирка пыли с бытовой техники и предметов  интерьера и мебели
+                      li Мойка розеток и выключателей
+                      li Мойка кухонного гарнитура внутри и снаружи  + мойка фартука
+                      li Дверных коробок, дверей, фурнитуры
+                      li Зеркальных поверхностей
+              .calculator__subtotal
+                .calculator__price
+                  strong #[sub Итого:] 3200
+                  a.calculator__btn-desk(href="#desk" data-fancybox="") Что входит
+                a.btn.btn--main.calculator__btn(href="#callback" data-toggle="modal" data-target="#callback") Заказать

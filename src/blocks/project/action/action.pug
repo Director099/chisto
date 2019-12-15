@@ -1,0 +1,9 @@
+mixin action(title, src, warning)
+  section.action
+    h2.action__title= title
+    .action__img
+      img(src= src, alt="Изображение")
+    if(warning !== "")
+      p.action__text= warning
+    else
+

@@ -2,6 +2,7 @@
   padding: 15px 15px 20px;
   border-radius: 10px;
   background-image: linear-gradient(to top, #ebeef1 0%, #ffffff 100%);
+  box-shadow: 0 5px 10px rgba(141,155,165,.4);
 }
 
 .comment__link {
@@ -13,7 +14,7 @@
   border-radius: 10px;
   overflow: hidden;
   background-color: rgba(39, 43, 56, 0.22);
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 
   &::after {
     content: "";
@@ -134,6 +135,11 @@
 .comment__stars svg {
   fill: transparent;
   stroke: #0a74f7;
+  margin-right: 11px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &.comment__fill {
     fill: #0a74f7;

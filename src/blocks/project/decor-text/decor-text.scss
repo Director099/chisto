@@ -1,0 +1,29 @@
+.decor-text {
+  display: none;
+  position: absolute;
+  left: -149px;
+  top: 70px;
+  font-size: 10px;
+  font-weight: 300;
+  color: #808495;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  transform: rotate(-90deg);
+
+  @media (min-width: $screen-xl) {
+    display: block;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -50px;
+      top: 35%;
+      height: 1px;
+      width: 30px;
+      background-color: #808495;
+    }
+  }
+
+
+}

@@ -7,7 +7,8 @@
 
   @media (min-width: $screen-xl) {
     height: 100vh;
-    min-height: 839px;
+    //min-height: 839px;
+    min-height: 710px;
   }
 }
 
@@ -26,22 +27,149 @@
     opacity: 0.98;
     background-image: linear-gradient(to top, #151621 0%, #343b4b 100%);
   }
+
+  @media (min-width: $screen-xl) {
+    overflow: hidden;
+  }
+}
+
+.fullpage--service {
+  background-position: top center;
+  padding-bottom: 50px;
+
+  @media (min-width: $screen-xl) {
+    padding-bottom: 172px;
+    min-height: inherit;
+    height: inherit;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba($black, 0.48%);
+  }
+
+}
+
+.fullpage--single {
+  @media (min-width: $screen-xl) {
+    min-height: inherit;
+    height: inherit;
+  }
+
+  .page-header {
+    margin-bottom: 20px;
+  }
+
+  .page-header__phone {
+    color: #333333;
+
+    &::after {
+      background: url("../img/icon/phone-blue.svg") no-repeat center/contain;
+    }
+  }
+}
+
+.fullpage--service .page-header {
+  padding-bottom: 51px;
+
+  @media (min-width: $screen-xl) {
+    padding-bottom: 112px;
+  }
+}
+
+
+.fullpage--service .page-header__phone {
+  background-image: url("../img/icon/phone-white.svg"), linear-gradient(to top, #006ef7 0%, #6aa5f5 100%);
+
+  @media (min-width: $screen-xl) {
+    background: transparent;
+
+    &::after {
+      background-image: url("../img/icon/phone-white.svg");
+    }
+  }
 }
 
 .fullpage--y-sb {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  //justify-content: space-between;
+}
+
+.fullpage__wrapper {
+  flex-grow: 1;
+
+  &--center {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 40px;
+  }
+}
+
+.fullpage__relative {
+  position: relative;
 }
 
 .fullpage__row {
   @include make-row();
+
+  &--xs-cr {
+    flex-direction: column-reverse;
+
+    @media (min-width: $screen-xl) {
+      flex-direction: row;
+    }
+  }
 }
 
 .fullpage__column {
   @include make-col-ready();
 
+  &--as-c {
+    align-self: center;
+  }
+
   @media (min-width: $screen-xl) {
     @include make-col(6);
+  }
+}
+
+.fullpage__mt {
+  margin-top: 10px;
+}
+
+.fullpage__la {
+  @media (min-width: $screen-xl) {
+    margin-left: auto;
+  }
+}
+
+.fullpage__dec-text {
+  top: 228px;
+  left: -135px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -37px;
+    width: 12px;
+    height: 20px;
+    background: url("../img/icon/mouse.svg") no-repeat center / cover;
+    transform: rotate(90deg);
+  }
+
+  @media (min-width: $screen-xl) {
+    &::after {
+      left: -83px;
+    }
   }
 }

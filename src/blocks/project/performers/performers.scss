@@ -1,0 +1,46 @@
+.performers {
+  padding: 15px 15px 32px;
+  box-shadow: -5px 21px 51px rgba(141, 155, 165, 0.4);
+  border-radius: 10px;
+  background-image: linear-gradient(to top, #ebeef1 0%, #ffffff 100%);
+
+  @media (min-width: $screen-xl) {
+    box-shadow: 0px 5px 10px rgba(141, 155, 165, 0.4);
+  }
+}
+
+.cleaning__slider .owl-stage-outer {
+  overflow: visible;
+
+  @media (min-width: $screen-xl) {
+    overflow: hidden;
+  }
+}
+
+.performers__img {
+  width: 268px;
+  height: 266px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 16px rgba(63, 66, 75, 0.28);
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.performers__title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 14px;
+}
+
+.performers__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #53575e;
+  margin-bottom: 14px;
+
+  p {
+    margin: 0;
+  }
+}

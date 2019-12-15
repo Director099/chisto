@@ -3,13 +3,18 @@
 }
 
 .page-footer__top {
-  padding-top: 62px;
-  padding-bottom: 55px;
-  background-color: #11161d;
+  padding-top: 48px;
+  padding-bottom: 5px;
+  // background-color: #11161d;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 67px;
+    padding-bottom: 55px;
+  }
 }
 
 .page-footer__bottom {
-  background-color: #11161d;
+  // background-color: #11161d;
 }
 
 .page-footer__row {
@@ -19,5 +24,11 @@
 
 .page-footer__item {
   @include make-col-ready();
-  @include make-col(3);
+  @include make-col(6);
+  margin-bottom: 36px;
+
+  @media (min-width: $screen-xl) {
+    @include make-col(2.68);
+    margin-bottom: 0;
+  }
 }

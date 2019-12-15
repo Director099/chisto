@@ -27,17 +27,22 @@
 @import "../blocks/companents/burger/burger";
 @import "../blocks/companents/table/table";
 @import "../blocks/companents/field-text/field-text";
+@import "../blocks/companents/field-select/field-select";
 @import "../blocks/companents/field-checkbox/field-checkbox";
 @import "../blocks/companents/form/form";
 @import "../blocks/companents/title/title";
+@import "../blocks/companents/embed-responsive/embed-responsive";
+@import "../blocks/companents/breadcrumbs/breadcrumbs";
 
-
+@import "../blocks/project/decor-text/decor-text";
+@import "../blocks/project/menu/menu";
+@import "../blocks/project/order-page/order-page";
+@import "../blocks/project/advantages/advantages";
 @import "../blocks/project/page-header/page-header";
 @import "../blocks/project/page-footer/page-footer";
 @import "../blocks/project/fullpage/fullpage";
 @import "../blocks/project/main-block/main-block";
 @import "../blocks/project/block-serv/block-serv";
-@import "../blocks/project/advantages/advantages";
 @import "../blocks/project/service/service";
 @import "../blocks/project/block-info/block-info";
 @import "../blocks/project/quest/quest";
@@ -50,3 +55,32 @@
 @import "../blocks/project/clients/clients";
 @import "../blocks/project/video-content/video-content";
 @import "../blocks/project/modal/modal";
+@import "../blocks/project/action/action";
+@import "../blocks/project/reglament/reglament";
+@import "../blocks/project/cleaning/cleaning";
+@import "../blocks/project/performers/performers";
+@import "../blocks/project/faq/faq";
+@import "../blocks/project/result/result";
+@import "../blocks/project/results/results";
+@import "../blocks/project/calculator/calculator";
+@import "../blocks/project/page/page";
+@import "../blocks/project/field-num/field-num";
+@import "../blocks/project/calc-service/calc-service";
+@import "../blocks/project/social-fix/social-fix";
+@import "../blocks/project/reserv/reserv";
+
+.footer-wrap {
+  background-image: linear-gradient(to bottom,#1f2831 0%,#0e0f17 100%);
+}
+
+.footer-wrap .page-footer:first-child {
+  background: lighten(#181d26, 5%);
+}
+
+.visible-xl {
+  display: none;
+
+  @media (min-width: $screen-xl) {
+    display: block;
+  }
+}

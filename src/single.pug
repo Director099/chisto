@@ -1,0 +1,62 @@
+extends pug/layout.pug
+
+block meta
+  title Услуги
+block header
+  .fullpage.fullpage--single
+    +page-header("single")
+    .container
+      +breadcrumbs()
+        +breadcrumbs-item('Главная', '/')
+        +breadcrumbs-item('О компании')
+block content
+  main
+    .page
+      .container
+        h1 Например заголовок о компании
+        .page__previev
+          .page__previev-left
+            a.result.result--video(href="https://www.youtube.com/watch?v=0X-pKZ8-7Nw&list=PLsgc2PQGF1hAy_BO5vfpWFTfcpi-f05VE&index=1" data-fancybox="")
+              p.result__text Генеральная уборка
+              img(src="img/content/result-1.jpg", alt="Результат работ")
+              span.result__play
+                span
+          .page__previev-right
+            img(src="img/content/prev.jpg" alt="Изображение")
+        h2 Миссия компании например
+        p Не следует, однако забывать, что укрепление и развитие структуры способствует подготовки и реализации систем массового участия. Разнообразный и богатый опыт консультация с широким активом позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач
+        p Разнообразный и богатый опыт консультация с широким активом позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач
+        h3 Объекты например
+        .results
+          .results__slider.owl-carousel.owl-theme
+            .results__slider-item
+              a.result(href="img/content/result-1.jpg" data-fancybox="")
+                p.result__text Поддерживающая уборка
+                img(src="img/content/result-1.jpg", alt="Результат работ")
+                .result__footer
+                  span.result__hash #До
+            .results__slider-item
+              a.result(href="img/content/result-2.jpg" data-fancybox="")
+                p.result__text Поддерживающая уборка
+                img(src="img/content/result-2.jpg", alt="Результат работ")
+                .result__footer
+                  span.result__hash #После
+            .results__slider-item
+              a.result.result--video(href="https://www.youtube.com/watch?v=0X-pKZ8-7Nw&list=PLsgc2PQGF1hAy_BO5vfpWFTfcpi-f05VE&index=1" data-fancybox="")
+                p.result__text Генеральная уборка
+                img(src="img/content/result-1.jpg", alt="Результат работ")
+                span.result__play
+                  span
+            .results__slider-item
+              a.result.result--video(href="https://www.youtube.com/watch?v=0X-pKZ8-7Nw&list=PLsgc2PQGF1hAy_BO5vfpWFTfcpi-f05VE&index=1" data-fancybox="")
+                p.result__text Генеральная уборка
+                img(src="img/content/result-1.jpg", alt="Результат работ")
+                span.result__play
+                  span
+        h4 Объекты например
+        p Не следует, однако забывать, что укрепление и развитие структуры способствует подготовки и реализации систем массового участия. Разнообразный и богатый опыт консультация с широким активом позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач
+        p Разнообразный и богатый опыт консультация с широким активом позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач
+    +calculator()
+    +cleaning()
+block footer
+  +page-footer("footer")

@@ -1,286 +1,332 @@
-mixin page-footer()
-  section.block-serv.reviews(style="background-image: url('../img/decor/bg-section-1.jpg')")
-    .container
-      header.reviews__header
-        h2.title.reviews__title Отзывы о нашей работе
-        ul.nav.reviews__nav(id="myTab")
-          li.reviews__nav-item
-            a.reviews__nav-link.active(data-toggle="tab" href="#tab0" role="tab") Видео-отзывы
-          li.reviews__nav-item
-            a.reviews__nav-link(data-toggle="tab" href="#tab1") Благодарственные письма
-      .tab-content.reviews__content(id="myTabContent")
-        .tab-pane.fade.show.active(id="tab0")
-          .reviews__slider.owl-carousel.owl-theme
-            .reviews__slider-item
-              .comment
-                a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
-                  img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
-                  span.comment__play(aria-label="Открыть Изображение")
-                    span.comment__play-img
-                .comment__text
-                  p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
-                .comment__stars
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-            .reviews__slider-item
-              .comment
-                a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
-                  img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
-                  span.comment__play(aria-label="Открыть Изображение")
-                    span.comment__play-img
-                .comment__text
-                  p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
-                .comment__stars
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-            .reviews__slider-item
-              .comment
-                a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
-                  img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
-                  span.comment__play(aria-label="Открыть Изображение")
-                    span.comment__play-img
-                .comment__text
-                  p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
-                .comment__stars
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-            .reviews__slider-item
-              .comment
-                a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
-                  img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
-                  span.comment__play(aria-label="Открыть Изображение")
-                    span.comment__play-img
-                .comment__text
-                  p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
-                .comment__stars
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-        .tab-pane.fade(id="tab1")
-          .reviews__slider.owl-carousel.owl-theme
-            .reviews__slider-item
-              .comment
-                a.comment__link(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
-                  img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
-                  span.comment__play(aria-label="Открыть Изображение")
-                    span.comment__play-video
-                .comment__text
-                  p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
-                .comment__stars
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-            .reviews__slider-item
-              .comment
-                a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
-                  img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
-                  span.comment__play(aria-label="Открыть Изображение")
-                    span.comment__play-video
-                .comment__text
-                  p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
-                .comment__stars
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-            .reviews__slider-item
-              .comment
-                a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
-                  img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
-                  span.comment__play(aria-label="Открыть Изображение")
-                    span.comment__play-video
-                .comment__text
-                  p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
-                .comment__stars
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg.comment__fill(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-                  svg(width="16" height="16")
-                    use(xlink:href="img/symbols.svg#star")
-  .block-info
-    .container
-      .block-info__row
-        .block-info__column
-          .contacts
-            header.contacts__header
-              h3.title.title--white Контакты
-            .contacts__row
-              .contacts__column-8
-                .contacts__wrap.contacts__wrap--row
-                  strong.contacts__name.contacts__name--point Адрес:
-                  .contacts__info
-                    p.contacts__info-text Уфа, Сочинская 43 к2
-                .contacts__wrap.contacts__wrap--row
-                  strong.contacts__name.contacts__name--phone Телефон:
-                  .contacts__info
-                    a.contacts__info-text(href="tel:+7(919)603-97-70") +7(919) 603-97-70
-                    a.contacts__info-text(href="tel:+7(347)266-50-47") +7(347) 266-50-47
-                .contacts__wrap.contacts__wrap--row
-                  strong.contacts__name.contacts__name--mail E-mail:
-                  .contacts__info
-                    a.contacts__info-text(href="mailto:moikaokon-rb@mail.ru") moikaokon-rb@mail.ru
-              .contacts__column-4
-                .contacts__wrap.contacts__wrap--ident
-                  strong.contacts__name Соц. сети
-                  .contacts__social
-                    a.contacts__social-link.contacts__social-link--insta(aria-label="Instagram")
-                    a.contacts__social-link.contacts__social-link--youtube(aria-label="Youtube")
-                    a.contacts__social-link.contacts__social-link--vk(aria-label="VK")
-                .contacts__wrap
-                  strong.contacts__name Messenger
-                  .contacts__social
-                    a.contacts__social-link.contacts__social-link--whatsapp(aria-label="whatsapp")
-                    a.contacts__social-link.contacts__social-link--vk(aria-label="vk")
-                    a.contacts__social-link.contacts__social-link--telega(aria-label="telegram")
-        .block-info__column
-          .quest
-            header.quest__header
-              h3.title.title--white.quest__title Задайте вопрос
-              p.quest__signature Проконсультируем в течении 5 минут
-            form.form
-              .quest__row
-                .quest__col-7
-                  +field-text({
-                    isTextarea: false,
-                    mods: 'tr',
-                    val: '',
-                    attrs: {
-                      name: 'contact',
-                      placeholder: 'Тел. или e-mail'
-                    }
-                  })
-                .quest__col-5
-                  +field-text({
-                    isTextarea: false,
-                    mods: 'tr',
-                    val: '',
-                    attrs: {
-                      name: 'name',
-                      placeholder: 'Ваше имя'
-                    }
-                  })
-                .quest__col-12
-                  +field-text({
-                    isTextarea: true,
-                    mods: 'tr',
-                    val: '',
-                    attrs: {
-                      name: 'text',
-                      placeholder: 'Сообщение',
+mixin page-footer(tpl)
+  if(tpl === "footer")
 
-                    }
-                  })
-              .quest__row.quest__row--center
-                .quest__col-7
-                  +field-checkbox([
-                    {
-                      title: 'Я даю свое согласие на обработку <a href="#">персональных данных</a>',
-                      mods: 'quest',
+  else
+    section.block-serv.reviews(style="background-image: url('../img/decor/bg-section-1.jpg')")
+      .container
+        header.reviews__header
+          h2.title.reviews__title Отзывы о нашей работе
+          ul.nav.reviews__nav(id="myTab")
+            li.reviews__nav-item
+              a.reviews__nav-link.active(data-toggle="tab" href="#tab0" ) Видео-отзывы
+            li.reviews__nav-item
+              a.reviews__nav-link(data-toggle="tab" href="#tab1") Благодарственные письма
+          img.reviews__header-img(src="img/content/text-img-4.png" alt="Отзывы")
+        .tab-content.reviews__content(id="myTabContent")
+          span.decor-text.reviews__dec-text Отзывы наших клиентов
+          .tab-pane.fade(id="tab0")
+            .reviews__slider.owl-carousel.owl-theme
+              .reviews__slider-item
+                .comment
+                  a.comment__link(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
+                    img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
+                    span.comment__play(aria-label="Открыть Изображение")
+                      span.comment__play-video
+                  .comment__text
+                    p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
+                  .comment__stars
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+              .reviews__slider-item
+                .comment
+                  a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
+                    img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
+                    span.comment__play(aria-label="Открыть Изображение")
+                      span.comment__play-video
+                  .comment__text
+                    p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
+                  .comment__stars
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+              .reviews__slider-item
+                .comment
+                  a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
+                    img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
+                    span.comment__play(aria-label="Открыть Изображение")
+                      span.comment__play-video
+                  .comment__text
+                    p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
+                  .comment__stars
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+          .tab-pane.fade.show.active(id="tab1")
+            .reviews__slider.owl-carousel.owl-theme
+              .reviews__slider-item
+                .comment
+                  a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
+                    img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
+                    span.comment__play(aria-label="Открыть Изображение")
+                      span.comment__play-img
+                  .comment__text
+                    p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
+                  .comment__stars
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+              .reviews__slider-item
+                .comment
+                  a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
+                    img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
+                    span.comment__play(aria-label="Открыть Изображение")
+                      span.comment__play-img
+                  .comment__text
+                    p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
+                  .comment__stars
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+              .reviews__slider-item
+                .comment
+                  a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
+                    img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
+                    span.comment__play(aria-label="Открыть Изображение")
+                      span.comment__play-img
+                  .comment__text
+                    p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
+                  .comment__stars
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+              .reviews__slider-item
+                .comment
+                  a.comment__link(href="img/content/rev-1.jpg" data-fancybox="")
+                    img.comment__img(src="img/content/rev-1.jpg", alt="Изображение")
+                    span.comment__play(aria-label="Открыть Изображение")
+                      span.comment__play-img
+                  .comment__text
+                    p Краткое описание и суть отзыва  в текстовом варианте, краткое  описание и суть отзыва в текстовом варианте
+                  .comment__stars
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg.comment__fill(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+                    svg(width="16" height="16")
+                      use(xlink:href="img/symbols.svg#star")
+  footer.footer-wrap
+    .page-footer
+      .page-footer__top
+        .container
+          ul.page-footer__row
+            li.page-footer__item
+              .footer-nav
+                strong.footer-nav__name Уборка
+                ul.footer-nav__list
+                  li.footer-nav__item
+                    a.footer-nav__link(href="") уборка квартир
+                  li.footer-nav__item
+                    a.footer-nav__link(href="") уборка коттеджей
+                  li.footer-nav__item
+                    a.footer-nav__link(href="") уборка офисов
+                  li.footer-nav__item
+                    a.footer-nav__link(href="") уборка помещений
+            li.page-footer__item
+              .footer-nav
+                strong.footer-nav__name Мойка
+                ul.footer-nav__list
+                  li.footer-nav__item
+                    a.footer-nav__link(href="") мойка окон
+                  li.footer-nav__item
+                    a.footer-nav__link(href="") мойка фасадов
+            li.page-footer__item
+              .footer-nav
+                strong.footer-nav__name Химчистка
+                ul.footer-nav__list
+                  li.footer-nav__item
+                    a.footer-nav__link(href="") химчистка ковров
+                  li.footer-nav__item
+                    a.footer-nav__link(href="") химчистка мягкой мебели
+                  li.footer-nav__item
+                    a.footer-nav__link(href="") химчистка матрасов
+                  li.footer-nav__item
+                    a.footer-nav__link(href="") устранение запахов
+            li.page-footer__item
+              .footer-nav
+                strong.footer-nav__name Другое
+                ul.footer-nav__list
+                  li.footer-nav__item
+                    a.footer-nav__link(href="") уборка снега
+                  li.footer-nav__item
+                    a.footer-nav__link(href="") услуги ассенизатора
+    .block-info
+      .container
+        .block-info__row
+          .block-info__column
+            .contacts
+              header.contacts__header
+                h3.title.title--white Контакты
+              .contacts__row
+                .contacts__column-8
+                  .contacts__wrap.contacts__wrap--row
+                    strong.contacts__name.contacts__name--point Адрес:
+                    .contacts__info
+                      p.contacts__info-text Уфа, Сочинская 43 к2
+                  .contacts__wrap.contacts__wrap--row
+                    strong.contacts__name.contacts__name--phone Телефон:
+                    .contacts__info
+                      a.contacts__info-text(href="tel:+7(919)603-97-70") +7(919) 603-97-70
+                      a.contacts__info-text(href="tel:+7(347)266-50-47") +7(347) 266-50-47
+                  .contacts__wrap.contacts__wrap--row
+                    strong.contacts__name.contacts__name--mail E-mail:
+                    .contacts__info
+                      a.contacts__info-text(href="mailto:moikaokon-rb@mail.ru") moikaokon-rb@mail.ru
+                .contacts__column-4
+                  .contacts__row-message
+                    .contacts__wrap.contacts__wrap--ident
+                      strong.contacts__name Соц. сети
+                      .contacts__social
+                        a.contacts__social-link.contacts__social-link--insta(aria-label="Instagram")
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve" width="15" height="15">
+                            <g>
+
+                              <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">
+                              <stop offset="0" style="stop-color:#E09B3D"/>
+                              <stop offset="0.3" style="stop-color:#C74C4D"/>
+                              <stop offset="0.6" style="stop-color:#C21975"/>
+                              <stop offset="1" style="stop-color:#7024C4"/>
+                            </linearGradient>
+                            <path style="fill:url(#SVGID_1_);" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722   c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156   C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156   c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722   c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"/>
+
+                              <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.57" x2="275.517" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">
+                              <stop offset="0" style="stop-color:#E09B3D"/>
+                              <stop offset="0.3" style="stop-color:#C74C4D"/>
+                              <stop offset="0.6" style="stop-color:#C21975"/>
+                              <stop offset="1" style="stop-color:#7024C4"/>
+                            </linearGradient>
+                            <path style="fill:url(#SVGID_2_);" d="M275.517,133C196.933,133,133,196.933,133,275.516s63.933,142.517,142.517,142.517   S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6c-48.095,0-87.083-38.988-87.083-87.083   s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083C362.6,323.611,323.611,362.6,275.517,362.6z"/>
+
+                              <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="418.31" y1="4.57" x2="418.31" y2="549.72" gradientTransform="matrix(1 0 0 -1 0 554)">
+                              <stop offset="0" style="stop-color:#E09B3D"/>
+                              <stop offset="0.3" style="stop-color:#C74C4D"/>
+                              <stop offset="0.6" style="stop-color:#C21975"/>
+                              <stop offset="1" style="stop-color:#7024C4"/>
+                            </linearGradient>
+                            <circle style="fill:url(#SVGID_3_);" cx="418.31" cy="134.07" r="34.15"/>
+                            </g>
+                        </svg>
+                        a.contacts__social-link.contacts__social-link--youtube(aria-label="Youtube")
+                          svg(width="16" height="16")
+                            use(xlink:href="img/symbols.svg#youtube-1")
+                        a.contacts__social-link.contacts__social-link--vk(aria-label="VK")
+                          svg(width="16" height="16")
+                            use(xlink:href="img/symbols.svg#vk-1")
+                        a.contacts__social-link.contacts__social-link--facebook(aria-label="facebook")
+                          svg(width="16" height="16")
+                            use(xlink:href="img/symbols.svg#facebook-2")
+                    .contacts__wrap
+                      strong.contacts__name Messenger
+                      .contacts__social
+                        a.contacts__social-link.contacts__social-link--whatsapp(aria-label="whatsapp")
+                          svg(width="16" height="16")
+                            use(xlink:href="img/symbols.svg#viber-1")
+                        a.contacts__social-link.contacts__social-link--telega(aria-label="telegram")
+                          svg(width="16" height="16")
+                            use(xlink:href="img/symbols.svg#telegram-1")
+          .block-info__column
+            .quest
+              header.quest__header
+                h3.title.title--white.quest__title Задайте вопрос
+                p.quest__signature Проконсультируем в течении 5 минут
+              form.form
+                .quest__row
+                  .quest__col-7
+                    +field-text({
+                      isTextarea: false,
+                      mods: 'tr',
+                      val: '',
                       attrs: {
-                        name: 'check0',
-                        checked: ""
+                        name: 'contact',
+                        placeholder: 'Тел. или e-mail'
                       }
-                    },
-                  ])
-                .quest__col-5
-                  button.btn.btn--main.quest__btn Отправить
-  footer.page-footer
-    .page-footer__top
-      .container
-        ul.page-footer__row
-          li.page-footer__item
-            .footer-nav
-              strong.footer-nav__name Уборка
-              ul.footer-nav__list
-                li.footer-nav__item
-                  a.footer-nav__link(href="") уборка квартир
-                li.footer-nav__item
-                  a.footer-nav__link(href="") уборка коттеджей
-                li.footer-nav__item
-                  a.footer-nav__link(href="") уборка офисов
-                li.footer-nav__item
-                  a.footer-nav__link(href="") уборка помещений
-          li.page-footer__item
-            .footer-nav
-              strong.footer-nav__name Мойка
-              ul.footer-nav__list
-                li.footer-nav__item
-                  a.footer-nav__link(href="") мойка окон
-                li.footer-nav__item
-                  a.footer-nav__link(href="") мойка фасадов
-          li.page-footer__item
-            .footer-nav
-              strong.footer-nav__name Химчистка
-              ul.footer-nav__list
-                li.footer-nav__item
-                  a.footer-nav__link(href="") химчистка ковров
-                li.footer-nav__item
-                  a.footer-nav__link(href="") химчистка мягкой мебели
-                li.footer-nav__item
-                  a.footer-nav__link(href="") химчистка матрасов
-                li.footer-nav__item
-                  a.footer-nav__link(href="") устранение запахов
-          li.page-footer__item
-            .footer-nav
-              strong.footer-nav__name Другое
-              ul.footer-nav__list
-                li.footer-nav__item
-                  a.footer-nav__link(href="") уборка снега
-                li.footer-nav__item
-                  a.footer-nav__link(href="") услуги ассенизатора
-    .page-footer__bottom
-      .container
-        .developer
-          .developer__row
-            a.developer__text(href="#" target="_blank") Политика конфиденциальности
-            a.developer__logo(href="https://pplans.ru" target="_blank")
-              img(src="img/icon/develop.svg" alt="Веб студия «People Plans» — Разработка сайтов и лендингов")
+                    })
+                  .quest__col-5
+                    +field-text({
+                      isTextarea: false,
+                      mods: 'tr',
+                      val: '',
+                      attrs: {
+                        name: 'name',
+                        placeholder: 'Ваше имя'
+                      }
+                    })
+                  .quest__col-12
+                    +field-text({
+                      isTextarea: true,
+                      mods: 'tr',
+                      val: '',
+                      attrs: {
+                        name: 'text',
+                        placeholder: 'Сообщение',
+
+                      }
+                    })
+                .quest__row.quest__row--center
+                  .quest__col-7
+                    +field-checkbox([
+                      {
+                        title: 'Я даю свое согласие на обработку <a href="#">персональных данных</a>',
+                        mods: 'quest',
+                        attrs: {
+                          name: 'check0',
+                          checked: ""
+                        }
+                      },
+                    ])
+                  .quest__col-5
+                    button.btn.btn--main.quest__btn Отправить
+    .page-footer
+      .page-footer__bottom
+        .container
+          .developer
+            .developer__row
+              a.developer__text(href="#" target="_blank") Политика конфиденциальности
+              a.developer__logo(href="https://pplans.ru" target="_blank")
+                img(src="img/icon/develop.svg" alt="Веб студия «People Plans» — Разработка сайтов и лендингов")

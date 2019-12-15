@@ -1,17 +1,52 @@
 .video-content {
   position: relative;
-  max-width: 500px;
+  max-width: 264px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: -70px;
+    bottom: 4px;
+    width: 331px;
+    height: 264px;
+    background: url("../img/decor/dot-1.png") no-repeat center left/cover;
+    z-index: -1;
+  }
+
+  @media (min-width: $screen-xl) {
+    max-width: 500px;
+    //margin-right: 0;
+  }
+}
+
+.video-content img {
+  //margin-left: -74px;
+  margin-left: -87px;
+
+  @media (min-width: $screen-xl) {
+    margin-left: -0px;
+  }
 }
 
 .video-content__play {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
   display: block;
-  width: 146px;
-  height: 146px;
+  position: absolute;
+  top: 44px;
+  right: 48px;
+  width: 94px;
+  height: 94px;
   z-index: 2;
+
+  @media (min-width: $screen-xl) {
+    width: 146px;
+    height: 146px;
+    top: 40%;
+    right: 48px;
+    transform: translateY(-42%);
+  }
 
   &::after,
   &::before {
@@ -50,37 +85,53 @@
     transform: translate(-50%,-50%);
     display: block;
     border-radius: 50px;
-    width: 88px;
-    height: 88px;
+    width: 56px;
+    height: 56px;
     background-image: linear-gradient(to top, #0772f7 0%, #73acf9 99%, #73acf9 100%);
+    background-repeat: no-repeat;
+
+    @media (min-width: $screen-xl) {
+      width: 88px;
+      height: 88px;
+    }
 
     &::after {
       content: "";
-      width: 19px;
-      height: 19px;
+      width: 12px;
+      height: 12px;
       top: 50%;
       left: 50%;
       transform: translate(-40%,-50%);
       background-image: url("../img/icon/play-arrow.svg");
       position: absolute;
       background-size: contain;
+
+      @media (min-width: $screen-xl) {
+        width: 19px;
+        height: 19px;
+      }
     }
   }
 }
 
 .video-content__text-wrap {
   position: absolute;
-  top: 440px;
-  right: 0;
+  top: 186px;
+  right: -12px;
   max-width: 210px;
   width: 100%;
   border-radius: 10px;
-  padding: 24px 27px;
+  padding: 19px 27px;
   background-image: linear-gradient(-23deg, #252936 0%, #454b5e 100%);
   color: #c8cedf;
   font-size: 12px;
   font-weight: 300;
   line-height: 20px;
+
+  @media (min-width: $screen-xl) {
+    top: 401px;
+    right: 7px;
+  }
 
   &::after {
     content: "";
