@@ -4257,6 +4257,15 @@ input:checked ~ .field-checkbox__name-text:after {
 .modal-backdrop.show {
     opacity: 0.98;
 }
+.modal__img {
+    border-radius: 6px 6px 0 0px;
+    overflow: hidden;
+}
+.modal__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .modal-content {
     padding: 40px 35px 47px;
     border-radius: 10px;
@@ -4314,6 +4323,18 @@ input:checked ~ .field-checkbox__name-text:after {
 }
 .modal__content .field-text__input {
     padding: 22px 30px 22px 50px;
+}
+.modal-dialog--banner .modal-content {
+    border: 0;
+}
+.modal-dialog--banner > .modal-content {
+    padding: 0;
+}
+.modal__check {
+    margin-bottom: 0;
+}
+.modal__check .field-checkbox__name-text a {
+    color: #a3acb7;
 }
 .action {
     position: relative;
@@ -6285,6 +6306,18 @@ input:checked ~ .field-checkbox__name-text:after {
     .clients__list {
         justify-content: space-between;
     }
+    .modal-dialog--banner {
+        max-width: 910px;
+    }
+    .modal__img {
+        max-width: 600px;
+        width: 100%;
+        flex-shrink: 0;
+        border-radius: 6px 0 0 6px;
+    }
+    .modal__row {
+        display: flex;
+    }
     .page__previev-right {
         display: block;
     }
@@ -7508,5 +7541,8 @@ input:checked ~ .field-checkbox__name-text:after {
     }
     .collapsing {
         transition: none;
+    }
+    .collapsing, .fade, .modal.fade .modal-dialog {
+        transition: transform 0.3s ease-out, opacity 0.15s linear;
     }
 }

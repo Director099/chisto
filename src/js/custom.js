@@ -2,6 +2,18 @@
 
 $(document).ready(function() {
 
+  function bannerShow() {
+    if ($('#banner-action').hasClass('show') == false) {
+      $('#banner-action').modal('show')
+    }
+
+    $('#banner-action').on('hidden.bs.modal', function (e) {
+      $('#banner-action').remove()
+    })
+  }
+
+  $(document).mouseleave(bannerShow);
+
   $('.reviews__slider, .cleaning__slider').owlCarousel({
     loop: true,
     margin: 50,

@@ -69,6 +69,12 @@
 @import "../blocks/project/social-fix/social-fix";
 @import "../blocks/project/reserv/reserv";
 
+@media screen and (prefers-reduced-motion: reduce) {
+  .collapsing, .fade, .modal.fade .modal-dialog {
+    transition: transform .3s ease-out, opacity .15s linear;
+  }
+}
+
 .footer-wrap {
   background-image: linear-gradient(to bottom,#1f2831 0%,#0e0f17 100%);
 }
